@@ -1,19 +1,19 @@
-import { addBuilding } from "./building"
+import { addMuseumBuilding } from "./building"
 import { addNFTImage } from "./nftImage"
 import { setSceneOrientation } from "./pivot"
 import { addSculpture } from "./sculpture"
-import { addSocialLink } from "./socialLink"
-import { addVideoScreen } from "./videoScreen"
+import { addMuseumSocialLink } from "./socialLink"
+import { addMuseumVideoScreen } from "./videoScreen"
 import { addElevator } from "./elevator"
-import { addLogo } from "./logo"
+import { addMuseumLogo } from "./logo"
 
 export function addMuseumAt(x: number, y: number, z: number, config: any) {
     const pivotScene = setSceneOrientation(x, y, z, config)
-    addBuilding(pivotScene)
+    addMuseumBuilding(pivotScene)
     addElevator(pivotScene)
-    addLogo(pivotScene, config)
+    addMuseumLogo(pivotScene, config)
     addSculpture(pivotScene, config)
     addNFTImage(pivotScene, config)
-    addSocialLink(pivotScene, config)
-    addVideoScreen(pivotScene, config)
+    addMuseumSocialLink(pivotScene, config)
+    addMuseumVideoScreen(pivotScene, config)
 }

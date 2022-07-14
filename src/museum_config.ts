@@ -1,4 +1,4 @@
-export const config1 =  {
+export const museumConfig1 =  {
     //SCENE FACING: "NORTH"/"EAST"/"SOUTH"/"WEST"
     sceneOrientation: "NORTH",
     logo: {
@@ -117,9 +117,9 @@ export const config1 =  {
     }
 }
 
-export const config2 =  {
+export const museumConfig2 =  {
     //SCENE FACING: "NORTH"/"EAST"/"SOUTH"/"WEST"
-    sceneOrientation: "EAST",
+    sceneOrientation: "NORTH",
     logo: {
         bottom: {
             //image should be 512px square
