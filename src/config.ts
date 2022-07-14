@@ -1,4 +1,4 @@
-export default {
+export const config1 =  {
     //SCENE FACING: "NORTH"/"EAST"/"SOUTH"/"WEST"
     sceneOrientation: "NORTH",
     logo: {
@@ -16,9 +16,9 @@ export default {
     },
     nftImage: [
         {
-            name: "image 1",
-            imgSrc: "images/001.png",
-            link: "https://www.decentraland.org",
+            name: "Small 12 L Backpack WATERPROOF CASUAL MINI BACKPACK BAGS FOR COLLEGE, SCHOOL, TRAVELLING, STUDENTS",
+            imgSrc: "https://rukminim1.flixcart.com/image/880/1056/l55nekw0/backpack/x/5/a/14-waterproof-casual-mini-backpack-bags-for-college-school-original-imagfw52ghxpw5kf.jpeg?q=50",
+            link: "https://www.flipkart.com/krizler-waterproof-casual-mini-backpack-bags-college-school-travelling-students-12-l/p/itm47f8b1bccee2b?pid=BKPGFW52MGVDAJRE&lid=LSTBKPGFW52MGVDAJREDHCYH4&marketplace=FLIPKART&store=reh%2F4d7%2Fak9&srno=b_1_1&otracker=clp_omu_Fashion%2BTop%2BDeals_2_2.dealCard.OMU_offers-store_offers-store_67UF561LATP0_2&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Fashion%2BTop%2BDeals_NA_dealCard_cc_2_NA_view-all_2&fm=neo%2Fmerchandising&iid=en_uEHybzCUY79zen6IC6GVHtdvHwOQJ%2F4gJg%2Bh%2B88iu3PGcnOo%2B6sY7721Mg6C53dGnQuuRm4HSZBwfWmKkbSSLg%3D%3D&ppt=browse&ppn=browse&ssid=6r9w39a9r40000001657817946140",
             width: 512,
             height: 512,
             position: new Vector3(6.8, 2.6, 4.2)

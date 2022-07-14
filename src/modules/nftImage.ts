@@ -1,7 +1,4 @@
-import config from "../config"
-import { pivotScene } from "./pivot"
-
-export function addNFTImage(){
+export function addNFTImage(pivotScene: Entity, config: any) {
     for (let img of config.nftImage) {
 
         let imageTexture = new Texture(img.imgSrc)

@@ -1,21 +1,9 @@
-import { addBuilding } from "./modules/building"
-import { addNFTImage } from "./modules/nftImage"
-import { setSceneOrientation } from "./modules/pivot"
-import { addSculpture } from "./modules/sculpture"
-import { addSocialLink } from "./modules/socialLink"
-import { addVideoScreen } from "./modules/videoScreen"
 import { createDispenser } from "./booth/dispenser"
-import { addElevator } from "./modules/elevator"
-import { addLogo } from "./modules/logo"
+import { addMuseumAt } from "./modules/museum"
+import { config1 } from "./config"
 
-setSceneOrientation()
-addBuilding()
-addElevator()
-addLogo()
-addSculpture()
-addNFTImage()
-addSocialLink()
-addVideoScreen()
+addMuseumAt(8, 0, 8, config1)
+addMuseumAt(24, 0, 8, config1)
 
 // change the eventUUID to your event
 // check following links about how to setup POAP event

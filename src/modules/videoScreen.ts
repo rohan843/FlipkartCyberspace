@@ -1,8 +1,7 @@
 import * as utils from '@dcl/ecs-scene-utils'
 import config from '../config'
-import { pivotScene } from './pivot'
 
-export function addVideoScreen() {
+export function addVideoScreen(pivotScene: Entity) {
 
 
     const videoClip = new VideoClip(config.videoScreen.src)

@@ -1,5 +1,4 @@
 import * as utils from '@dcl/ecs-scene-utils'
-import { pivotScene } from './pivot'
 
 class elevatorSystem {
 
@@ -9,13 +8,16 @@ class elevatorSystem {
     firstFloorPos = new Vector3(0, 0.3, -4.8)
     secondFloorPos = new Vector3(0, 7.5, -4.8)
 
-    constructor() {
+    pivotScene = null;
+
+    constructor(pivotScene: Entity) {
+        this.pivotScene = pivotScene;
         this.platform.addComponent(new GLTFShape("models/museum/elevator.glb"))
         this.platform.addComponent(new Transform({
             position: new Vector3(0, 0.3, -4.8)
         }))
 
-        this.platform.setParent(pivotScene)
+        this.platform.setParent(this.pivotScene)
     }
 
     movePlatform() {
@@ -47,8 +49,8 @@ class elevatorSystem {
     }
 }
 
-export function addElevator() {
-    const elevatorSys = new elevatorSystem()
+export function addElevator(pivotScene: Entity) {
+    const elevatorSys = new elevatorSystem(pivotScene)
 
 
     const triggerEntity = new Entity()

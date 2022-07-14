@@ -1,9 +1,9 @@
 import config from "../config"
 
-export const pivotScene = new Entity()
+export function setSceneOrientation(x: number, y: number, z: number) {
 
+    const pivotScene = new Entity()
 
-export function setSceneOrientation() {
     let yRotation = 0
 
     switch (config.sceneOrientation) {
@@ -25,8 +25,11 @@ export function setSceneOrientation() {
     }
 
     pivotScene.addComponent(new Transform({
-        position: new Vector3(8, 0, 8),
+        position: new Vector3(x, y, z),
         rotation: Quaternion.Euler(0, yRotation, 0)
     }))
     engine.addEntity(pivotScene)
+
+    return pivotScene;
+
 }

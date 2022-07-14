@@ -1,7 +1,6 @@
 import config from "../config"
-import { pivotScene } from "./pivot"
 
-export function addSocialLink() {
+export function addSocialLink(pivotScene: Entity) {
     for (let linkData of config.socialMedia) {
         let clickableLink = new Entity()
         clickableLink.setParent(pivotScene)

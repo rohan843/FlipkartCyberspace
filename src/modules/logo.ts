@@ -1,7 +1,6 @@
 import config from "../config"
-import { pivotScene } from "./pivot"
 
-export function addLogo() {
+export function addLogo(pivotScene: Entity) {
     //TOP LOGO
     const topLogoData = config.logo.top
 

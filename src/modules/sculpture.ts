@@ -1,7 +1,6 @@
 import config from "../config"
-import { pivotScene } from "./pivot"
 
-export function addSculpture() {
+export function addSculpture(pivotScene: Entity) {
     const sculpture = new Entity()
     sculpture.addComponent(new GLTFShape(config.sculpture.modelSrc))
     sculpture.addComponent(new Transform({
