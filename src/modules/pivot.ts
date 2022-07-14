@@ -1,6 +1,4 @@
-import config from "../config"
-
-export function setSceneOrientation(x: number, y: number, z: number) {
+export function setSceneOrientation(x: number, y: number, z: number, config: any) {
 
     const pivotScene = new Entity()
 

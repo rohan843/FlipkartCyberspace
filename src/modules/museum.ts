@@ -8,12 +8,12 @@ import { addElevator } from "./elevator"
 import { addLogo } from "./logo"
 
 export function addMuseumAt(x: number, y: number, z: number, config: any) {
-    const pivotScene = setSceneOrientation(x, y, z)
+    const pivotScene = setSceneOrientation(x, y, z, config)
     addBuilding(pivotScene)
     addElevator(pivotScene)
-    addLogo(pivotScene)
-    addSculpture(pivotScene)
+    addLogo(pivotScene, config)
+    addSculpture(pivotScene, config)
     addNFTImage(pivotScene, config)
-    addSocialLink(pivotScene)
-    addVideoScreen(pivotScene)
+    addSocialLink(pivotScene, config)
+    addVideoScreen(pivotScene, config)
 }

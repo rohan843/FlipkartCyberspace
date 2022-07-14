@@ -1,9 +1,9 @@
 import { createDispenser } from "./booth/dispenser"
 import { addMuseumAt } from "./modules/museum"
-import { config1 } from "./config"
+import { config1, config2 } from "./config"
 
 addMuseumAt(8, 0, 8, config1)
-addMuseumAt(24, 0, 8, config1)
+addMuseumAt(24, 0, 8, config2)
 
 // change the eventUUID to your event
 // check following links about how to setup POAP event
