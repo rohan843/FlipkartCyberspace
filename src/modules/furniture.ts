@@ -1,6 +1,6 @@
-import { createChannel } from '../../node_modules/decentraland-builder-scripts/channel'
-import { createInventory } from '../../node_modules/decentraland-builder-scripts/inventory'
-import Script1 from "../../models/a116b006-c177-4e39-ab7c-a8c64761a621/src/item"
+// import { createChannel } from '../../node_modules/decentraland-builder-scripts/channel'
+// import { createInventory } from '../../node_modules/decentraland-builder-scripts/inventory'
+// import Script1 from "../../models/a116b006-c177-4e39-ab7c-a8c64761a621/src/item"
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -590,27 +590,27 @@ export function addOverheadRoadSign(x: number, y: number, z: number) {
 }
 
 // TODO: See
-export function addtelephoneBooth(x: number, y: number, z: number) {
-    const telephoneBooth = new Entity('telephoneBooth')
-    engine.addEntity(telephoneBooth)
-    telephoneBooth.setParent(_scene)
-    const transform15 = new Transform({
-        position: new Vector3(x, y, z),
-        rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
-    })
-    const channelId = Math.random().toString(16).slice(2)
-    const channelBus = new MessageBus()
-    const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
-    const options = { inventory }
+// export function addtelephoneBooth(x: number, y: number, z: number) {
+//     const telephoneBooth = new Entity('telephoneBooth')
+//     engine.addEntity(telephoneBooth)
+//     telephoneBooth.setParent(_scene)
+//     const transform15 = new Transform({
+//         position: new Vector3(x, y, z),
+//         rotation: new Quaternion(0, 0, 0, 1),
+//         scale: new Vector3(1, 1, 1)
+//     })
+//     const channelId = Math.random().toString(16).slice(2)
+//     const channelBus = new MessageBus()
+//     const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
+//     const options = { inventory }
 
-    const script1 = new Script1()
-    // script1.init(options)
-    script1.init()
-    script1.spawn(telephoneBooth, { "clickable": true }, createChannel(channelId, telephoneBooth, channelBus))
+//     const script1 = new Script1()
+//     // script1.init(options)
+//     script1.init()
+//     script1.spawn(telephoneBooth, { "clickable": true }, createChannel(channelId, telephoneBooth, channelBus))
 
-    telephoneBooth.addComponentOrReplace(transform15)
-}
+//     telephoneBooth.addComponentOrReplace(transform15)
+// }
 
 export function addGrassTile(x: number, y: number, z: number) {
     const grassTile = new Entity('grassTile')

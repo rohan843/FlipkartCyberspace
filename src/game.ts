@@ -5,9 +5,9 @@ import { museumConfig1, museumConfig2, museumConfig3 } from "./museum_config"
 import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
-import { addtelephoneBooth } from "./modules/furniture"
+// import { addtelephoneBooth } from "./modules/furniture"
 
-addtelephoneBooth(-4.00,0.88,53.66)
+
 addMuseumAt(8, 0, 8, museumConfig1)
 addMuseumAt(40, 0, 8, museumConfig1)
 addMuseumAt(56, 0, 24, museumConfig2)
