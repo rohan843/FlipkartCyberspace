@@ -1,3 +1,7 @@
+import { createChannel } from '../../node_modules/decentraland-builder-scripts/channel'
+import { createInventory } from '../../node_modules/decentraland-builder-scripts/inventory'
+import Script1 from "../../models/a116b006-c177-4e39-ab7c-a8c64761a621/src/item"
+
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
 const transform = new Transform({
@@ -431,3 +435,418 @@ export function addTheFountainOfSpirits(x: number, y: number, z: number) {
     gltfShape26.visible = true
     theFountainOfSpirits.addComponentOrReplace(gltfShape26)
 }
+
+export function addRoadCobbleCrossLong(x: number, y: number, z: number) {
+    const roadCobbleCrossLong = new Entity('roadCobbleCrossLong')
+    engine.addEntity(roadCobbleCrossLong)
+    roadCobbleCrossLong.setParent(_scene)
+    const transform2 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCobbleCrossLong.addComponentOrReplace(transform2)
+    const gltfShape = new GLTFShape("models/bfff3e0c-3958-46ac-99d4-0724429a90d9/Road Cobble Cross Long.glb")
+    gltfShape.withCollisions = true
+    gltfShape.isPointerBlocker = true
+    gltfShape.visible = true
+    roadCobbleCrossLong.addComponentOrReplace(gltfShape)
+}
+
+export function addRoadCobbleStraight(x: number, y: number, z: number) {
+    const roadCobbleStraight = new Entity('roadCobbleStraight')
+    engine.addEntity(roadCobbleStraight)
+    roadCobbleStraight.setParent(_scene)
+    const transform7 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCobbleStraight.addComponentOrReplace(transform7)
+    const gltfShape3 = new GLTFShape("models/36c28c69-e943-416a-9f73-c1ab82944c23/Road Cobble Straight.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    roadCobbleStraight.addComponentOrReplace(gltfShape3)
+}
+
+export function addRoadCobbleT(x: number, y: number, z: number) {
+    const roadCobbleT = new Entity('roadCobbleT')
+    engine.addEntity(roadCobbleT)
+    roadCobbleT.setParent(_scene)
+    const transform8 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCobbleT.addComponentOrReplace(transform8)
+    const gltfShape4 = new GLTFShape("models/4432e823-05c8-4a95-aaae-0fe2742765ef/Road Cobble T.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    roadCobbleT.addComponentOrReplace(gltfShape4)
+}
+
+export function addRoadCobbleTShort(x: number, y: number, z: number) {
+    const roadCobbleTShort = new Entity('roadCobbleTShort')
+    engine.addEntity(roadCobbleTShort)
+    roadCobbleTShort.setParent(_scene)
+    const transform9 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCobbleTShort.addComponentOrReplace(transform9)
+    const gltfShape5 = new GLTFShape("models/c7015da9-0ffc-4359-997a-94b06d3654ac/Road Cobble T Short.glb")
+    gltfShape5.withCollisions = true
+    gltfShape5.isPointerBlocker = true
+    gltfShape5.visible = true
+    roadCobbleTShort.addComponentOrReplace(gltfShape5)
+}
+
+export function addRoadCross(x: number, y: number, z: number) {
+    const roadCross = new Entity('roadCross')
+    engine.addEntity(roadCross)
+    roadCross.setParent(_scene)
+    const transform10 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCross.addComponentOrReplace(transform10)
+    const gltfShape6 = new GLTFShape("models/efa7cf32-9129-45e9-b3ff-e9193c029dbf/Road Cross.glb")
+    gltfShape6.withCollisions = true
+    gltfShape6.isPointerBlocker = true
+    gltfShape6.visible = true
+    roadCross.addComponentOrReplace(gltfShape6)
+}
+
+export function addRoadCrossShort(x: number, y: number, z: number) {
+    const roadCrossShort = new Entity('roadCrossShort')
+    engine.addEntity(roadCrossShort)
+    roadCrossShort.setParent(_scene)
+    const transform11 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCrossShort.addComponentOrReplace(transform11)
+    const gltfShape7 = new GLTFShape("models/2d8c6889-2029-458b-a40a-b48e3e4ebcd8/Road Cross Short.glb")
+    gltfShape7.withCollisions = true
+    gltfShape7.isPointerBlocker = true
+    gltfShape7.visible = true
+    roadCrossShort.addComponentOrReplace(gltfShape7)
+}
+
+export function addRoadStraight(x: number, y: number, z: number) {
+    const roadStraight = new Entity('roadStraight')
+    engine.addEntity(roadStraight)
+    roadStraight.setParent(_scene)
+    const transform12 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadStraight.addComponentOrReplace(transform12)
+    const gltfShape8 = new GLTFShape("models/1a60f177-c822-4d6a-b65a-983c90e05ad6/Road Straight.glb")
+    gltfShape8.withCollisions = true
+    gltfShape8.isPointerBlocker = true
+    gltfShape8.visible = true
+    roadStraight.addComponentOrReplace(gltfShape8)
+}
+
+export function addRockTile(x: number, y: number, z: number) {
+    const rockTile = new Entity('rockTile')
+    engine.addEntity(rockTile)
+    rockTile.setParent(_scene)
+    const transform13 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    rockTile.addComponentOrReplace(transform13)
+    const gltfShape9 = new GLTFShape("models/5df296c5-f070-44dc-9ba2-8cafe7852037/FloorBlock_04/FloorBlock_04.glb")
+    gltfShape9.withCollisions = true
+    gltfShape9.isPointerBlocker = true
+    gltfShape9.visible = true
+    rockTile.addComponentOrReplace(gltfShape9)
+}
+
+export function addOverheadRoadSign(x: number, y: number, z: number) {
+    const overheadRoadSign = new Entity('overheadRoadSign')
+    engine.addEntity(overheadRoadSign)
+    overheadRoadSign.setParent(_scene)
+    const transform14 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    overheadRoadSign.addComponentOrReplace(transform14)
+    const gltfShape10 = new GLTFShape("models/451e7f17-ec8d-4beb-a383-0ec634eb341e/Overhead_Road_Sign.glb")
+    gltfShape10.withCollisions = true
+    gltfShape10.isPointerBlocker = true
+    gltfShape10.visible = true
+    overheadRoadSign.addComponentOrReplace(gltfShape10)
+}
+
+// TODO: See
+export function addtelephoneBooth(x: number, y: number, z: number) {
+    const telephoneBooth = new Entity('telephoneBooth')
+    engine.addEntity(telephoneBooth)
+    telephoneBooth.setParent(_scene)
+    const transform15 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    const channelId = Math.random().toString(16).slice(2)
+    const channelBus = new MessageBus()
+    const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
+    const options = { inventory }
+
+    const script1 = new Script1()
+    // script1.init(options)
+    script1.init()
+    script1.spawn(telephoneBooth, { "clickable": true }, createChannel(channelId, telephoneBooth, channelBus))
+
+    telephoneBooth.addComponentOrReplace(transform15)
+}
+
+export function addGrassTile(x: number, y: number, z: number) {
+    const grassTile = new Entity('grassTile')
+    engine.addEntity(grassTile)
+    grassTile.setParent(_scene)
+    const transform16 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    grassTile.addComponentOrReplace(transform16)
+    const gltfShape11 = new GLTFShape("models/7f2dbcb5-40f5-4e2f-9409-1886d26ce068/FloorBlock_05/FloorBlock_05.glb")
+    gltfShape11.withCollisions = true
+    gltfShape11.isPointerBlocker = true
+    gltfShape11.visible = true
+    grassTile.addComponentOrReplace(gltfShape11)
+}
+
+export function addSandTile(x: number, y: number, z: number) {
+    const sandTile = new Entity('sandTile')
+    engine.addEntity(sandTile)
+    sandTile.setParent(_scene)
+    const transform17 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    sandTile.addComponentOrReplace(transform17)
+    const gltfShape12 = new GLTFShape("models/1874152b-dd3d-4890-960a-4e7719346326/FloorBlock_02/FloorBlock_02.glb")
+    gltfShape12.withCollisions = true
+    gltfShape12.isPointerBlocker = true
+    gltfShape12.visible = true
+    sandTile.addComponentOrReplace(gltfShape12)
+}
+
+export function addSideWalkTile(x: number, y: number, z: number) {
+    const sidewalkTile = new Entity('sidewalkTile')
+    engine.addEntity(sidewalkTile)
+    sidewalkTile.setParent(_scene)
+    const transform18 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    sidewalkTile.addComponentOrReplace(transform18)
+    const gltfShape13 = new GLTFShape("models/9e52d29e-d70c-4dc2-9cff-80cfc2771b58/FloorBlock_01/FloorBlock_01.glb")
+    gltfShape13.withCollisions = true
+    gltfShape13.isPointerBlocker = true
+    gltfShape13.visible = true
+    sidewalkTile.addComponentOrReplace(gltfShape13)
+}
+
+export function addWoodTile(x: number, y: number, z: number) {
+    const woodTile = new Entity('woodTile')
+    engine.addEntity(woodTile)
+    woodTile.setParent(_scene)
+    const transform19 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    woodTile.addComponentOrReplace(transform19)
+    const gltfShape14 = new GLTFShape("models/df6bc5c0-5989-4251-8d1f-38edcf9c9beb/FloorBlock_03/FloorBlock_03.glb")
+    gltfShape14.withCollisions = true
+    gltfShape14.isPointerBlocker = true
+    gltfShape14.visible = true
+    woodTile.addComponentOrReplace(gltfShape14)
+}
+
+export function addRoadCobbleAngled(x: number, y: number, z: number) {
+    const roadCobbleAngled = new Entity('roadCobbleAngled')
+    engine.addEntity(roadCobbleAngled)
+    roadCobbleAngled.setParent(_scene)
+    const transform20 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCobbleAngled.addComponentOrReplace(transform20)
+    const gltfShape15 = new GLTFShape("models/c3fe212d-f3c1-47e2-aa8b-707492866281/Road Cobble Angled.glb")
+    gltfShape15.withCollisions = true
+    gltfShape15.isPointerBlocker = true
+    gltfShape15.visible = true
+    roadCobbleAngled.addComponentOrReplace(gltfShape15)
+}
+
+export function addRoadCobbleEnd(x: number, y: number, z: number) {
+    const roadCobbleEnd = new Entity('roadCobbleEnd')
+    engine.addEntity(roadCobbleEnd)
+    roadCobbleEnd.setParent(_scene)
+    const transform21 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadCobbleEnd.addComponentOrReplace(transform21)
+    const gltfShape16 = new GLTFShape("models/1ef4b5ec-c278-422e-b072-48c04dddce08/Road Cobble End.glb")
+    gltfShape16.withCollisions = true
+    gltfShape16.isPointerBlocker = true
+    gltfShape16.visible = true
+    roadCobbleEnd.addComponentOrReplace(gltfShape16)
+}
+
+export function addRoadAngle(x: number, y: number, z: number) {
+    const roadAngle = new Entity('roadAngle')
+    engine.addEntity(roadAngle)
+    roadAngle.setParent(_scene)
+    const transform22 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadAngle.addComponentOrReplace(transform22)
+    const gltfShape17 = new GLTFShape("models/16f2ad21-56ab-4d28-bcce-f818cd390fcf/Road Angle.glb")
+    gltfShape17.withCollisions = true
+    gltfShape17.isPointerBlocker = true
+    gltfShape17.visible = true
+    roadAngle.addComponentOrReplace(gltfShape17)
+}
+
+export function addRoadT(x: number, y: number, z: number) {
+    const roadT = new Entity('roadT')
+    engine.addEntity(roadT)
+    roadT.setParent(_scene)
+    const transform23 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadT.addComponentOrReplace(transform23)
+    const gltfShape18 = new GLTFShape("models/6497938f-280d-4956-9f3f-0cde1af7b1e1/Road T.glb")
+    gltfShape18.withCollisions = true
+    gltfShape18.isPointerBlocker = true
+    gltfShape18.visible = true
+    roadT.addComponentOrReplace(gltfShape18)
+}
+
+export function addRoadTShort(x: number, y: number, z: number) {
+    const roadTShort = new Entity('roadTShort')
+    engine.addEntity(roadTShort)
+    roadTShort.setParent(_scene)
+    const transform24 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    roadTShort.addComponentOrReplace(transform24)
+    const gltfShape19 = new GLTFShape("models/22b22059-a866-4675-b2e4-d5c11b2c80aa/Road T Short.glb")
+    gltfShape19.withCollisions = true
+    gltfShape19.isPointerBlocker = true
+    gltfShape19.visible = true
+    roadTShort.addComponentOrReplace(gltfShape19)
+}
+
+export function addCaribeanWaterWithRocksPatch(x: number, y: number, z: number) {
+    const caribbeanShoreWithRocksPatch = new Entity('caribbeanShoreWithRocksPatch')
+    engine.addEntity(caribbeanShoreWithRocksPatch)
+    caribbeanShoreWithRocksPatch.setParent(_scene)
+    const transform25 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    caribbeanShoreWithRocksPatch.addComponentOrReplace(transform25)
+    const gltfShape20 = new GLTFShape("models/fd9eb4ee-2caa-4fc5-8bd3-bc34288b515e/WaterPatchCurve_01/WaterPatchCurve_01.glb")
+    gltfShape20.withCollisions = true
+    gltfShape20.isPointerBlocker = true
+    gltfShape20.visible = true
+    caribbeanShoreWithRocksPatch.addComponentOrReplace(gltfShape20)
+}
+
+export function addCaribeanWaterWithTwoSideRocks(x: number, y: number, z: number) {
+    const caribbeanWaterWithTwoSideRocks = new Entity('caribbeanWaterWithTwoSideRocks')
+    engine.addEntity(caribbeanWaterWithTwoSideRocks)
+    caribbeanWaterWithTwoSideRocks.setParent(_scene)
+    const transform26 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    caribbeanWaterWithTwoSideRocks.addComponentOrReplace(transform26)
+    const gltfShape21 = new GLTFShape("models/01d15783-7d05-42d6-a010-3db4b60c63dd/WaterPatchCornerOutside_01/WaterPatchCornerOutside_01.glb")
+    gltfShape21.withCollisions = true
+    gltfShape21.isPointerBlocker = true
+    gltfShape21.visible = true
+    caribbeanWaterWithTwoSideRocks.addComponentOrReplace(gltfShape21)
+}
+
+export function addCaribeanWaterWithCornerRocks(x: number, y: number, z: number) {
+    const caribbeanWaterWithCornerRocks = new Entity('caribbeanWaterWithCornerRocks')
+    engine.addEntity(caribbeanWaterWithCornerRocks)
+    caribbeanWaterWithCornerRocks.setParent(_scene)
+    const transform27 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    caribbeanWaterWithCornerRocks.addComponentOrReplace(transform27)
+    const gltfShape22 = new GLTFShape("models/fc559a0b-41b9-4d53-b24c-1713ad9c161c/WaterPatchCornerInside_01/WaterPatchCornerInside_01.glb")
+    gltfShape22.withCollisions = true
+    gltfShape22.isPointerBlocker = true
+    gltfShape22.visible = true
+    caribbeanWaterWithCornerRocks.addComponentOrReplace(gltfShape22)
+}
+
+export function addCaribeanWaterWithSideRocks(x: number, y: number, z: number) {
+    const caribbeanWaterWithSideRocks = new Entity('caribbeanWaterWithSideRocks')
+    engine.addEntity(caribbeanWaterWithSideRocks)
+    caribbeanWaterWithSideRocks.setParent(_scene)
+    const transform28 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    caribbeanWaterWithSideRocks.addComponentOrReplace(transform28)
+    const gltfShape23 = new GLTFShape("models/52850b6b-49b5-40f6-8b1b-c5ee95de159b/WaterPatchSide_01/WaterPatchSide_01.glb")
+    gltfShape23.withCollisions = true
+    gltfShape23.isPointerBlocker = true
+    gltfShape23.visible = true
+    caribbeanWaterWithSideRocks.addComponentOrReplace(gltfShape23)
+}
+
+export function addCaribeanWater(x: number, y: number, z: number) {
+    const caribbeanWater = new Entity('caribbeanWater')
+    engine.addEntity(caribbeanWater)
+    caribbeanWater.setParent(_scene)
+    const transform29 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    caribbeanWater.addComponentOrReplace(transform29)
+    const gltfShape24 = new GLTFShape("models/390b876e-4b3a-4e78-bd03-5be21b1ecc67/WaterPatchFull_01/WaterPatchFull_01.glb")
+    gltfShape24.withCollisions = true
+    gltfShape24.isPointerBlocker = true
+    gltfShape24.visible = true
+    caribbeanWater.addComponentOrReplace(gltfShape24)
+}
+
