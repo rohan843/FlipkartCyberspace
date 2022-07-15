@@ -51,6 +51,7 @@ export function addDoors() {
     doorMaterial.albedoColor = Color3.Red()
     doorMaterial.metallic = 0.9
     doorMaterial.roughness = 0.1
+    doorMaterial.transparencyMode = 2
 
     // Assign the material to both door sides
     doorL.addComponent(doorMaterial)
