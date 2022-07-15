@@ -25,7 +25,7 @@ engine.addEntity(birdFlyingPreloadDummy)
 // Add ground terrain
 const sand = new Entity()      
 sand.addComponent(new Transform({ 
-          position: new Vector3(0,0,0),
+          position: new Vector3(-48,0,0),
           rotation: Quaternion.Euler(0,0,0),
           scale: new Vector3(1,1,1)
         }))        
