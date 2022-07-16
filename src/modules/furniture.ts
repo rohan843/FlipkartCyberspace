@@ -885,3 +885,53 @@ export function addCaribeanWater(x: number, y: number, z: number) {
     caribbeanWater.addComponentOrReplace(gltfShape24)
 }
 
+export function addConicalStonePillar(x: number, y: number, z: number) {
+    const conicalStonePillar = new Entity('conicalStonePillar')
+    engine.addEntity(conicalStonePillar)
+    conicalStonePillar.setParent(_scene)
+    const transform6 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    conicalStonePillar.addComponentOrReplace(transform6)
+    const gltfShape2 = new GLTFShape("12db208d-b6a0-4256-9bc7-25c2e19006e0/Pillar_Cylinder_04/Pillar_Cylinder_04.glb")
+    gltfShape2.withCollisions = true
+    gltfShape2.isPointerBlocker = true
+    gltfShape2.visible = true
+    conicalStonePillar.addComponentOrReplace(gltfShape2)
+}
+
+export function addOrnamentalStonePillar(x: number, y: number, z: number) {
+    const ornamentalStonePillar = new Entity('ornamentalStonePillar')
+    engine.addEntity(ornamentalStonePillar)
+    ornamentalStonePillar.setParent(_scene)
+    const transform7 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    ornamentalStonePillar.addComponentOrReplace(transform7)
+    const gltfShape3 = new GLTFShape("a483fe6d-be3d-4810-b00c-7998b3dd949b/Pillar_Cylinder_03/Pillar_Cylinder_03.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    ornamentalStonePillar.addComponentOrReplace(gltfShape3)
+}
+
+export function addSmallStonePillar(x: number, y: number, z: number) {
+    const smallStonePillar = new Entity('smallStonePillar')
+    engine.addEntity(smallStonePillar)
+    smallStonePillar.setParent(_scene)
+    const transform8 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    smallStonePillar.addComponentOrReplace(transform8)
+    const gltfShape4 = new GLTFShape("40f5aa21-8036-4147-b9a7-da48c0c8c06b/Pillar_Cylinder_02/Pillar_Cylinder_02.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    smallStonePillar.addComponentOrReplace(gltfShape4)
+}

@@ -6,7 +6,7 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen} from "./modules/addProjector"
-import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar } from "./modules/furniture"
+import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 
 
 addMuseumAt(8, 0, 8, museumConfig1)
@@ -98,7 +98,7 @@ addStoneBrickWall(76 - 4 * 9, 0, 127.2);
 addStoneBrickWall(76 - 4 * 10, 0, 127.2);
 addStoneBrickWall(76 - 4 * 11, 0, 127.2);
 addStoneBrickWall(76 - 4 * 12, 0, 127.2);
-// addLowStonePillar(76 - 4 * 13, 0, 127.2);
+addConicalStonePillar(76 - 4 * 13, 0, 127.2);
 
 createDispenser(
     {
