@@ -49,6 +49,10 @@ addStraightBarrier(-1.45 + 2 * 6, 0, 127.5);
 addCurvedBarrierEnd(12.55, 0, 127.5);
 addWallLight(13, 0, 127.5, 1, 1, 1, 0, 0, 0);
 
+addStoneBrickWall(79.9, 0, 123.85 - 4 * 33, 0, 270, 0);
+addStoneBrickWall(79.9, 0, 123.85 - 4 * 32, 0, 270, 0);
+addStoneBrickWall(79.9, 0, 123.85 - 4 * 31, 0, 270, 0);
+addStoneBrickWall(79.9, 0, 123.85 - 4 * 30, 0, 270, 0);
 addStoneBrickWall(79.9, 0, 123.85 - 4 * 29, 0, 270, 0);
 addStoneBrickWall(79.9, 0, 123.85 - 4 * 28, 0, 270, 0);
 addStoneBrickWall(79.9, 0, 123.85 - 4 * 27, 0, 270, 0);
