@@ -11,15 +11,26 @@ const transform = new Transform({
 })
 _scene.addComponentOrReplace(transform)
 
-export function addWallLight(x: number, y: number, z: number) {
+export function addWallLight(
+    x: number,
+    y: number,
+    z: number,
+    xScale: number = 1,
+    yScale: number = 1,
+    zScale: number = 1,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const wallLight = new Entity('wallLight')
     engine.addEntity(wallLight)
     wallLight.setParent(_scene)
     const transform3 = new Transform({
         position: new Vector3(x, y, z),
-        rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        rotation: new Quaternion(-1, 0, 0, 1),
+        scale: new Vector3(xScale, yScale, zScale)
     })
+    transform3.rotation.setEuler(xRot, yRot, zRot);
     wallLight.addComponentOrReplace(transform3)
     const gltfShape2 = new GLTFShape("models/d6cbb77a-a9c5-40a3-8eba-7bdf86fc3747/LightWall_01/LightWall_01.glb")
     gltfShape2.withCollisions = true
@@ -130,7 +141,14 @@ export function addGrafittiWallShortF(x: number, y: number, z: number) {
     grafittiWallShortF.addComponentOrReplace(gltfShape8)
 }
 
-export function addCurvedBarrierEnd(x: number, y: number, z: number) {
+export function addCurvedBarrierEnd(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const curvedBarrierEnd = new Entity('curvedBarrierEnd')
     engine.addEntity(curvedBarrierEnd)
     curvedBarrierEnd.setParent(_scene)
@@ -139,6 +157,7 @@ export function addCurvedBarrierEnd(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform10.rotation.setEuler(xRot, yRot, zRot)
     curvedBarrierEnd.addComponentOrReplace(transform10)
     const gltfShape9 = new GLTFShape("models/a2feb0bb-a805-40ff-83fb-337785bf7eb3/Fence_End_01/Fence_End_01.glb")
     gltfShape9.withCollisions = true
@@ -164,7 +183,14 @@ export function addFullCurvedBarrier(x: number, y: number, z: number) {
     fullCurvedBarrier.addComponentOrReplace(gltfShape10)
 }
 
-export function addCornerStoneBrickWall(x: number, y: number, z: number) {
+export function addCornerStoneBrickWall(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const cornerStoneBrickWall = new Entity('cornerStoneBrickWall')
     engine.addEntity(cornerStoneBrickWall)
     cornerStoneBrickWall.setParent(_scene)
@@ -173,6 +199,7 @@ export function addCornerStoneBrickWall(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform12.rotation.setEuler(xRot, yRot, zRot);
     cornerStoneBrickWall.addComponentOrReplace(transform12)
     const gltfShape11 = new GLTFShape("models/018773fa-dd9b-4924-a07c-c803fa36f9a5/Module_Stone_Curve_01/Module_Stone_Curve_01.glb")
     gltfShape11.withCollisions = true
