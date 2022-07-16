@@ -242,7 +242,14 @@ export function addMediumStoneWall(x: number, y: number, z: number) {
     mediumStoneWall.addComponentOrReplace(gltfShape13)
 }
 
-export function addStoneBrickWall(x: number, y: number, z: number) {
+export function addStoneBrickWall(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const stoneBrickWall = new Entity('stoneBrickWall')
     engine.addEntity(stoneBrickWall)
     stoneBrickWall.setParent(_scene)
@@ -251,6 +258,7 @@ export function addStoneBrickWall(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform15.rotation.setEuler(xRot, yRot, zRot);
     stoneBrickWall.addComponentOrReplace(transform15)
     const gltfShape14 = new GLTFShape("models/5ed9c4c0-8a9c-4c0d-814c-d40354987f2b/Module_Stone_Straight_01/Module_Stone_Straight_01.glb")
     gltfShape14.withCollisions = true
