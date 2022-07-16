@@ -5,6 +5,7 @@ import { museumConfig1, museumConfig2, museumConfig3 } from "./museum_config"
 import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
+import { addProjectorScreen} from "./modules/addProjector"
 // import { addtelephoneBooth } from "./modules/furniture"
 
 
@@ -21,7 +22,7 @@ addShopAt(24, 0, 8, shopConfig1)
 addShopAt(24, 0, 104, shopConfig2)
 addBirdField()
 addDoors()
-
+addProjectorScreen()
 
 createDispenser(
     {
