@@ -87,10 +87,10 @@ export const addProjectorScreen = () => {
     // creates a grid of screen columns around a center position
     function addColumnGrid(_rows: number, _columns: number, _center: Vector3) {
 
-        const columnScale = 0.75
+        const columnScale = 5
         const columnBaseHeight = 0
         const columnHeight = 10
-        const columnSpacing = 2
+        const columnSpacing = 3
 
         let sizeRows = columnSpacing * (_rows - 1)
         let sizeColumnss = columnSpacing * (_columns - 1)
@@ -109,7 +109,8 @@ export const addProjectorScreen = () => {
                     columnScale * Math.random() + 0.5,
                     columnHeight,
                     false,
-                    uvMat)
+                    uvMat
+                )
             }
         }
     }
@@ -137,7 +138,7 @@ export const addProjectorScreen = () => {
     addColumnGrid(3, 3, scene.columnsCenter)
 
     //add the TV stack
-    addTVScreens(4, 6, 15, scene.center)
+    // addTVScreens(4, 6, 15, scene.center)
 
     //calculate the UVs for the TV stack only once on startup (no realtime reprojection needed)
     ScreenGrpScatterTvs.updateScreens(scene.center)

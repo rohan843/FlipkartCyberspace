@@ -6,7 +6,7 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addRockTile, addrustickiosk, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWallPlainGlass, addWoodTile } from "./modules/furniture"
+import { addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addRockTile, addrustickiosk, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 import { addShopBuilding } from "./modules/building"
 
@@ -24,7 +24,7 @@ addShopAt(24, 0, 8, shopConfig1)
 addShopAt(24, 0, 104, shopConfig2)
 // addBirdField()
 // addDoors()
-// addProjectorScreen()
+addProjectorScreen()
 // addTheFountainOfBrokenDreams(16, 0, 56)
 // addTheFountainOfSpirits(16, 0, 62)
 // addCaribeanWater(8,-0.1,113)
@@ -100,7 +100,17 @@ addCurvedBarrierEnd(12.55, 0, 127.5);
 addWallLight(13, 0, 127.5, 1, 1, 1, 0, 0, 0);
 
 
-addWallPlainGlass(-62, 0, -15.7, 10.0)
+addLowStonePillar(-62 + 1.5 * 8, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 7, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 6, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 5, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 4, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 3, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 2, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 1, 0, -15.54);
+addLowStonePillar(-62, 0, -15.54);
+addLowStonePillar(-62 - 1.5 * 1, 0, -15.54);
+// addWallPlainGlass(-62, 0, -15.7, 0, 0, 0, -10, 1, 1)
 // addStoneBrickWall(76 - 4 * 34, 0, -15.9, 0, 0, 0);
 // addStoneBrickWall(76 - 4 * 33, 0, -15.9, 0, 0, 0);
 // addStoneBrickWall(76 - 4 * 32, 0, -15.9, 0, 0, 0);

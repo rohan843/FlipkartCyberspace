@@ -1480,8 +1480,9 @@ export function addWallPlainGlass(
     const transform11 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(xScale, yScale, zScale)
     })
+    transform11.rotation.setEuler(xRot, yRot, zRot);
     wallPlainGlass.addComponentOrReplace(transform11)
     const gltfShape6 = new GLTFShape("models/e28ea76e-fe21-4544-a001-a65867b11be0/PlainGlassWall.glb")
     gltfShape6.withCollisions = true
