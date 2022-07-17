@@ -106,7 +106,14 @@ export function addStraightBarrier(x: number, y: number, z: number) {
     straightBarrier.addComponentOrReplace(gltfShape3)
 }
 
-export function addStainedGlassStoneBrickWindow(x: number, y: number, z: number) {
+export function addStainedGlassStoneBrickWindow(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+){
     const stoneBrickWindowWithStainedGlass = new Entity('stoneBrickWindowWithStainedGlass')
     engine.addEntity(stoneBrickWindowWithStainedGlass)
     stoneBrickWindowWithStainedGlass.setParent(_scene)
@@ -115,6 +122,7 @@ export function addStainedGlassStoneBrickWindow(x: number, y: number, z: number)
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform5.rotation.setEuler(xRot, yRot, zRot)
     stoneBrickWindowWithStainedGlass.addComponentOrReplace(transform5)
     const gltfShape4 = new GLTFShape("models/63b1ed7a-fd00-41f0-9eab-71e17873b491/Module_Stone_Straight_Window_02/Module_Stone_Straight_Window_02.glb")
     gltfShape4.withCollisions = true
@@ -157,7 +165,14 @@ export function addLowStonePillar(x: number, y: number, z: number) {
     lowStonePillar.addComponentOrReplace(gltfShape6)
 }
 
-export function addStoneBrickThreshold(x: number, y: number, z: number) {
+export function addStoneBrickThreshold(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+) {
     const stoneBrickThreshold = new Entity('stoneBrickThreshold')
     engine.addEntity(stoneBrickThreshold)
     stoneBrickThreshold.setParent(_scene)
@@ -166,6 +181,7 @@ export function addStoneBrickThreshold(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform8.rotation.setEuler(xRot, yRot, zRot);
     stoneBrickThreshold.addComponentOrReplace(transform8)
     const gltfShape7 = new GLTFShape("models/4e47bac9-96be-4b23-a40b-61306db54f13/Module_Stone_Straight_Door_01/Module_Stone_Straight_Door_01.glb")
     gltfShape7.withCollisions = true
@@ -977,7 +993,14 @@ export function addfencedoor(x: number, y: number, z: number){
     gltfShape2.visible = true
     fenceDoor.addComponentOrReplace(gltfShape2)
 }
-export function addFruitKiosk(x: number, y: number, z: number){
+export function addFruitKiosk(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+){
     const fruitKiosk = new Entity('fruitKiosk')
 engine.addEntity(fruitKiosk)
 fruitKiosk.setParent(_scene)
@@ -986,6 +1009,7 @@ const transform4 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+transform4.rotation.setEuler(xRot, yRot, zRot)
 fruitKiosk.addComponentOrReplace(transform4)
 const gltfShape3 = new GLTFShape("models/3bb3f823-e27a-4f4b-9a0f-fe046cb8a57d/Store_02/Store_02.glb")
 gltfShape3.withCollisions = true
@@ -994,8 +1018,14 @@ gltfShape3.visible = true
 fruitKiosk.addComponentOrReplace(gltfShape3)
 }
 
-export function addFairKiosk(x: number, y: number, z: number)
-{
+export function addFairKiosk(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+){
     const fairKiosk = new Entity('fairKiosk')
 engine.addEntity(fairKiosk)
 fairKiosk.setParent(_scene)
@@ -1004,6 +1034,7 @@ const transform5 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+transform5.rotation.setEuler(xRot, yRot, zRot)
 fairKiosk.addComponentOrReplace(transform5)
 const gltfShape4 = new GLTFShape("models/b72478c3-f485-42b9-8dd4-94a4f34588f4/Store_01/Store_01.glb")
 gltfShape4.withCollisions = true
@@ -1013,7 +1044,14 @@ fairKiosk.addComponentOrReplace(gltfShape4)
 
 }
 
-export function addiceCreamKiosk(x: number, y: number, z: number){
+export function addiceCreamKiosk(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+){
     const iceCreamKiosk = new Entity('iceCreamKiosk')
 engine.addEntity(iceCreamKiosk)
 iceCreamKiosk.setParent(_scene)
@@ -1022,6 +1060,7 @@ const transform6 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+transform6.rotation.setEuler(xRot, yRot, zRot)
 iceCreamKiosk.addComponentOrReplace(transform6)
 const gltfShape5 = new GLTFShape("models/3a0dddfe-be84-4100-b36e-0fb1c6c15cb2/IceCreamTruck_01/IceCreamTruck_01.glb")
 gltfShape5.withCollisions = true
