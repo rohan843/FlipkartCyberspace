@@ -107,13 +107,13 @@ export function addStraightBarrier(x: number, y: number, z: number) {
 }
 
 export function addStainedGlassStoneBrickWindow(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
-){
+) {
     const stoneBrickWindowWithStainedGlass = new Entity('stoneBrickWindowWithStainedGlass')
     engine.addEntity(stoneBrickWindowWithStainedGlass)
     stoneBrickWindowWithStainedGlass.setParent(_scene)
@@ -166,11 +166,11 @@ export function addLowStonePillar(x: number, y: number, z: number) {
 }
 
 export function addStoneBrickThreshold(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
 ) {
     const stoneBrickThreshold = new Entity('stoneBrickThreshold')
@@ -470,11 +470,11 @@ export function addWallcornerCyberpunk(x: number, y: number, z: number) {
 }
 
 export function addSteampunkBench(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
 ) {
     const steampunkBench = new Entity('steampunkBench')
@@ -966,7 +966,7 @@ export function addContructionMetalFence(x: number, y: number, z: number) {
     engine.addEntity(constructionMetalFence)
     constructionMetalFence.setParent(_scene)
     const transform2 = new Transform({
-        position: new Vector3(x,y,z),
+        position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
@@ -977,14 +977,14 @@ export function addContructionMetalFence(x: number, y: number, z: number) {
     gltfShape.visible = true
     constructionMetalFence.addComponentOrReplace(gltfShape)
 }
-export function addfencedoor(x: number, y: number, z: number){
+export function addfencedoor(x: number, y: number, z: number) {
     const fenceDoor = new Entity('fenceDoor')
     engine.addEntity(fenceDoor)
     fenceDoor.setParent(_scene)
     const transform3 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     fenceDoor.addComponentOrReplace(transform3)
     const gltfShape2 = new GLTFShape("models/d7fa26cb-8cfe-41bf-83b0-71e627a94897/FencePicketDoor_01/FencePicketDoor_01.glb")
@@ -994,90 +994,89 @@ export function addfencedoor(x: number, y: number, z: number){
     fenceDoor.addComponentOrReplace(gltfShape2)
 }
 export function addFruitKiosk(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
-){
+) {
     const fruitKiosk = new Entity('fruitKiosk')
-engine.addEntity(fruitKiosk)
-fruitKiosk.setParent(_scene)
-const transform4 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-transform4.rotation.setEuler(xRot, yRot, zRot)
-fruitKiosk.addComponentOrReplace(transform4)
-const gltfShape3 = new GLTFShape("models/3bb3f823-e27a-4f4b-9a0f-fe046cb8a57d/Store_02/Store_02.glb")
-gltfShape3.withCollisions = true
-gltfShape3.isPointerBlocker = true
-gltfShape3.visible = true
-fruitKiosk.addComponentOrReplace(gltfShape3)
+    engine.addEntity(fruitKiosk)
+    fruitKiosk.setParent(_scene)
+    const transform4 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    transform4.rotation.setEuler(xRot, yRot, zRot)
+    fruitKiosk.addComponentOrReplace(transform4)
+    const gltfShape3 = new GLTFShape("models/3bb3f823-e27a-4f4b-9a0f-fe046cb8a57d/Store_02/Store_02.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    fruitKiosk.addComponentOrReplace(gltfShape3)
 }
 
 export function addFairKiosk(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
-){
+) {
     const fairKiosk = new Entity('fairKiosk')
-engine.addEntity(fairKiosk)
-fairKiosk.setParent(_scene)
-const transform5 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-transform5.rotation.setEuler(xRot, yRot, zRot)
-fairKiosk.addComponentOrReplace(transform5)
-const gltfShape4 = new GLTFShape("models/b72478c3-f485-42b9-8dd4-94a4f34588f4/Store_01/Store_01.glb")
-gltfShape4.withCollisions = true
-gltfShape4.isPointerBlocker = true
-gltfShape4.visible = true
-fairKiosk.addComponentOrReplace(gltfShape4)
+    engine.addEntity(fairKiosk)
+    fairKiosk.setParent(_scene)
+    const transform5 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    transform5.rotation.setEuler(xRot, yRot, zRot)
+    fairKiosk.addComponentOrReplace(transform5)
+    const gltfShape4 = new GLTFShape("models/b72478c3-f485-42b9-8dd4-94a4f34588f4/Store_01/Store_01.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    fairKiosk.addComponentOrReplace(gltfShape4)
 
 }
 
 export function addiceCreamKiosk(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
-){
+) {
     const iceCreamKiosk = new Entity('iceCreamKiosk')
-engine.addEntity(iceCreamKiosk)
-iceCreamKiosk.setParent(_scene)
-const transform6 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-transform6.rotation.setEuler(xRot, yRot, zRot)
-iceCreamKiosk.addComponentOrReplace(transform6)
-const gltfShape5 = new GLTFShape("models/3a0dddfe-be84-4100-b36e-0fb1c6c15cb2/IceCreamTruck_01/IceCreamTruck_01.glb")
-gltfShape5.withCollisions = true
-gltfShape5.isPointerBlocker = true
-gltfShape5.visible = true
-iceCreamKiosk.addComponentOrReplace(gltfShape5)
+    engine.addEntity(iceCreamKiosk)
+    iceCreamKiosk.setParent(_scene)
+    const transform6 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    transform6.rotation.setEuler(xRot, yRot, zRot)
+    iceCreamKiosk.addComponentOrReplace(transform6)
+    const gltfShape5 = new GLTFShape("models/3a0dddfe-be84-4100-b36e-0fb1c6c15cb2/IceCreamTruck_01/IceCreamTruck_01.glb")
+    gltfShape5.withCollisions = true
+    gltfShape5.isPointerBlocker = true
+    gltfShape5.visible = true
+    iceCreamKiosk.addComponentOrReplace(gltfShape5)
 }
 
-export function addironFenceDoor(x: number, y: number, z: number)
-{
+export function addironFenceDoor(x: number, y: number, z: number) {
     const ironFenceDoor = new Entity('ironFenceDoor')
     engine.addEntity(ironFenceDoor)
     ironFenceDoor.setParent(_scene)
     const transform7 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     ironFenceDoor.addComponentOrReplace(transform7)
     const gltfShape6 = new GLTFShape("models/3c1b0a40-3225-49e0-b3ff-de947afe8306/FenceIronDoor_01/FenceIronDoor_01.glb")
@@ -1087,104 +1086,98 @@ export function addironFenceDoor(x: number, y: number, z: number)
     ironFenceDoor.addComponentOrReplace(gltfShape6)
 }
 
-export function addlargeFence(x: number, y: number, z: number)
-{
+export function addlargeFence(x: number, y: number, z: number) {
     const largeFence = new Entity('largeFence')
-engine.addEntity(largeFence)
-largeFence.setParent(_scene)
-const transform8 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-largeFence.addComponentOrReplace(transform8)
-const gltfShape7 = new GLTFShape("models/6018e89d-e995-476a-ae26-deab3628cf29/FencePicketLarge_01/FencePicketLarge_01.glb")
-gltfShape7.withCollisions = true
-gltfShape7.isPointerBlocker = true
-gltfShape7.visible = true
-largeFence.addComponentOrReplace(gltfShape7)
+    engine.addEntity(largeFence)
+    largeFence.setParent(_scene)
+    const transform8 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    largeFence.addComponentOrReplace(transform8)
+    const gltfShape7 = new GLTFShape("models/6018e89d-e995-476a-ae26-deab3628cf29/FencePicketLarge_01/FencePicketLarge_01.glb")
+    gltfShape7.withCollisions = true
+    gltfShape7.isPointerBlocker = true
+    gltfShape7.visible = true
+    largeFence.addComponentOrReplace(gltfShape7)
 }
 
-export function addlargeOrnamentedStonedRail(x: number, y: number, z: number)
-{
+export function addlargeOrnamentedStonedRail(x: number, y: number, z: number) {
     const largeOrnamentedStoneRail = new Entity('largeOrnamentedStoneRail')
-engine.addEntity(largeOrnamentedStoneRail)
-largeOrnamentedStoneRail.setParent(_scene)
-const transform9 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-largeOrnamentedStoneRail.addComponentOrReplace(transform9)
-const gltfShape8 = new GLTFShape("models/e7f7a10a-995d-48a7-bc32-68a357f7dfe9/FenceStoneLarge_01/FenceStoneLarge_01.glb")
-gltfShape8.withCollisions = true
-gltfShape8.isPointerBlocker = true
-gltfShape8.visible = true
-largeOrnamentedStoneRail.addComponentOrReplace(gltfShape8)
+    engine.addEntity(largeOrnamentedStoneRail)
+    largeOrnamentedStoneRail.setParent(_scene)
+    const transform9 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    largeOrnamentedStoneRail.addComponentOrReplace(transform9)
+    const gltfShape8 = new GLTFShape("models/e7f7a10a-995d-48a7-bc32-68a357f7dfe9/FenceStoneLarge_01/FenceStoneLarge_01.glb")
+    gltfShape8.withCollisions = true
+    gltfShape8.isPointerBlocker = true
+    gltfShape8.visible = true
+    largeOrnamentedStoneRail.addComponentOrReplace(gltfShape8)
 }
 
-export function addlargeIronFence(x: number, y: number, z: number)
-{
+export function addlargeIronFence(x: number, y: number, z: number) {
     const largeIronFence = new Entity('largeIronFence')
-engine.addEntity(largeIronFence)
-largeIronFence.setParent(_scene)
-const transform10 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-largeIronFence.addComponentOrReplace(transform10)
-const gltfShape9 = new GLTFShape("models/1bea49b5-528b-48cf-8d97-8aef8c86bbd0/FenceIronLarge_01/FenceIronLarge_01.glb")
-gltfShape9.withCollisions = true
-gltfShape9.isPointerBlocker = true
-gltfShape9.visible = true
-largeIronFence.addComponentOrReplace(gltfShape9)
+    engine.addEntity(largeIronFence)
+    largeIronFence.setParent(_scene)
+    const transform10 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    largeIronFence.addComponentOrReplace(transform10)
+    const gltfShape9 = new GLTFShape("models/1bea49b5-528b-48cf-8d97-8aef8c86bbd0/FenceIronLarge_01/FenceIronLarge_01.glb")
+    gltfShape9.withCollisions = true
+    gltfShape9.isPointerBlocker = true
+    gltfShape9.visible = true
+    largeIronFence.addComponentOrReplace(gltfShape9)
 }
-export function addslide(x: number, y: number, z: number)
-{
+export function addslide(x: number, y: number, z: number) {
     const slide = new Entity('slide')
-engine.addEntity(slide)
-slide.setParent(_scene)
-const transform11 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-slide.addComponentOrReplace(transform11)
-const gltfShape10 = new GLTFShape("models/34e36e9f-1cc5-49a1-8143-fcf04999e0b7/PlaygroundSlide_01/PlaygroundSlide_01.glb")
-gltfShape10.withCollisions = true
-gltfShape10.isPointerBlocker = true
-gltfShape10.visible = true
-slide.addComponentOrReplace(gltfShape10)
-} 
-
-export function addrusticLampPost(x: number, y: number, z: number)
-{
-    const rusticLampPost = new Entity('rusticLampPost')
-engine.addEntity(rusticLampPost)
-rusticLampPost.setParent(_scene)
-const transform12 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-rusticLampPost.addComponentOrReplace(transform12)
-const gltfShape11 = new GLTFShape("models/6560eb7a-bd9e-45cd-9124-5d2fe0187575/LampPost_04/LampPost_04.glb")
-gltfShape11.withCollisions = true
-gltfShape11.isPointerBlocker = true
-gltfShape11.visible = true
-rusticLampPost.addComponentOrReplace(gltfShape11)
+    engine.addEntity(slide)
+    slide.setParent(_scene)
+    const transform11 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    slide.addComponentOrReplace(transform11)
+    const gltfShape10 = new GLTFShape("models/34e36e9f-1cc5-49a1-8143-fcf04999e0b7/PlaygroundSlide_01/PlaygroundSlide_01.glb")
+    gltfShape10.withCollisions = true
+    gltfShape10.isPointerBlocker = true
+    gltfShape10.visible = true
+    slide.addComponentOrReplace(gltfShape10)
 }
 
-export function addrustickiosk(x: number, y: number, z: number)
-{
+export function addrusticLampPost(x: number, y: number, z: number) {
+    const rusticLampPost = new Entity('rusticLampPost')
+    engine.addEntity(rusticLampPost)
+    rusticLampPost.setParent(_scene)
+    const transform12 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    rusticLampPost.addComponentOrReplace(transform12)
+    const gltfShape11 = new GLTFShape("models/6560eb7a-bd9e-45cd-9124-5d2fe0187575/LampPost_04/LampPost_04.glb")
+    gltfShape11.withCollisions = true
+    gltfShape11.isPointerBlocker = true
+    gltfShape11.visible = true
+    rusticLampPost.addComponentOrReplace(gltfShape11)
+}
+
+export function addrustickiosk(x: number, y: number, z: number) {
     const rusticKiosk = new Entity('rusticKiosk')
     engine.addEntity(rusticKiosk)
     rusticKiosk.setParent(_scene)
     const transform13 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     rusticKiosk.addComponentOrReplace(transform13)
     const gltfShape12 = new GLTFShape("models/5bac22be-63d7-43b9-a400-ca10623119b2/Store_03/Store_03.glb")
@@ -1192,118 +1185,114 @@ export function addrustickiosk(x: number, y: number, z: number)
     gltfShape12.isPointerBlocker = true
     gltfShape12.visible = true
     rusticKiosk.addComponentOrReplace(gltfShape12)
-} 
+}
 
-export function addornamentalFountain(x: number, y: number, z: number)
-{
+export function addornamentalFountain(x: number, y: number, z: number) {
     const ornamentalFountain = new Entity('ornamentalFountain')
-engine.addEntity(ornamentalFountain)
-ornamentalFountain.setParent(_scene)
-const transform14 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-ornamentalFountain.addComponentOrReplace(transform14)
-const gltfShape13 = new GLTFShape("models/afeef180-da7d-4cc9-9703-6c24f229ac6c/Fountain_02/Fountain_02.glb")
-gltfShape13.withCollisions = true
-gltfShape13.isPointerBlocker = true
-gltfShape13.visible = true
-ornamentalFountain.addComponentOrReplace(gltfShape13)
+    engine.addEntity(ornamentalFountain)
+    ornamentalFountain.setParent(_scene)
+    const transform14 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    ornamentalFountain.addComponentOrReplace(transform14)
+    const gltfShape13 = new GLTFShape("models/afeef180-da7d-4cc9-9703-6c24f229ac6c/Fountain_02/Fountain_02.glb")
+    gltfShape13.withCollisions = true
+    gltfShape13.isPointerBlocker = true
+    gltfShape13.visible = true
+    ornamentalFountain.addComponentOrReplace(gltfShape13)
 }
 
-export function addbeachUmbrella(x: number, y: number, z: number)
-{
+export function addbeachUmbrella(x: number, y: number, z: number) {
     const beachUmbrella = new Entity('beachUmbrella')
-engine.addEntity(beachUmbrella)
-beachUmbrella.setParent(_scene)
-const transform16 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-beachUmbrella.addComponentOrReplace(transform16)
-const gltfShape15 = new GLTFShape("models/0be9abea-83ae-4a9c-b24d-8a5ce1b9580f/Umbrella_01/Umbrella_01.glb")
-gltfShape15.withCollisions = true
-gltfShape15.isPointerBlocker = true
-gltfShape15.visible = true
-beachUmbrella.addComponentOrReplace(gltfShape15)
+    engine.addEntity(beachUmbrella)
+    beachUmbrella.setParent(_scene)
+    const transform16 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    beachUmbrella.addComponentOrReplace(transform16)
+    const gltfShape15 = new GLTFShape("models/0be9abea-83ae-4a9c-b24d-8a5ce1b9580f/Umbrella_01/Umbrella_01.glb")
+    gltfShape15.withCollisions = true
+    gltfShape15.isPointerBlocker = true
+    gltfShape15.visible = true
+    beachUmbrella.addComponentOrReplace(gltfShape15)
 }
-export function addinformationTerminal(x: number, y: number, z: number)
-{
+export function addinformationTerminal(x: number, y: number, z: number) {
     const informationTerminal = new Entity('informationTerminal')
-engine.addEntity(informationTerminal)
-informationTerminal.setParent(_scene)
-const transform20 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-informationTerminal.addComponentOrReplace(transform20)
-const gltfShape19 = new GLTFShape("models/5e4a922e-50f1-40aa-a1a3-bee660371499/Terminal_01/Terminal_01.glb")
-gltfShape19.withCollisions = true
-gltfShape19.isPointerBlocker = true
-gltfShape19.visible = true
-informationTerminal.addComponentOrReplace(gltfShape19)
+    engine.addEntity(informationTerminal)
+    informationTerminal.setParent(_scene)
+    const transform20 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    informationTerminal.addComponentOrReplace(transform20)
+    const gltfShape19 = new GLTFShape("models/5e4a922e-50f1-40aa-a1a3-bee660371499/Terminal_01/Terminal_01.glb")
+    gltfShape19.withCollisions = true
+    gltfShape19.isPointerBlocker = true
+    gltfShape19.visible = true
+    informationTerminal.addComponentOrReplace(gltfShape19)
 }
 
 export function addShopEmissive(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
-)
-{
+) {
     const shopEmissive = new Entity('shopEmissive')
-engine.addEntity(shopEmissive)
-shopEmissive.setParent(_scene)
-const transform25 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-transform25.rotation.setEuler(xRot, yRot, zRot);
-shopEmissive.addComponentOrReplace(transform25)
-const gltfShape21 = new GLTFShape("models/461bf97f-886b-47f7-89ce-16255f6a985f/Shop_Emissive.glb")
-gltfShape21.withCollisions = true
-gltfShape21.isPointerBlocker = true
-gltfShape21.visible = true
-shopEmissive.addComponentOrReplace(gltfShape21)
+    engine.addEntity(shopEmissive)
+    shopEmissive.setParent(_scene)
+    const transform25 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    transform25.rotation.setEuler(xRot, yRot, zRot);
+    shopEmissive.addComponentOrReplace(transform25)
+    const gltfShape21 = new GLTFShape("models/461bf97f-886b-47f7-89ce-16255f6a985f/Shop_Emissive.glb")
+    gltfShape21.withCollisions = true
+    gltfShape21.isPointerBlocker = true
+    gltfShape21.visible = true
+    shopEmissive.addComponentOrReplace(gltfShape21)
 }
 
-export function addShopBlack(x: number, y: number, z: number){
+export function addShopBlack(x: number, y: number, z: number) {
     const shopBlack = new Entity('shopBlack')
-engine.addEntity(shopBlack)
-shopBlack.setParent(_scene)
-const transform26 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-shopBlack.addComponentOrReplace(transform26)
-const gltfShape22 = new GLTFShape("models/d3419855-54da-41a8-9267-656eb844ed91/Shop_Black.glb")
-gltfShape22.withCollisions = true
-gltfShape22.isPointerBlocker = true
-gltfShape22.visible = true
-shopBlack.addComponentOrReplace(gltfShape22)
-} 
+    engine.addEntity(shopBlack)
+    shopBlack.setParent(_scene)
+    const transform26 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    shopBlack.addComponentOrReplace(transform26)
+    const gltfShape22 = new GLTFShape("models/d3419855-54da-41a8-9267-656eb844ed91/Shop_Black.glb")
+    gltfShape22.withCollisions = true
+    gltfShape22.isPointerBlocker = true
+    gltfShape22.visible = true
+    shopBlack.addComponentOrReplace(gltfShape22)
+}
 export function addShushiBar(x: number, y: number, z: number) {
     const sushiBar = new Entity('sushiBar')
-engine.addEntity(sushiBar)
-sushiBar.setParent(_scene)
-const transform27 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-sushiBar.addComponentOrReplace(transform27)
-const gltfShape23 = new GLTFShape("models/e20782b4-2b4c-4046-a5ee-41e60912c620/Sushi_Bar.glb")
-gltfShape23.withCollisions = true
-gltfShape23.isPointerBlocker = true
-gltfShape23.visible = true
-sushiBar.addComponentOrReplace(gltfShape23)
+    engine.addEntity(sushiBar)
+    sushiBar.setParent(_scene)
+    const transform27 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    sushiBar.addComponentOrReplace(transform27)
+    const gltfShape23 = new GLTFShape("models/e20782b4-2b4c-4046-a5ee-41e60912c620/Sushi_Bar.glb")
+    gltfShape23.withCollisions = true
+    gltfShape23.isPointerBlocker = true
+    gltfShape23.visible = true
+    sushiBar.addComponentOrReplace(gltfShape23)
 }
 // export function addvideoBillDesk(x: number, y: number, z: number) {
 //     const videoBillboardBlack = new Entity('videoBillboardBlack')
@@ -1335,9 +1324,9 @@ export function addplanetSurfaceViolet(x: number, y: number, z: number) {
     engine.addEntity(planetSurfaceViolet)
     planetSurfaceViolet.setParent(_scene)
     const transform35 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     planetSurfaceViolet.addComponentOrReplace(transform35)
     const gltfShape24 = new GLTFShape("models/d49a7cc6-15e4-47c8-94f9-f81b178314d1/PlanetFloorViolet_01/PlanetFloorViolet_01.glb")
@@ -1349,57 +1338,56 @@ export function addplanetSurfaceViolet(x: number, y: number, z: number) {
 
 export function addorangefloorpanel(x: number, y: number, z: number) {
     const orangeFloorPanel = new Entity('orangeFloorPanel')
-engine.addEntity(orangeFloorPanel)
-orangeFloorPanel.setParent(_scene)
-const transform36 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-orangeFloorPanel.addComponentOrReplace(transform36)
-const gltfShape25 = new GLTFShape("models/30a5ce08-2b42-40ae-9f6d-1b3b5c96bfea/Floor_Module_06/Floor_Module_06.glb")
-gltfShape25.withCollisions = true
-gltfShape25.isPointerBlocker = true
-gltfShape25.visible = true
-orangeFloorPanel.addComponentOrReplace(gltfShape25)
+    engine.addEntity(orangeFloorPanel)
+    orangeFloorPanel.setParent(_scene)
+    const transform36 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    orangeFloorPanel.addComponentOrReplace(transform36)
+    const gltfShape25 = new GLTFShape("models/30a5ce08-2b42-40ae-9f6d-1b3b5c96bfea/Floor_Module_06/Floor_Module_06.glb")
+    gltfShape25.withCollisions = true
+    gltfShape25.isPointerBlocker = true
+    gltfShape25.visible = true
+    orangeFloorPanel.addComponentOrReplace(gltfShape25)
 }
 
 
-export function addplanetSurfaceCrimson(x: number, y: number, z: number){
+export function addplanetSurfaceCrimson(x: number, y: number, z: number) {
     const planetSurfaceCrimson = new Entity('planetSurfaceCrimson')
-engine.addEntity(planetSurfaceCrimson)
-planetSurfaceCrimson.setParent(_scene)
-const transform37 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-planetSurfaceCrimson.addComponentOrReplace(transform37)
-const gltfShape26 = new GLTFShape("models/1ac5eebf-24e9-43b4-a4b3-d20c5ff49c6f/PlanetFloorRed_02/PlanetFloorRed_02.glb")
-gltfShape26.withCollisions = true
-gltfShape26.isPointerBlocker = true
-gltfShape26.visible = true
-planetSurfaceCrimson.addComponentOrReplace(gltfShape26)
-} 
+    engine.addEntity(planetSurfaceCrimson)
+    planetSurfaceCrimson.setParent(_scene)
+    const transform37 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    planetSurfaceCrimson.addComponentOrReplace(transform37)
+    const gltfShape26 = new GLTFShape("models/1ac5eebf-24e9-43b4-a4b3-d20c5ff49c6f/PlanetFloorRed_02/PlanetFloorRed_02.glb")
+    gltfShape26.withCollisions = true
+    gltfShape26.isPointerBlocker = true
+    gltfShape26.visible = true
+    planetSurfaceCrimson.addComponentOrReplace(gltfShape26)
+}
 
 
 //////////////////////////////////////////////////////////////////////////////
-export function addDoorFrameGlass(x: number, y: number, z: number) 
-{
+export function addDoorFrameGlass(x: number, y: number, z: number) {
     const doorframeGlass = new Entity('doorframeGlass')
-engine.addEntity(doorframeGlass)
-doorframeGlass.setParent(_scene)
-const transform6 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-doorframeGlass.addComponentOrReplace(transform6)
-const gltfShape2 = new GLTFShape("models/f38f0a83-881b-4080-abba-a6f7ffe671a4/GlassDoorframe.glb")
-gltfShape2.withCollisions = true
-gltfShape2.isPointerBlocker = true
-gltfShape2.visible = true
-doorframeGlass.addComponentOrReplace(gltfShape2)
+    engine.addEntity(doorframeGlass)
+    doorframeGlass.setParent(_scene)
+    const transform6 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    doorframeGlass.addComponentOrReplace(transform6)
+    const gltfShape2 = new GLTFShape("models/f38f0a83-881b-4080-abba-a6f7ffe671a4/GlassDoorframe.glb")
+    gltfShape2.withCollisions = true
+    gltfShape2.isPointerBlocker = true
+    gltfShape2.visible = true
+    doorframeGlass.addComponentOrReplace(gltfShape2)
 }
 
 // export function addGalleryInfoGlass(x: number, y: number, z: number) 
@@ -1424,15 +1412,14 @@ doorframeGlass.addComponentOrReplace(gltfShape2)
 // script1.spawn(galleryInfoGlass, {"text":"Some text","fontSize":5,"font":"SF","color":"#000000"}, createChannel(channelId, galleryInfoGlass, channelBus))
 // }
 
-export function addThickStainedGlassWindow(x: number, y: number, z: number) 
-{
+export function addThickStainedGlassWindow(x: number, y: number, z: number) {
     const thickStainedGlassWindow = new Entity('thickStainedGlassWindow')
     engine.addEntity(thickStainedGlassWindow)
     thickStainedGlassWindow.setParent(_scene)
     const transform8 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     thickStainedGlassWindow.addComponentOrReplace(transform8)
     const gltfShape3 = new GLTFShape("models/123c6c11-1f73-44a7-a146-5bf7f0f3b0fa/Window_03/Window_03.glb")
@@ -1442,15 +1429,14 @@ export function addThickStainedGlassWindow(x: number, y: number, z: number)
     thickStainedGlassWindow.addComponentOrReplace(gltfShape3)
 }
 
-export function addWindowXGlassPanel(x: number, y: number, z: number) 
-{
+export function addWindowXGlassPanel(x: number, y: number, z: number) {
     const windowXGlassPanel = new Entity('windowXGlassPanel')
     engine.addEntity(windowXGlassPanel)
     windowXGlassPanel.setParent(_scene)
     const transform9 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     windowXGlassPanel.addComponentOrReplace(transform9)
     const gltfShape4 = new GLTFShape("models/35978cd5-66e3-445d-a2c6-539987f13ca1/Window 2x4 Glass Panel.glb")
@@ -1460,15 +1446,14 @@ export function addWindowXGlassPanel(x: number, y: number, z: number)
     windowXGlassPanel.addComponentOrReplace(gltfShape4)
 }
 
-export function addWallcornerGlass(x: number, y: number, z: number) 
-{
+export function addWallcornerGlass(x: number, y: number, z: number) {
     const wallcornerGlass = new Entity('wallcornerGlass')
     engine.addEntity(wallcornerGlass)
     wallcornerGlass.setParent(_scene)
     const transform10 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     wallcornerGlass.addComponentOrReplace(transform10)
     const gltfShape5 = new GLTFShape("models/32049ed9-26e5-4fc2-965f-6e09e7084984/GlassCorner.glb")
@@ -1478,72 +1463,82 @@ export function addWallcornerGlass(x: number, y: number, z: number)
     wallcornerGlass.addComponentOrReplace(gltfShape5)
 }
 
-export function addWallPlainGlass(x: number, y: number, z: number) {
+export function addWallPlainGlass(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0,
+    xScale: number = 1, 
+    yScale: number = 1, 
+    zScale: number = 1
+) {
     const wallPlainGlass = new Entity('wallPlainGlass')
-engine.addEntity(wallPlainGlass)
-wallPlainGlass.setParent(_scene)
-const transform11 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-wallPlainGlass.addComponentOrReplace(transform11)
-const gltfShape6 = new GLTFShape("models/e28ea76e-fe21-4544-a001-a65867b11be0/PlainGlassWall.glb")
-gltfShape6.withCollisions = true
-gltfShape6.isPointerBlocker = true
-gltfShape6.visible = true
-wallPlainGlass.addComponentOrReplace(gltfShape6)
+    engine.addEntity(wallPlainGlass)
+    wallPlainGlass.setParent(_scene)
+    const transform11 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    wallPlainGlass.addComponentOrReplace(transform11)
+    const gltfShape6 = new GLTFShape("models/e28ea76e-fe21-4544-a001-a65867b11be0/PlainGlassWall.glb")
+    gltfShape6.withCollisions = true
+    gltfShape6.isPointerBlocker = true
+    gltfShape6.visible = true
+    wallPlainGlass.addComponentOrReplace(gltfShape6)
 }
 
-export function addFloorGlass(x: number, y: number, z: number){
+export function addFloorGlass(x: number, y: number, z: number) {
     const floorGlass = new Entity('floorGlass')
-engine.addEntity(floorGlass)
-floorGlass.setParent(_scene)
-const transform12 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-floorGlass.addComponentOrReplace(transform12)
-const gltfShape7 = new GLTFShape("models/f4a4956e-f60a-4108-82c7-41b5ebda6549/GlassFloor.glb")
-gltfShape7.withCollisions = true
-gltfShape7.isPointerBlocker = true
-gltfShape7.visible = true
-floorGlass.addComponentOrReplace(gltfShape7)
+    engine.addEntity(floorGlass)
+    floorGlass.setParent(_scene)
+    const transform12 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    floorGlass.addComponentOrReplace(transform12)
+    const gltfShape7 = new GLTFShape("models/f4a4956e-f60a-4108-82c7-41b5ebda6549/GlassFloor.glb")
+    gltfShape7.withCollisions = true
+    gltfShape7.isPointerBlocker = true
+    gltfShape7.visible = true
+    floorGlass.addComponentOrReplace(gltfShape7)
 }
 
-export function addGlass(x: number, y: number, z: number){
+export function addGlass(x: number, y: number, z: number) {
     const glass = new Entity('glass')
-engine.addEntity(glass)
-glass.setParent(_scene)
-const transform13 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-glass.addComponentOrReplace(transform13)
-const gltfShape8 = new GLTFShape("models/2f83aea7-3f35-400f-8ca5-9fc95c4d99b2/glass.glb")
-gltfShape8.withCollisions = true
-gltfShape8.isPointerBlocker = true
-gltfShape8.visible = true
-glass.addComponentOrReplace(gltfShape8)
+    engine.addEntity(glass)
+    glass.setParent(_scene)
+    const transform13 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    glass.addComponentOrReplace(transform13)
+    const gltfShape8 = new GLTFShape("models/2f83aea7-3f35-400f-8ca5-9fc95c4d99b2/glass.glb")
+    gltfShape8.withCollisions = true
+    gltfShape8.isPointerBlocker = true
+    gltfShape8.visible = true
+    glass.addComponentOrReplace(gltfShape8)
 }
 
-export function addGlassBlack(x: number, y: number, z: number){
+export function addGlassBlack(x: number, y: number, z: number) {
     const glassBlack = new Entity('glassBlack')
-engine.addEntity(glassBlack)
-glassBlack.setParent(_scene)
-const transform14 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-glassBlack.addComponentOrReplace(transform14)
-const gltfShape9 = new GLTFShape("models/c39c2bfa-efd9-40a6-b0be-fc0da138e1f7/glass_black.glb")
-gltfShape9.withCollisions = true
-gltfShape9.isPointerBlocker = true
-gltfShape9.visible = true
-glassBlack.addComponentOrReplace(gltfShape9)
+    engine.addEntity(glassBlack)
+    glassBlack.setParent(_scene)
+    const transform14 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    glassBlack.addComponentOrReplace(transform14)
+    const gltfShape9 = new GLTFShape("models/c39c2bfa-efd9-40a6-b0be-fc0da138e1f7/glass_black.glb")
+    gltfShape9.withCollisions = true
+    gltfShape9.isPointerBlocker = true
+    gltfShape9.visible = true
+    glassBlack.addComponentOrReplace(gltfShape9)
 
 }
 

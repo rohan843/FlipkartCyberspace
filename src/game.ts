@@ -6,7 +6,7 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addRockTile, addrustickiosk, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWoodTile } from "./modules/furniture"
+import { addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addRockTile, addrustickiosk, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 import { addShopBuilding } from "./modules/building"
 
@@ -99,25 +99,27 @@ addStraightBarrier(-1.45 + 2 * 6, 0, 127.5);
 addCurvedBarrierEnd(12.55, 0, 127.5);
 addWallLight(13, 0, 127.5, 1, 1, 1, 0, 0, 0);
 
-addStoneBrickWall(76 - 4 * 34, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 33, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 32, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 31, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 30, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 29, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 28, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 27, 0, -15.9, 0, 0, 0);
-addStoneBrickThreshold(76 - 4 * 26, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 25, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 24, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 23, 0, -15.9, 0, 0, 0);
-addStainedGlassStoneBrickWindow(76 - 4 * 22, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 21, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 20, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 19, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 18, 0, -15.9, 0, 0, 0);
-addStoneBrickWall(76 - 4 * 17, 0, -15.9, 0, 0, 0);
-addStainedGlassStoneBrickWindow(76 - 4 * 16, 0, -15.9, 0, 0, 0);
+
+addWallPlainGlass(-62, 0, -15.7, 10.0)
+// addStoneBrickWall(76 - 4 * 34, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 33, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 32, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 31, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 30, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 29, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 28, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 27, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 26, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 25, 0, -15.9, 0, 0, 0);
+// addStoneBrickWall(76 - 4 * 24, 0, -15.9, 0, 0, 0);
+// addStoneBrickThreshold(76 - 4 * 23, 0, -15.9, 0, 0, 0);
+// addStoneBrickThreshold(76 - 4 * 22, 0, -15.9, 0, 0, 0);
+// addStoneBrickThreshold(76 - 4 * 21, 0, -15.9, 0, 0, 0);
+// addStoneBrickThreshold(76 - 4 * 20, 0, -15.9, 0, 0, 0);
+// addStoneBrickThreshold(76 - 4 * 19, 0, -15.9, 0, 0, 0);
+// addStoneBrickThreshold(76 - 4 * 18, 0, -15.9, 0, 0, 0);
+// addStoneBrickThreshold(76 - 4 * 17, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 16, 0, -15.9, 0, 0, 0);
 addStoneBrickWall(76 - 4 * 15, 0, -15.9, 0, 0, 0);
 addStoneBrickWall(76 - 4 * 14, 0, -15.9, 0, 0, 0);
 addStoneBrickWall(76 - 4 * 13, 0, -15.9, 0, 0, 0);
