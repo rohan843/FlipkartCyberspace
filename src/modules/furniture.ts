@@ -1542,4 +1542,197 @@ export function addGlassBlack(x: number, y: number, z: number) {
 
 }
 
-// export function addWallcornerGlass(x: number, y: number, z: number)
+export function addpond(x: number, y: number, z: number){
+    const pond = new Entity('pond')
+engine.addEntity(pond)
+pond.setParent(_scene)
+const transform6 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+pond.addComponentOrReplace(transform6)
+const gltfShape2 = new GLTFShape("models/2950ca19-cb51-422b-b80e-fc0765d6cf4b/Pond_01/Pond_01.glb")
+gltfShape2.withCollisions = true
+gltfShape2.isPointerBlocker = true
+gltfShape2.visible = true
+pond.addComponentOrReplace(gltfShape2)
+}
+
+export function addRedFish(x: number, y: number, z: number){
+    const redFish = new Entity('redFish')
+    engine.addEntity(redFish)
+    redFish.setParent(_scene)
+    const transform7 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(1, 1, 1)
+    })
+    redFish.addComponentOrReplace(transform7)
+    const gltfShape3 = new GLTFShape("models/7b804637-e9d5-4a4b-a028-265e162453b2/Fish_02/Fish_02.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    redFish.addComponentOrReplace(gltfShape3)
+}
+
+export function addRusticMerchantFishStand(x: number, y: number, z: number)
+{
+    const rusticMerchantFishStand = new Entity('rusticMerchantFishStand')
+engine.addEntity(rusticMerchantFishStand)
+rusticMerchantFishStand.setParent(_scene)
+const transform8 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+rusticMerchantFishStand.addComponentOrReplace(transform8)
+const gltfShape4 = new GLTFShape("models/936e45c1-6fe5-441a-b4ec-17422465439e/SellingGoods_02/SellingGoods_02.glb")
+gltfShape4.withCollisions = true
+gltfShape4.isPointerBlocker = true
+gltfShape4.visible = true
+rusticMerchantFishStand.addComponentOrReplace(gltfShape4)
+}
+
+export function addExoticFish(x: number, y: number, z: number){
+    const exoticFish = new Entity('exoticFish')
+engine.addEntity(exoticFish)
+exoticFish.setParent(_scene)
+const transform9 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+exoticFish.addComponentOrReplace(transform9)
+const gltfShape5 = new GLTFShape("models/3c68ce69-6066-4b58-9417-f930fb8bb17d/Fish_04/Fish_04.glb")
+gltfShape5.withCollisions = true
+gltfShape5.isPointerBlocker = true
+gltfShape5.visible = true
+exoticFish.addComponentOrReplace(gltfShape5)
+}
+
+export function addGreenFish(x: number, y: number, z: number){
+    const greenFish = new Entity('greenFish')
+engine.addEntity(greenFish)
+greenFish.setParent(_scene)
+const transform10 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+greenFish.addComponentOrReplace(transform10)
+const gltfShape6 = new GLTFShape("models/d491889d-7721-4a5e-89be-180f1f96feaa/Fish_03/Fish_03.glb")
+gltfShape6.withCollisions = true
+gltfShape6.isPointerBlocker = true
+gltfShape6.visible = true
+greenFish.addComponentOrReplace(gltfShape6)
+}
+
+export function addTheFountainOfPurity(x: number, y: number, z: number){
+    const theFountainOfPurity = new Entity('theFountainOfPurity')
+engine.addEntity(theFountainOfPurity)
+theFountainOfPurity.setParent(_scene)
+const transform11 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+theFountainOfPurity.addComponentOrReplace(transform11)
+const gltfShape7 = new GLTFShape("models/b4c64a17-c3b8-45b6-bd60-6a90a79834ac/Fountain_02/Fountain_02.glb")
+gltfShape7.withCollisions = true
+gltfShape7.isPointerBlocker = true
+gltfShape7.visible = true
+theFountainOfPurity.addComponentOrReplace(gltfShape7)
+}
+
+
+export function addWater(x: number, y: number, z: number)
+{
+    const water = new Entity('water')
+engine.addEntity(water)
+water.setParent(_scene)
+const transform12 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+water.addComponentOrReplace(transform12)
+const gltfShape8 = new GLTFShape("models/4608ec00-9775-4602-88a7-52c4d5e2357f/water.glb")
+gltfShape8.withCollisions = true
+gltfShape8.isPointerBlocker = true
+gltfShape8.visible = true
+water.addComponentOrReplace(gltfShape8)
+}
+
+
+export function addFairyFountain(x: number, y: number, z: number)
+{
+    const fairyFountain = new Entity('fairyFountain')
+engine.addEntity(fairyFountain)
+fairyFountain.setParent(_scene)
+const transform13 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+fairyFountain.addComponentOrReplace(transform13)
+const gltfShape9 = new GLTFShape("models/52e8d663-9235-401d-88e3-764a4ff22202/Fountain_01/Fountain_01.glb")
+gltfShape9.withCollisions = true
+gltfShape9.isPointerBlocker = true
+gltfShape9.visible = true
+fairyFountain.addComponentOrReplace(gltfShape9)
+}
+
+
+export function addTemple(x: number, y: number, z: number){
+    const temple = new Entity('temple')
+engine.addEntity(temple)
+temple.setParent(_scene)
+const transform14 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+temple.addComponentOrReplace(transform14)
+const gltfShape10 = new GLTFShape("models/d6a75fd6-7adc-431c-913f-6d15156936cf/ChineseHouse_01/ChineseHouse_01.glb")
+gltfShape10.withCollisions = true
+gltfShape10.isPointerBlocker = true
+gltfShape10.visible = true
+temple.addComponentOrReplace(gltfShape10)
+}
+
+export function addFireWorksBox(x: number, y: number, z: number)
+{
+    const fireworksBox = new Entity('fireworksBox')
+engine.addEntity(fireworksBox)
+fireworksBox.setParent(_scene)
+const transform15 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+fireworksBox.addComponentOrReplace(transform15)
+const gltfShape11 = new GLTFShape("models/8838315c-b7e6-4066-9388-b6aa08f29df8/ChineseFireworks_01/ChineseFireworks_01.glb")
+gltfShape11.withCollisions = true
+gltfShape11.isPointerBlocker = true
+gltfShape11.visible = true
+fireworksBox.addComponentOrReplace(gltfShape11)
+}
+
+export function addOutdoorBoxLamp(x: number, y: number, z: number)
+{
+    const outdoorBoxLamp = new Entity('outdoorBoxLamp')
+engine.addEntity(outdoorBoxLamp)
+outdoorBoxLamp.setParent(_scene)
+const transform17 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+outdoorBoxLamp.addComponentOrReplace(transform17)
+const gltfShape13 = new GLTFShape("models/2e34764f-6c52-4dcb-beb7-19f0eb8c2cc3/Outdoor Box Lamp3.glb")
+gltfShape13.withCollisions = true
+gltfShape13.isPointerBlocker = true
+gltfShape13.visible = true
+outdoorBoxLamp.addComponentOrReplace(gltfShape13)
+}
