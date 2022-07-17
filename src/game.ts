@@ -5,7 +5,7 @@ import { museumConfig1, museumConfig2, museumConfig3 } from "./museum_config"
 import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
-import { addProjectorScreen} from "./modules/addProjector"
+import { addProjectorScreen } from "./modules/addProjector"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 
 
@@ -49,6 +49,17 @@ addStraightBarrier(-1.45 + 2 * 6, 0, 127.5);
 addCurvedBarrierEnd(12.55, 0, 127.5);
 addWallLight(13, 0, 127.5, 1, 1, 1, 0, 0, 0);
 
+addStoneBrickWall(76 - 4 * 9, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 8, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 7, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 6, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 5, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 4, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 3, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 2, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76 - 4 * 1, 0, -15.9, 0, 0, 0);
+addStoneBrickWall(76, 0, -15.9, 0, 0, 0);
+addCornerStoneBrickWall(79.9, 0, -15.9, 0, 0, 0);
 addStoneBrickWall(79.9, 0, 123.85 - 4 * 33, 0, 270, 0);
 addStoneBrickWall(79.9, 0, 123.85 - 4 * 32, 0, 270, 0);
 addStoneBrickWall(79.9, 0, 123.85 - 4 * 31, 0, 270, 0);
