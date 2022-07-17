@@ -5,11 +5,12 @@ import { museumConfig1, museumConfig2, museumConfig3 } from "./museum_config"
 import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
-import { addProjectorScreen} from "./modules/addProjector"
-import { addCaribeanWater, addGrassTile, addRockTile, addSandTile, addSideWalkTile, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWoodTile } from "./modules/furniture"
+import { addProjectorScreen } from "./modules/addProjector"
+import { addCaribeanWater, addGrassTile, addornamentalFountain as addOrnamentalFountain, addRockTile, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWoodTile } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
+import { addShopBuilding } from "./modules/building"
 
-addGrassTile(-7.60+15,0,64.08)
+// addGrassTile(-7.60 + 15, 0, 64.08)
 addMuseumAt(8, 0, 8, museumConfig1)
 addMuseumAt(40, 0, 8, museumConfig1)
 addMuseumAt(56, 0, 24, museumConfig2)
@@ -21,11 +22,11 @@ addMuseumAt(8, 0, 104, museumConfig3)
 addMuseumAt(40, 0, 104, museumConfig3)
 addShopAt(24, 0, 8, shopConfig1)
 addShopAt(24, 0, 104, shopConfig2)
-addBirdField()
+// addBirdField()
 // addDoors()
-addProjectorScreen()
-addTheFountainOfBrokenDreams(16,0,56)
-addTheFountainOfSpirits(16,0,62)
+// addProjectorScreen()
+// addTheFountainOfBrokenDreams(16, 0, 56)
+// addTheFountainOfSpirits(16, 0, 62)
 // addCaribeanWater(8,-0.1,113)
 // addRockTile(-7.60,0,64.08)
 // addSandTile(-7.60+5,0,64.08)
@@ -44,6 +45,25 @@ addTheFountainOfSpirits(16,0,62)
 // addCaribeanWater(40,0,128)
 // addCaribeanWater(48,0,128)
 
+// Fountain
+addTheFountainOfSpirits(19.32, 0, 56.14);
+
+// Shops
+addShopEmissive(73, 0, -11, 0, 270, 0)
+addShopEmissive(73, 0, -11 + 7 * 1, 0, 270, 0)
+addShopEmissive(73, 0, -11 + 7 * 2, 0, 270, 0)
+
+addShopEmissive(73, 0, 123, 0, 270, 0)
+addShopEmissive(73, 0, 123 - 7 * 1, 0, 270, 0)
+addShopEmissive(73, 0, 123 - 7 * 2, 0, 270, 0)
+
+// Benches
+addSteampunkBench(78.29, 0, 35.01 + 10 * 3, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01 + 10 * 2, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01 + 10 * 1, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01 - 1 * 10, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01 - 2 * 10, 0, 270, 0);
 
 // Wall
 addCurvedBarrierEnd(-31.45, 0, 127.5, 0, 180, 0);

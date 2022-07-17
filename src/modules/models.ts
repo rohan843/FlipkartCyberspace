@@ -10,7 +10,7 @@ birdPreloadDummy.addComponent(new Transform({
           scale: new Vector3(1,1,1)
         }))        
 birdPreloadDummy.addComponent(birdIdleShape )               
-engine.addEntity(birdPreloadDummy)
+// engine.addEntity(birdPreloadDummy)
 
 // preload the animated bird glbs (underground), for faster loading
 const birdFlyingPreloadDummy = new Entity()      
@@ -20,7 +20,7 @@ birdFlyingPreloadDummy.addComponent(new Transform({
           scale: new Vector3(1,1,1)
         }))        
         birdFlyingPreloadDummy.addComponent(birdFlyShape )               
-engine.addEntity(birdFlyingPreloadDummy)
+// engine.addEntity(birdFlyingPreloadDummy)
 
 // Add ground terrain
 const sand = new Entity()      
@@ -30,4 +30,4 @@ sand.addComponent(new Transform({
           scale: new Vector3(1,1,1)
         }))        
 sand.addComponent(sandShape )               
-engine.addEntity(sand)
+// engine.addEntity(sand)

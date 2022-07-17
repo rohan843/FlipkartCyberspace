@@ -453,7 +453,14 @@ export function addWallcornerCyberpunk(x: number, y: number, z: number) {
     wallcornerCyberpunk.addComponentOrReplace(gltfShape22)
 }
 
-export function addSteampunkBench(x: number, y: number, z: number) {
+export function addSteampunkBench(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+) {
     const steampunkBench = new Entity('steampunkBench')
     engine.addEntity(steampunkBench)
     steampunkBench.setParent(_scene)
@@ -462,6 +469,7 @@ export function addSteampunkBench(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform24.rotation.setEuler(xRot, yRot, zRot);
     steampunkBench.addComponentOrReplace(transform24)
     const gltfShape23 = new GLTFShape("models/c17db1de-1c8f-4e30-b8cf-d470d0ca7fcf/Steampunk Bench.glb")
     gltfShape23.withCollisions = true
@@ -511,7 +519,7 @@ export function addTheFountainOfSpirits(x: number, y: number, z: number) {
     const transform27 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(2, 2, 2)
     })
     theFountainOfSpirits.addComponentOrReplace(transform27)
     const gltfShape26 = new GLTFShape("models/fca5ed25-573f-4792-ac64-3d5a48933dec/Fountain_01/Fountain_01.glb")
@@ -1200,7 +1208,14 @@ gltfShape19.visible = true
 informationTerminal.addComponentOrReplace(gltfShape19)
 }
 
-export function addShopEmissive(x: number, y: number, z: number) 
+export function addShopEmissive(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+)
 {
     const shopEmissive = new Entity('shopEmissive')
 engine.addEntity(shopEmissive)
@@ -1210,6 +1225,7 @@ const transform25 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+transform25.rotation.setEuler(xRot, yRot, zRot);
 shopEmissive.addComponentOrReplace(transform25)
 const gltfShape21 = new GLTFShape("models/461bf97f-886b-47f7-89ce-16255f6a985f/Shop_Emissive.glb")
 gltfShape21.withCollisions = true
