@@ -619,7 +619,7 @@ export function addGrassTile(x: number, y: number, z: number) {
     const transform16 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(75, -0.1, 65)
     })
     grassTile.addComponentOrReplace(transform16)
     const gltfShape11 = new GLTFShape("models/7f2dbcb5-40f5-4e2f-9409-1886d26ce068/FloorBlock_05/FloorBlock_05.glb")
@@ -840,7 +840,7 @@ export function addCaribeanWater(x: number, y: number, z: number) {
     const transform29 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(1, 1, 1 / 8)
     })
     caribbeanWater.addComponentOrReplace(transform29)
     const gltfShape24 = new GLTFShape("models/390b876e-4b3a-4e78-bd03-5be21b1ecc67/WaterPatchFull_01/WaterPatchFull_01.glb")
