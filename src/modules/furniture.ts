@@ -1381,8 +1381,170 @@ gltfShape26.isPointerBlocker = true
 gltfShape26.visible = true
 planetSurfaceCrimson.addComponentOrReplace(gltfShape26)
 } 
-// export function addShopEmissive(x: number, y: number, z: number) 
-// export function addShopEmissive(x: number, y: number, z: number) 
-// export function addShopEmissive(x: number, y: number, z: number) 
-// export function addShopEmissive(x: number, y: number, z: number) 
-// export function addShopEmissive(x: number, y: number, z: number) 
+
+
+//////////////////////////////////////////////////////////////////////////////
+export function addDoorFrameGlass(x: number, y: number, z: number) 
+{
+    const doorframeGlass = new Entity('doorframeGlass')
+engine.addEntity(doorframeGlass)
+doorframeGlass.setParent(_scene)
+const transform6 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+doorframeGlass.addComponentOrReplace(transform6)
+const gltfShape2 = new GLTFShape("models/f38f0a83-881b-4080-abba-a6f7ffe671a4/GlassDoorframe.glb")
+gltfShape2.withCollisions = true
+gltfShape2.isPointerBlocker = true
+gltfShape2.visible = true
+doorframeGlass.addComponentOrReplace(gltfShape2)
+}
+
+// export function addGalleryInfoGlass(x: number, y: number, z: number) 
+// {
+//     const galleryInfoGlass = new Entity('galleryInfoGlass')
+//     engine.addEntity(galleryInfoGlass)
+//     galleryInfoGlass.setParent(_scene)
+//     const transform7 = new Transform({
+//       position: new Vector3(17.5, 0, 14.5),
+//       rotation: new Quaternion(0, 0, 0, 1),
+//       scale: new Vector3(1, 1, 1)
+//     })
+//     galleryInfoGlass.addComponentOrReplace(transform7)
+
+//     const channelId = Math.random().toString(16).slice(2)
+// const channelBus = new MessageBus()
+// const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
+// const options = { inventory }
+
+// const script1 = new Script1()
+// script1.init(options)
+// script1.spawn(galleryInfoGlass, {"text":"Some text","fontSize":5,"font":"SF","color":"#000000"}, createChannel(channelId, galleryInfoGlass, channelBus))
+// }
+
+export function addThickStainedGlassWindow(x: number, y: number, z: number) 
+{
+    const thickStainedGlassWindow = new Entity('thickStainedGlassWindow')
+    engine.addEntity(thickStainedGlassWindow)
+    thickStainedGlassWindow.setParent(_scene)
+    const transform8 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(1, 1, 1)
+    })
+    thickStainedGlassWindow.addComponentOrReplace(transform8)
+    const gltfShape3 = new GLTFShape("models/123c6c11-1f73-44a7-a146-5bf7f0f3b0fa/Window_03/Window_03.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    thickStainedGlassWindow.addComponentOrReplace(gltfShape3)
+}
+
+export function addWindowXGlassPanel(x: number, y: number, z: number) 
+{
+    const windowXGlassPanel = new Entity('windowXGlassPanel')
+    engine.addEntity(windowXGlassPanel)
+    windowXGlassPanel.setParent(_scene)
+    const transform9 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(1, 1, 1)
+    })
+    windowXGlassPanel.addComponentOrReplace(transform9)
+    const gltfShape4 = new GLTFShape("models/35978cd5-66e3-445d-a2c6-539987f13ca1/Window 2x4 Glass Panel.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    windowXGlassPanel.addComponentOrReplace(gltfShape4)
+}
+
+export function addWallcornerGlass(x: number, y: number, z: number) 
+{
+    const wallcornerGlass = new Entity('wallcornerGlass')
+    engine.addEntity(wallcornerGlass)
+    wallcornerGlass.setParent(_scene)
+    const transform10 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(1, 1, 1)
+    })
+    wallcornerGlass.addComponentOrReplace(transform10)
+    const gltfShape5 = new GLTFShape("models/32049ed9-26e5-4fc2-965f-6e09e7084984/GlassCorner.glb")
+    gltfShape5.withCollisions = true
+    gltfShape5.isPointerBlocker = true
+    gltfShape5.visible = true
+    wallcornerGlass.addComponentOrReplace(gltfShape5)
+}
+
+export function addWallPlainGlass(x: number, y: number, z: number) {
+    const wallPlainGlass = new Entity('wallPlainGlass')
+engine.addEntity(wallPlainGlass)
+wallPlainGlass.setParent(_scene)
+const transform11 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+wallPlainGlass.addComponentOrReplace(transform11)
+const gltfShape6 = new GLTFShape("models/e28ea76e-fe21-4544-a001-a65867b11be0/PlainGlassWall.glb")
+gltfShape6.withCollisions = true
+gltfShape6.isPointerBlocker = true
+gltfShape6.visible = true
+wallPlainGlass.addComponentOrReplace(gltfShape6)
+}
+
+export function addFloorGlass(x: number, y: number, z: number){
+    const floorGlass = new Entity('floorGlass')
+engine.addEntity(floorGlass)
+floorGlass.setParent(_scene)
+const transform12 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+floorGlass.addComponentOrReplace(transform12)
+const gltfShape7 = new GLTFShape("models/f4a4956e-f60a-4108-82c7-41b5ebda6549/GlassFloor.glb")
+gltfShape7.withCollisions = true
+gltfShape7.isPointerBlocker = true
+gltfShape7.visible = true
+floorGlass.addComponentOrReplace(gltfShape7)
+}
+
+export function addGlass(x: number, y: number, z: number){
+    const glass = new Entity('glass')
+engine.addEntity(glass)
+glass.setParent(_scene)
+const transform13 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+glass.addComponentOrReplace(transform13)
+const gltfShape8 = new GLTFShape("models/2f83aea7-3f35-400f-8ca5-9fc95c4d99b2/glass.glb")
+gltfShape8.withCollisions = true
+gltfShape8.isPointerBlocker = true
+gltfShape8.visible = true
+glass.addComponentOrReplace(gltfShape8)
+}
+
+export function addGlassBlack(x: number, y: number, z: number){
+    const glassBlack = new Entity('glassBlack')
+engine.addEntity(glassBlack)
+glassBlack.setParent(_scene)
+const transform14 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+glassBlack.addComponentOrReplace(transform14)
+const gltfShape9 = new GLTFShape("models/c39c2bfa-efd9-40a6-b0be-fc0da138e1f7/glass_black.glb")
+gltfShape9.withCollisions = true
+gltfShape9.isPointerBlocker = true
+gltfShape9.visible = true
+glassBlack.addComponentOrReplace(gltfShape9)
+
+}
+
+// export function addWallcornerGlass(x: number, y: number, z: number)
