@@ -11,15 +11,26 @@ const transform = new Transform({
 })
 _scene.addComponentOrReplace(transform)
 
-export function addWallLight(x: number, y: number, z: number) {
+export function addWallLight(
+    x: number,
+    y: number,
+    z: number,
+    xScale: number = 1,
+    yScale: number = 1,
+    zScale: number = 1,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const wallLight = new Entity('wallLight')
     engine.addEntity(wallLight)
     wallLight.setParent(_scene)
     const transform3 = new Transform({
         position: new Vector3(x, y, z),
-        rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        rotation: new Quaternion(-1, 0, 0, 1),
+        scale: new Vector3(xScale, yScale, zScale)
     })
+    transform3.rotation.setEuler(xRot, yRot, zRot);
     wallLight.addComponentOrReplace(transform3)
     const gltfShape2 = new GLTFShape("models/d6cbb77a-a9c5-40a3-8eba-7bdf86fc3747/LightWall_01/LightWall_01.glb")
     gltfShape2.withCollisions = true
@@ -28,6 +39,56 @@ export function addWallLight(x: number, y: number, z: number) {
     wallLight.addComponentOrReplace(gltfShape2)
 }
 
+export function addConicalStonePillar(x: number, y: number, z: number) {
+    const conicalStonePillar = new Entity('conicalStonePillar')
+    engine.addEntity(conicalStonePillar)
+    conicalStonePillar.setParent(_scene)
+    const transform6 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    conicalStonePillar.addComponentOrReplace(transform6)
+    const gltfShape2 = new GLTFShape("12db208d-b6a0-4256-9bc7-25c2e19006e0/Pillar_Cylinder_04/Pillar_Cylinder_04.glb")
+    gltfShape2.withCollisions = true
+    gltfShape2.isPointerBlocker = true
+    gltfShape2.visible = true
+    conicalStonePillar.addComponentOrReplace(gltfShape2)
+}
+
+export function addOrnamentalStonePillar(x: number, y: number, z: number) {
+    const ornamentalStonePillar = new Entity('ornamentalStonePillar')
+    engine.addEntity(ornamentalStonePillar)
+    ornamentalStonePillar.setParent(_scene)
+    const transform7 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    ornamentalStonePillar.addComponentOrReplace(transform7)
+    const gltfShape3 = new GLTFShape("a483fe6d-be3d-4810-b00c-7998b3dd949b/Pillar_Cylinder_03/Pillar_Cylinder_03.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    ornamentalStonePillar.addComponentOrReplace(gltfShape3)
+}
+
+export function addSmallStonePillar(x: number, y: number, z: number) {
+    const smallStonePillar = new Entity('smallStonePillar')
+    engine.addEntity(smallStonePillar)
+    smallStonePillar.setParent(_scene)
+    const transform8 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    smallStonePillar.addComponentOrReplace(transform8)
+    const gltfShape4 = new GLTFShape("40f5aa21-8036-4147-b9a7-da48c0c8c06b/Pillar_Cylinder_02/Pillar_Cylinder_02.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    smallStonePillar.addComponentOrReplace(gltfShape4)
+}
 export function addStraightBarrier(x: number, y: number, z: number) {
     const straightBarrier = new Entity('straightBarrier')
     engine.addEntity(straightBarrier)
@@ -130,7 +191,14 @@ export function addGrafittiWallShortF(x: number, y: number, z: number) {
     grafittiWallShortF.addComponentOrReplace(gltfShape8)
 }
 
-export function addCurvedBarrierEnd(x: number, y: number, z: number) {
+export function addCurvedBarrierEnd(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const curvedBarrierEnd = new Entity('curvedBarrierEnd')
     engine.addEntity(curvedBarrierEnd)
     curvedBarrierEnd.setParent(_scene)
@@ -139,6 +207,7 @@ export function addCurvedBarrierEnd(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform10.rotation.setEuler(xRot, yRot, zRot)
     curvedBarrierEnd.addComponentOrReplace(transform10)
     const gltfShape9 = new GLTFShape("models/a2feb0bb-a805-40ff-83fb-337785bf7eb3/Fence_End_01/Fence_End_01.glb")
     gltfShape9.withCollisions = true
@@ -164,7 +233,14 @@ export function addFullCurvedBarrier(x: number, y: number, z: number) {
     fullCurvedBarrier.addComponentOrReplace(gltfShape10)
 }
 
-export function addCornerStoneBrickWall(x: number, y: number, z: number) {
+export function addCornerStoneBrickWall(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const cornerStoneBrickWall = new Entity('cornerStoneBrickWall')
     engine.addEntity(cornerStoneBrickWall)
     cornerStoneBrickWall.setParent(_scene)
@@ -173,6 +249,7 @@ export function addCornerStoneBrickWall(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform12.rotation.setEuler(xRot, yRot, zRot);
     cornerStoneBrickWall.addComponentOrReplace(transform12)
     const gltfShape11 = new GLTFShape("models/018773fa-dd9b-4924-a07c-c803fa36f9a5/Module_Stone_Curve_01/Module_Stone_Curve_01.glb")
     gltfShape11.withCollisions = true
@@ -215,7 +292,14 @@ export function addMediumStoneWall(x: number, y: number, z: number) {
     mediumStoneWall.addComponentOrReplace(gltfShape13)
 }
 
-export function addStoneBrickWall(x: number, y: number, z: number) {
+export function addStoneBrickWall(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const stoneBrickWall = new Entity('stoneBrickWall')
     engine.addEntity(stoneBrickWall)
     stoneBrickWall.setParent(_scene)
@@ -224,6 +308,7 @@ export function addStoneBrickWall(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform15.rotation.setEuler(xRot, yRot, zRot);
     stoneBrickWall.addComponentOrReplace(transform15)
     const gltfShape14 = new GLTFShape("models/5ed9c4c0-8a9c-4c0d-814c-d40354987f2b/Module_Stone_Straight_01/Module_Stone_Straight_01.glb")
     gltfShape14.withCollisions = true
@@ -619,7 +704,7 @@ export function addGrassTile(x: number, y: number, z: number) {
     const transform16 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(75, -0.1, 65)
+        scale: new Vector3(1, 1, 1)
     })
     grassTile.addComponentOrReplace(transform16)
     const gltfShape11 = new GLTFShape("models/7f2dbcb5-40f5-4e2f-9409-1886d26ce068/FloorBlock_05/FloorBlock_05.glb")
@@ -840,7 +925,7 @@ export function addCaribeanWater(x: number, y: number, z: number) {
     const transform29 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1 / 8)
+        scale: new Vector3(1, 1, 1)
     })
     caribbeanWater.addComponentOrReplace(transform29)
     const gltfShape24 = new GLTFShape("models/390b876e-4b3a-4e78-bd03-5be21b1ecc67/WaterPatchFull_01/WaterPatchFull_01.glb")
@@ -849,6 +934,8 @@ export function addCaribeanWater(x: number, y: number, z: number) {
     gltfShape24.visible = true
     caribbeanWater.addComponentOrReplace(gltfShape24)
 }
+
+
 
 export function addContructionMetalFence(x: number, y: number, z: number) {
     const constructionMetalFence = new Entity('constructionMetalFence')
