@@ -6,9 +6,10 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addRockTile, addrustickiosk, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWallPlainGlass, addWoodTile } from "./modules/furniture"
+import { addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk as addIceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addRockTile, addrustickiosk, addRusticMerchantFishStand, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 import { addShopBuilding } from "./modules/building"
+
 
 // addGrassTile(-7.60 + 15, 0, 64.08)
 addMuseumAt(8, 0, 8, museumConfig1)
@@ -47,13 +48,16 @@ addProjectorScreen()
 // addCaribeanWater(48,0,128)
 
 // Kiosks
-const fruitOff = 0, extraOff = 0;
+const fruitOff = 16, extraOff = 16, iceOff = 16, sushiOff = 16, fishOff = 16;
 addFruitKiosk(-53.60 - 3 + fruitOff, 0, -11.5, 0, 90, 0)
 addFruitKiosk(-53.60 + fruitOff, 0, -11.5, 0, 90, 0)
 addFruitKiosk(-53.60 + 3 + fruitOff, 0, -11.5, 0, 90, 0)
 addFairKiosk(-53.60 + 3 * 2 + extraOff, 0, -11.5, 0, 90, 0)
 addFairKiosk(-53.60 + 3 * 3 + extraOff, 0, -11.5, 0, 90, 0)
-addiceCreamKiosk(-60.8, 0, -11, 0, 30, 0)
+addIceCreamKiosk(-60.8 + iceOff, 0, -11, 0, 30, 0)
+addShushiBar(-41.91 + sushiOff, 0, -12.60, 0, 270, 0)
+addRusticMerchantFishStand(-62.25 + fishOff, 0, -7.93, 0, 60, 0)
+
 
 // Fountain
 addTheFountainOfSpirits(19.32, 0, 56.14);
@@ -100,17 +104,17 @@ addStraightBarrier(-1.45 + 2 * 6, 0, 127.5);
 addCurvedBarrierEnd(12.55, 0, 127.5);
 addWallLight(13, 0, 127.5, 1, 1, 1, 0, 0, 0);
 
-
-addLowStonePillar(-62 + 1.5 * 8, 0, -15.54);
-addLowStonePillar(-62 + 1.5 * 7, 0, -15.54);
-addLowStonePillar(-62 + 1.5 * 6, 0, -15.54);
-addLowStonePillar(-62 + 1.5 * 5, 0, -15.54);
-addLowStonePillar(-62 + 1.5 * 4, 0, -15.54);
-addLowStonePillar(-62 + 1.5 * 3, 0, -15.54);
-addLowStonePillar(-62 + 1.5 * 2, 0, -15.54);
-addLowStonePillar(-62 + 1.5 * 1, 0, -15.54);
-addLowStonePillar(-62, 0, -15.54);
-addLowStonePillar(-62 - 1.5 * 1, 0, -15.54);
+const pillarOff = 16;
+addLowStonePillar(-62 + 1.5 * 8 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 7 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 6 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 5 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 4 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 3 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 2 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + 1.5 * 1 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 + pillarOff, 0, -15.54);
+addLowStonePillar(-62 - 1.5 * 1 + pillarOff, 0, -15.54);
 // addWallPlainGlass(-62, 0, -15.7, 0, 0, 0, -10, 1, 1)
 // addStoneBrickWall(76 - 4 * 34, 0, -15.9, 0, 0, 0);
 // addStoneBrickWall(76 - 4 * 33, 0, -15.9, 0, 0, 0);
