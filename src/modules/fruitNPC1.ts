@@ -1,4 +1,4 @@
-import resources from "../resources"
+import resources from "../NPCResources"
 import { NPC, NPCDelay } from '@dcl/npc-scene-utils'
 import { FruitNPC1Dialog } from "./dialogData"
 
