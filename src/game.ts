@@ -26,8 +26,6 @@ addShopAt(24, 0, 104, shopConfig2)
 // addDoors()
 addProjectorScreen()
 
-//stash command
-
 // addTheFountainOfBrokenDreams(16, 0, 56)
 // addTheFountainOfSpirits(16, 0, 62)
 // addCaribeanWater(8,-0.1,113)
