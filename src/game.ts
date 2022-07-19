@@ -6,8 +6,9 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addRockTile, addrustickiosk, addSandTile, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWallPlainGlass, addWoodTile } from "./modules/furniture"
+import { addBook1, addCaribeanWater, addFairKiosk, addFruitKiosk, addGrassTile, addiceCreamKiosk, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
+import { addShelf4 } from "./modules/furniture"
 import { addShopBuilding } from "./modules/building"
 
 // addGrassTile(-7.60 + 15, 0, 64.08)
@@ -62,7 +63,10 @@ addTheFountainOfSpirits(19.32, 0, 56.14);
 addShopEmissive(73, 0, -11, 0, 270, 0)
 addShopEmissive(73, 0, -11 + 7 * 1, 0, 270, 0)
 addShopEmissive(73, 0, -11 + 7 * 2, 0, 270, 0)
-
+addShelf2(75.14,0,-11.89)
+addShelf4(75.14,0,-11.89 + 2)
+addBook1(75.14, 2, -11.5)
+// addShelf5(75.14,0,-11.89 + 2)
 addShopEmissive(73, 0, 123, 0, 270, 0)
 addShopEmissive(73, 0, 123 - 7 * 1, 0, 270, 0)
 addShopEmissive(73, 0, 123 - 7 * 2, 0, 270, 0)

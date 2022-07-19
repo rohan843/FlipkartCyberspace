@@ -3,9 +3,9 @@ import { PianoKey, keys } from './pianoKey'
 import resources from './resources'
 
 // Base scene
-const baseScene = new Entity()
-baseScene.addComponent(resources.models.baseScene)
-engine.addEntity(baseScene)
+// const baseScene = new Entity()
+// baseScene.addComponent(resources.models.baseScene)
+// engine.addEntity(baseScene)
 
 // For transforming the piano
 const scene = new Entity()
