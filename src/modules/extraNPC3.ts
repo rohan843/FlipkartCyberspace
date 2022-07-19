@@ -1,32 +1,32 @@
 import resources from "../NPCResources"
 import { NPC, NPCDelay } from '@dcl/npc-scene-utils'
-import { HowToUseNPC1Dialog } from "./dialogData"
+import { ExtraNPC3Dialog } from "./dialogData"
 
-export const howToUseNPC1 = new NPC(
+export const extraNPC3 = new NPC(
     {
-        position: new Vector3(-9.83, 1.5, 104.04),
+        position: new Vector3(39.82, 2.2, 45.5),
         rotation: Quaternion.Euler(0, 30, 0),
         scale: new Vector3(1.7, 1.7, 1.7)
     },
     resources.models.robots.marsha,
     () => {
         // animations
-        howToUseNPC1.playAnimation('Hello', true, 2)
+        extraNPC3.playAnimation('Hello', true, 2)
 
         const dummyent = new Entity()
         dummyent.addComponent(
             new NPCDelay(2, () => {
-                howToUseNPC1.playAnimation('Talk')
+                extraNPC3.playAnimation('Talk')
             })
         )
         engine.addEntity(dummyent)
 
         // sound
-        howToUseNPC1.addComponentOrReplace(new AudioSource(resources.sounds.marsha))
-        howToUseNPC1.getComponent(AudioSource).playOnce()
+        extraNPC3.addComponentOrReplace(new AudioSource(resources.sounds.marsha))
+        extraNPC3.getComponent(AudioSource).playOnce()
 
         // dialog UI
-        howToUseNPC1.talk(HowToUseNPC1Dialog)
+        extraNPC3.talk(ExtraNPC3Dialog)
     },
     {
         faceUser: true,
@@ -40,18 +40,9 @@ export const howToUseNPC1 = new NPC(
             }
         },
         onWalkAway: () => {
-            howToUseNPC1.playAnimation('Goodbye', true, 2)
+            extraNPC3.playAnimation('Goodbye', true, 2)
         }
     }
 )
 
-const ringShape = resources.models.robots.rings
 
-const howToUseNPC1Rings = new Entity()
-howToUseNPC1Rings.addComponent(ringShape)
-howToUseNPC1Rings.addComponent(
-    new Transform({
-        position: new Vector3(0, -0.65, 0)
-    })
-)
-howToUseNPC1Rings.setParent(howToUseNPC1)

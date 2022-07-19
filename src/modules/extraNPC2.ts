@@ -1,32 +1,32 @@
 import resources from "../NPCResources"
 import { NPC, NPCDelay } from '@dcl/npc-scene-utils'
-import { HowToUseNPC1Dialog } from "./dialogData"
+import { ExtraNPC2Dialog } from "./dialogData"
 
-export const howToUseNPC1 = new NPC(
+export const extraNPC2 = new NPC(
     {
-        position: new Vector3(-9.83, 1.5, 104.04),
+        position: new Vector3(31.65,1.6,80.15),
         rotation: Quaternion.Euler(0, 30, 0),
         scale: new Vector3(1.7, 1.7, 1.7)
     },
     resources.models.robots.betty,
     () => {
         // animations
-        howToUseNPC1.playAnimation('Hello', true, 2)
+        extraNPC2.playAnimation('Hello', true, 2)
 
         const dummyent = new Entity()
         dummyent.addComponent(
             new NPCDelay(2, () => {
-                howToUseNPC1.playAnimation('Talk')
+                extraNPC2.playAnimation('Talk')
             })
         )
         engine.addEntity(dummyent)
 
         // sound
-        howToUseNPC1.addComponentOrReplace(new AudioSource(resources.sounds.betty))
-        howToUseNPC1.getComponent(AudioSource).playOnce()
+        extraNPC2.addComponentOrReplace(new AudioSource(resources.sounds.betty))
+        extraNPC2.getComponent(AudioSource).playOnce()
 
         // dialog UI
-        howToUseNPC1.talk(HowToUseNPC1Dialog)
+        extraNPC2.talk(ExtraNPC2Dialog)
     },
     {
         faceUser: true,
@@ -40,18 +40,18 @@ export const howToUseNPC1 = new NPC(
             }
         },
         onWalkAway: () => {
-            howToUseNPC1.playAnimation('Goodbye', true, 2)
+            extraNPC2.playAnimation('Goodbye', true, 2)
         }
     }
 )
 
-const ringShape = resources.models.robots.rings
+// const ringShape = resources.models.robots.rings
 
-const howToUseNPC1Rings = new Entity()
-howToUseNPC1Rings.addComponent(ringShape)
-howToUseNPC1Rings.addComponent(
-    new Transform({
-        position: new Vector3(0, -0.65, 0)
-    })
-)
-howToUseNPC1Rings.setParent(howToUseNPC1)
+// const howToUseNPC1Rings = new Entity()
+// howToUseNPC1Rings.addComponent(ringShape)
+// howToUseNPC1Rings.addComponent(
+//     new Transform({
+//         position: new Vector3(0, -0.8, 0)
+//     })
+// )
+// howToUseNPC1Rings.setParent(extraNPC2)

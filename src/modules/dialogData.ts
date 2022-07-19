@@ -2,6 +2,10 @@ import { Dialog } from '@dcl/npc-scene-utils'
 import { fruitNPC1 } from './fruitNPC1'
 import { mainIntroNPC1 } from './mainIntroNPC1'
 import { howToUseNPC1 } from './howToUseNPC1'
+import { extraNPC1 } from './extraNPC1'
+import { extraNPC2 } from './extraNPC2'
+import { extraNPC3 } from './extraNPC3'
+import { extraNPC4 } from './extraNPC4'
 
 export const FruitNPC1Dialog: Dialog[] = [
     {
@@ -142,6 +146,9 @@ export const HowToUseNPC1Dialog: Dialog[] = [
         text: "Some items (like me!) are interactive. To interact with them, go near them. Now, ensure that the pointer is locked, by doing a left click. After this, simply point the dot at the centre of the screen to the items, and click!"
     },
     {
+        text: "Also, at the bottom left of the screen, there's an option to chat with other people, with a voice chat option coming soon!"
+    },
+    {
         text: 'Now that you know how to use the controlls, have fun at Flipkart Cyberspace! I would recommend to go to the fountain to meet Flip - he\'s really excited to tell you more. Also, if you go straight ahead, you\'ll meet Eko - she loves to show people around.',
         isEndOfDialog: true,
         triggeredByNext: () => {
@@ -150,12 +157,42 @@ export const HowToUseNPC1Dialog: Dialog[] = [
     }
 ]
 
-// export const ExtraNPC1Dialog: Dialog[] = [
-//     {
-//         text: "Okay, Have a nice experience!",
-//         isEndOfDialog: true,
-//         triggeredByNext: () => {
-//             ext.playAnimation('Goodbye', true, 2)
-//         }
-//     }
-// ]
+export const ExtraNPC1Dialog: Dialog[] = [
+    {
+        text: "Hi! I'm Ririn",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            extraNPC1.playAnimation('Goodbye', true, 2)
+        }
+    }
+]
+
+export const ExtraNPC2Dialog: Dialog[] = [
+    {
+        text: "Hi! I'm Ita",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            extraNPC2.playAnimation('Goodbye', true, 2)
+        }
+    }
+]
+
+export const ExtraNPC3Dialog: Dialog[] = [
+    {
+        text: "Hi! I'm Vanya",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            extraNPC3.playAnimation('Goodbye', true, 2)
+        }
+    }
+]
+
+export const ExtraNPC4Dialog: Dialog[] = [
+    {
+        text: "Hi! I'm Rd",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            extraNPC4.playAnimation('Goodbye', true, 2)
+        }
+    }
+]
