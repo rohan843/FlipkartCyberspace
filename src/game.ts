@@ -27,7 +27,7 @@ addShopAt(24, 0, 8, shopConfig1)
 addShopAt(24, 0, 104, shopConfig2)
 // addBirdField()
 // addDoors()
-addProjectorScreen()
+// addProjectorScreen()
 
 // addTheFountainOfBrokenDreams(16, 0, 56)
 // addTheFountainOfSpirits(16, 0, 62)

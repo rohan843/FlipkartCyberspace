@@ -1,125 +1,161 @@
 import { Dialog } from '@dcl/npc-scene-utils'
 import { fruitNPC1 } from './fruitNPC1'
+import { mainIntroNPC1 } from './mainIntroNPC1'
+import { howToUseNPC1 } from './howToUseNPC1'
 
 export const FruitNPC1Dialog: Dialog[] = [
-  {
-    text: "Hi, I'm Flip - welcome to the Flipkart Cyberspace!"
-  },
-  {
-    text: 'Would you like to learn more about this place?',
-    isQuestion: true,
-    buttons: [
-      { label: 'Yes', goToDialog: 3 },
-      { label: 'No', goToDialog: 2 }
-    ]
-  },
-  {
-    text: "Okay, I'll be around if you get curious!",
-    isEndOfDialog: true,
-    triggeredByNext: () => {
-      fruitNPC1.playAnimation('Goodbye', true, 2)
-    }
-  },
-  {
-    text: 'We’re currently in the center of the Genesis City map, the roads fan out in all directions from here.'
-  },
-  {
-    text: 'Genesis Plaza is built and maintained by the Decentraland Foundation but is still in many ways a community project.'
-  },
-  {
-    text: 'If you venture out into the world, you’ll see that the content is created by our growing community.'
-  },
-  {
-    text: 'Do you want to explore the rest of Genesis Plaza or explore the rest of the world?',
-    isQuestion: true,
-    buttons: [
-      { label: 'PLAZA', goToDialog: 7 },
-      { label: 'WORLD', goToDialog: 18 }
-    ]
-  },
-  {
-    text: 'Great! There’s a lot to see right here.'
-  },
-  {
-    text: 'If you walk around you might run into my buddies and each is an expert on a different topic.'
-  },
-  {
-    text: 'You can learn a lot from them about how Decentraland works and what makes it special.'
-  },
-  {
-    text: 'I recommend you start at that boat-shaped building to the North!'
-  },
-  {
-    text: "Do you also want to learn about what's beyond Genesis Plaza?",
-    isQuestion: true,
-    buttons: [
-      { label: 'YES', goToDialog: 12 },
-      { label: 'NO', goToDialog: 28 }
-    ]
-  },
-  {
-    text: 'There’s a big world to explore out there!',
-    offsetY: 18
-  },
-  {
-    text: "Around Genesis Plaza you'll find several teleports that can take you directly to special scenes marked as points of interest."
-  },
-  {
-    text: "There's also the 'crowd' teleport, which takes you to the biggest gathering of people in Decentraland so you can meet up and hang out."
-  },
-  {
-    text: "If you press the 'M' key, you’ll open the map. You'll see markers for points of interest that are worth visiting."
-  },
-  {
-    text: "Or simply explore the virtual world by foot and plot your own adventure. Just keep in mind that there's a LOT of ground to cover."
-  },
-  {
-    text: 'So what are you waiting for? Go and explore the world!',
-    isEndOfDialog: true,
-    triggeredByNext: () => {
-      fruitNPC1.playAnimation('Goodbye', true, 2)
-    }
-  },
-  {
-    text: 'There’s a big world to explore out there!'
-  },
-  {
-    text: "Around Genesis Plaza you'll find several teleports that can take you directly to special scenes marked as points of interest."
-  },
-  {
-    text: "There's also the 'crowd' teleport, which takes you to the biggest gathering of people in Decentraland so you can meet up and hang out."
-  },
-  {
-    text: "If you press the 'M' key, you’ll open the map. You'll see markers for points of interest that are worth visiting."
-  },
-  {
-    text: "Or simply explore the virtual world by foot and plot your own adventure. Just keep in mind that there's a LOT of ground to cover."
-  },
-  {
-    text: "Do you also want to find out what's here in Genesis Plaza?",
-    isQuestion: true,
-    buttons: [
-      { label: 'YES', goToDialog: 24 },
-      { label: 'NO', goToDialog: 28 }
-    ]
-  },
-  {
-    text: 'Great! There’s a lot to see right here.'
-  },
-  {
-    text: 'If you walk around you might run into my buddies and each is an expert on a different topic.'
-  },
-  {
-    text: 'You can learn a lot from them about how Decentraland works and what makes it special.'
-  },
-  {
-    text: 'I recommend you start at that boat-shaped building to the North!'
-  },
-  {
-    text: "Well that's it from me. So what are you waiting for? Go and explore the world!",
-    triggeredByNext: () => {
-      fruitNPC1.playAnimation('Goodbye', true, 2)
+    {
+        text: "Hi, I'm Eko - welcome to the groceries corner!"
     },
-    isEndOfDialog: true
-  }
+    {
+        text: "Here you can buy fruits, vegetables, stationery, fish, frozen food, and even ice cream!"
+    },
+    {
+        text: 'Would you like to know which stand provides what?',
+        isQuestion: true,
+        buttons: [
+            { label: 'Yes', goToDialog: 4 },
+            { label: 'No', goToDialog: 3 }
+        ]
+    },
+    {
+        text: "Okay, I'll be right here!",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            fruitNPC1.playAnimation('Goodbye', true, 2)
+        }
+    },
+    {
+        text: "The first stand from the right is the fish stand."
+    },
+    {
+        text: "Right next to it is the ice cream stand, followed by 3 fruit stands."
+    },
+    {
+        text: "After the fruit stand, there lie the 2 stationery stands, and after those is the frozen food stand."
+    },
+    {
+        text: "All products are delivered fresh, right to your doorstep!"
+    },
+    {
+        text: 'Would you like me to repeat?',
+        isQuestion: true,
+        buttons: [
+            { label: 'Yes', goToDialog: 4 },
+            { label: 'No', goToDialog: 9 }
+        ]
+    },
+    {
+        text: "Okay, Happy shopping!",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            fruitNPC1.playAnimation('Goodbye', true, 2)
+        }
+    }
 ]
+
+export const MainIntroNPC1Dialog: Dialog[] = [
+    {
+        text: "Hi, I'm Flip - welcome to the Flipkart Cyberspace!"
+    },
+    {
+        text: 'Would you like to learn more about this place?',
+        isQuestion: true,
+        buttons: [
+            { label: 'Yes', goToDialog: 3 },
+            { label: 'No', goToDialog: 2 }
+        ]
+    },
+    {
+        text: "Okay, I'll be around if you get curious!",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            mainIntroNPC1.playAnimation('Goodbye', true, 2)
+        }
+    },
+    {
+        text: 'Flipkart Cyberspace is a virtual shopping mall. It allows you to experience shopping in a real mall, from the comfort of your home.'
+    },
+    {
+        text: 'Do you want me to talk about the rest of Flipkart Cyberspace?',
+        isQuestion: true,
+        buttons: [
+            { label: 'Yes', goToDialog: 5 },
+            { label: 'No', goToDialog: 10 }
+        ]
+    },
+    {
+        text: 'Great! There\'s a lot to see right here.'
+    },
+    {
+        text: 'If you walk around you might run into my buddies and each will be happy to help you.'
+    },
+    {
+        text: 'You can learn a lot from them about how Flipkart Cyberspace works and what makes it special.'
+    },
+    {
+        text: 'I recommend you start at the shop right behind me!',
+        offsetY: 18
+    },
+    {
+        text: 'So what are you waiting for? Go and explore the Flipkart Cyberspace!',
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            mainIntroNPC1.playAnimation('Goodbye', true, 2)
+        }
+    },
+    {
+        text: 'All right! I\'ll be right here.',
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            mainIntroNPC1.playAnimation('Goodbye', true, 2)
+        }
+    }
+]
+
+export const HowToUseNPC1Dialog: Dialog[] = [
+    {
+        text: "Hi, I'm Tri - would you like to learn about how to move around? (Right click and choose the option)",
+        isQuestion: true,
+        buttons: [
+            { label: 'Yes', goToDialog: 2 },
+            { label: 'No', goToDialog: 1 }
+        ]
+    },
+    {
+        text: "Okay, Have a nice experience!",
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            howToUseNPC1.playAnimation('Goodbye', true, 2)
+        }
+    },
+    {
+        text: 'The left click allows you to go to next text box. \nIt also allows you to lock the pointer position, to look around. To look around, simply point your mouse to the screen, do a left click, and move the mouse.'
+    },
+    {
+        text: 'To be able to move, press either the arrow keys, or the WASD keys on the keyboard.'
+    },
+    {
+        text: 'At any time, the right click undocks the mouse pointer, and you can use the pointer again.'
+    },
+    {
+        text: "Some items (like me!) are interactive. To interact with them, go near them. Now, ensure that the pointer is locked, by doing a left click. After this, simply point the dot at the centre of the screen to the items, and click!"
+    },
+    {
+        text: 'Now that you know how to use the controlls, have fun at Flipkart Cyberspace! I would recommend to go to the fountain to meet Flip - he\'s really excited to tell you more. Also, if you go straight ahead, you\'ll meet Eko - she loves to show people around.',
+        isEndOfDialog: true,
+        triggeredByNext: () => {
+            howToUseNPC1.playAnimation('Goodbye', true, 2)
+        }
+    }
+]
+
+// export const ExtraNPC1Dialog: Dialog[] = [
+//     {
+//         text: "Okay, Have a nice experience!",
+//         isEndOfDialog: true,
+//         triggeredByNext: () => {
+//             ext.playAnimation('Goodbye', true, 2)
+//         }
+//     }
+// ]

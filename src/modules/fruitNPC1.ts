@@ -4,8 +4,8 @@ import { FruitNPC1Dialog } from "./dialogData"
 
 export const fruitNPC1 = new NPC(
     {
-        position: new Vector3(16.09, 1.5, 52.74),
-        rotation: Quaternion.Euler(0, 270, 0),
+        position: new Vector3(-41.18, 1.5, 5.64),
+        rotation: Quaternion.Euler(0, 30, 0),
         scale: new Vector3(1.7, 1.7, 1.7)
     },
     resources.models.robots.alice,
@@ -47,11 +47,11 @@ export const fruitNPC1 = new NPC(
 
 const ringShape = resources.models.robots.rings
 
-const fruitNPC2Rings = new Entity()
-fruitNPC2Rings.addComponent(ringShape)
-fruitNPC2Rings.addComponent(
+const fruitNPC1Rings = new Entity()
+fruitNPC1Rings.addComponent(ringShape)
+fruitNPC1Rings.addComponent(
     new Transform({
         position: new Vector3(0, -0.65, 0)
     })
 )
-fruitNPC2Rings.setParent(fruitNPC1)
+fruitNPC1Rings.setParent(fruitNPC1)
