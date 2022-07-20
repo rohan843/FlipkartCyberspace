@@ -7,10 +7,11 @@ import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
 import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addJungleFern, addJungleShrub, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addPlant, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallPlainGlass, addWoodTile } from "./modules/furniture"
+import { addApple, addBananas, addDustbin, addFruit, addFruit2, addFruit3, addFruit4, addFruit5, addFruit6, addPineapple, addRedFish, addShelf, addSucculentCrop } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 import { addShelf4 } from "./modules/furniture"
 import { addShopBuilding } from "./modules/building"
-import { addRusticMerchantFishStand} from "./modules/furniture"
+import { addRusticMerchantFishStand } from "./modules/furniture"
 
 
 // addGrassTile(-7.60 + 15, 0, 64.08)
@@ -61,6 +62,7 @@ addShushiBar(-41.91 + sushiOff, 0, -12.60, 0, 270, 0)
 addRusticMerchantFishStand(-62.25 + fishOff, 0, -7.93, 0, 60, 0)
 
 
+
 // Fountain
 addTheFountainOfSpirits(19.32, 0, 56.14);
 
@@ -68,8 +70,8 @@ addTheFountainOfSpirits(19.32, 0, 56.14);
 addShopEmissive(73, 0, -11, 0, 270, 0)
 addShopEmissive(73, 0, -11 + 7 * 1, 0, 270, 0)
 addShopEmissive(73, 0, -11 + 7 * 2, 0, 270, 0)
-addShelf2(75.14,0,-11.89)
-addShelf4(75.14,0,-11.89 + 2)
+addShelf2(75.14, 0, -11.89)
+addShelf4(75.14, 0, -11.89 + 2)
 addBook1(75.14, 2, -11.5)
 // addShelf5(75.14,0,-11.89 + 2)
 addShopEmissive(73, 0, 123, 0, 270, 0)
