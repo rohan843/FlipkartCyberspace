@@ -6,7 +6,7 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addJungleFern, addJungleShrub, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addPlant, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallPlainGlass, addWoodTile } from "./modules/furniture"
+import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addinformationTerminal, addJungleFern, addJungleShrub, addornamentalFountain, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addPlant, addpond, addRockTile, addrustickiosk, addrusticLampPost, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addApple, addBananas, addDustbin, addFruit, addFruit2, addFruit3, addFruit4, addFruit5, addFruit6, addPineapple, addRedFish, addShelf, addSucculentCrop } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 import { addShelf4 } from "./modules/furniture"
@@ -86,7 +86,48 @@ addSteampunkBench(78.29, 0, 35.01, 0, 270, 0);
 addSteampunkBench(78.29, 0, 35.01 - 1 * 10, 0, 270, 0);
 addSteampunkBench(78.29, 0, 35.01 - 2 * 10, 0, 270, 0);
 
+// addpond(-42.30, 0, 122.20)
+
 // Wall
+addStoneBrickWall(-47, 0, 116 - 4 * 24, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 23, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 22, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 21, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 20, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 19, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 18, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 17, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 16, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 15, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 14, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 13, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 12, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 11, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 10, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 9, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 8, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 7, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 6, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 5, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 4, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 3, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 2, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116 - 4 * 1, 0, 270, 0);
+addStoneBrickWall(-47, 0, 116, 0, 270, 0);
+addWallCorrugatedMetal(-31.56 - 2 * 8, 0, 127.5 - 2 * 6.0, 0, 270, 0);
+addWallCorrugatedMetal(-31.56 - 2 * 8, 0, 127.5 - 2 * 5, 0, 270, 0);
+addWallCorrugatedMetal(-31.56 - 2 * 8, 0, 127.5 - 2 * 4, 0, 270, 0);
+addWallCorrugatedMetal(-31.56 - 2 * 8, 0, 127.5 - 2 * 3, 0, 270, 0);
+addWallCorrugatedMetal(-31.56 - 2 * 8, 0, 127.5 - 2 * 2, 0, 270, 0);
+addWallCorrugatedMetal(-31.56 - 2 * 8, 0, 127.5 - 2 * 1, 0, 270, 0);
+addWallcornerCyberpunk(-31.56 - 2 * 8, 0, 127.5, 0, 270, 0);
+addWallCorrugatedMetal(-31.56 - 2 * 6, 0, 127.5);
+addWallCorrugatedMetal(-31.56 - 2 * 5, 0, 127.5);
+addWallCorrugatedMetal(-31.56 - 2 * 4, 0, 127.5);
+addWallCorrugatedMetal(-31.56 - 2 * 3, 0, 127.5);
+addWallCorrugatedMetal(-31.56 - 2 * 2, 0, 127.5);
+addWallCorrugatedMetal(-31.56 - 2 * 1, 0, 127.5);
+addWallCorrugatedMetal(-31.56, 0, 127.5);
 addCurvedBarrierEnd(-31.45, 0, 127.5, 0, 180, 0);
 addStraightBarrier(-1.45 + 2 * -13, 0, 127.5);
 addStraightBarrier(-1.45 + 2 * -12, 0, 127.5);
@@ -211,149 +252,149 @@ addStoneBrickWall(76 - 4 * 12, 0, 127.2);
 addConicalStonePillar(76 - 4 * 13, 0, 127.2);
 
 //Bushes
-addBush2(71.9-2*35,0,13.5-2*7)
-addShrub(71.9-2*34,0,13.5-2*7)
-addEvergreenShrub(71.4-2*33,0,13.5-2*7)
-addBush2(71.2-2*32,0,13.5-2*7)
-addShrub(71.2-2*31,0,13.5-2*7)
-addEvergreenShrub(70.7-2*30,0,13.5-2*7)
-addBush2(70.5-2*29,0,13.5-2*7)
-addShrub(70.5-2*28,0,13.5-2*7)
-addEvergreenShrub(70-2*27,0,13.5-2*7)
-addBush2(69.8-2*26,0,13.5-2*7)
-addShrub(69.8-2*25,0,13.5-2*7)
-addEvergreenShrub(69.3-2*24,0,13.5-2*7)
-addBush2(69.1-2*23,0,13.5-2*7)
-addShrub(69.1-2*22,0,13.5-2*7)
-addEvergreenShrub(68.6-2*21,0,13.5-2*7)
-addBush2(68.4-2*20,0,13.5-2*7)
-addShrub(68.4-2*19,0,13.5-2*7)
-addEvergreenShrub(67.9-2*18,0,13.5-2*7)
-addBush2(67.7-2*17,0,13.5-2*7)
-addShrub(67.7-2*16,0,13.5-2*7)
-addEvergreenShrub(67.2-2*15,0,13.5-2*7)
-addBush2(67-2*14,0,13.5-2*7)
-addShrub(67-2*13,0,13.5-2*7)
-addEvergreenShrub(66.7-2*12,0,13.5-2*7)
-addBush2(66.5-2*11,0,13.5-2*7)
-addShrub(66.5-2*10,0,13.5-2*7)
+addBush2(71.9 - 2 * 35, 0, 13.5 - 2 * 7)
+addShrub(71.9 - 2 * 34, 0, 13.5 - 2 * 7)
+addEvergreenShrub(71.4 - 2 * 33, 0, 13.5 - 2 * 7)
+addBush2(71.2 - 2 * 32, 0, 13.5 - 2 * 7)
+addShrub(71.2 - 2 * 31, 0, 13.5 - 2 * 7)
+addEvergreenShrub(70.7 - 2 * 30, 0, 13.5 - 2 * 7)
+addBush2(70.5 - 2 * 29, 0, 13.5 - 2 * 7)
+addShrub(70.5 - 2 * 28, 0, 13.5 - 2 * 7)
+addEvergreenShrub(70 - 2 * 27, 0, 13.5 - 2 * 7)
+addBush2(69.8 - 2 * 26, 0, 13.5 - 2 * 7)
+addShrub(69.8 - 2 * 25, 0, 13.5 - 2 * 7)
+addEvergreenShrub(69.3 - 2 * 24, 0, 13.5 - 2 * 7)
+addBush2(69.1 - 2 * 23, 0, 13.5 - 2 * 7)
+addShrub(69.1 - 2 * 22, 0, 13.5 - 2 * 7)
+addEvergreenShrub(68.6 - 2 * 21, 0, 13.5 - 2 * 7)
+addBush2(68.4 - 2 * 20, 0, 13.5 - 2 * 7)
+addShrub(68.4 - 2 * 19, 0, 13.5 - 2 * 7)
+addEvergreenShrub(67.9 - 2 * 18, 0, 13.5 - 2 * 7)
+addBush2(67.7 - 2 * 17, 0, 13.5 - 2 * 7)
+addShrub(67.7 - 2 * 16, 0, 13.5 - 2 * 7)
+addEvergreenShrub(67.2 - 2 * 15, 0, 13.5 - 2 * 7)
+addBush2(67 - 2 * 14, 0, 13.5 - 2 * 7)
+addShrub(67 - 2 * 13, 0, 13.5 - 2 * 7)
+addEvergreenShrub(66.7 - 2 * 12, 0, 13.5 - 2 * 7)
+addBush2(66.5 - 2 * 11, 0, 13.5 - 2 * 7)
+addShrub(66.5 - 2 * 10, 0, 13.5 - 2 * 7)
 
-addEvergreenShrub(66.5-2*9,0,14-2*7)
-addBush2(66.5-2*9,0,14-2*6)
-addShrub(66.5-2*9,0,14-2*5)
-addEvergreenShrub(66.5-2*9,0,14-2*4)
-addBush2(66.5-2*9,0,14-2*3)
-addShrub(66.5-2*9,0,14-2*2)
-addEvergreenShrub(66.5-2*9,0,14-2*1)
-addBush2(66.5-2*9,0,14)
+addEvergreenShrub(66.5 - 2 * 9, 0, 14 - 2 * 7)
+addBush2(66.5 - 2 * 9, 0, 14 - 2 * 6)
+addShrub(66.5 - 2 * 9, 0, 14 - 2 * 5)
+addEvergreenShrub(66.5 - 2 * 9, 0, 14 - 2 * 4)
+addBush2(66.5 - 2 * 9, 0, 14 - 2 * 3)
+addShrub(66.5 - 2 * 9, 0, 14 - 2 * 2)
+addEvergreenShrub(66.5 - 2 * 9, 0, 14 - 2 * 1)
+addBush2(66.5 - 2 * 9, 0, 14)
 
-addShrub(66-2*8,0,15.5)
-addEvergreenShrub(66-2*7,0,15.5)
-addBush2(65.5-2*6,0,15.5)
-addShrub(65.5-2*5,0,15.5)
-addEvergreenShrub(65.5-2*4,0,15.5)
-addBush2(65-2*3,0,15.5)
-addShrub(65-2*2,0,15.5)
-addEvergreenShrub(65-2*1,0,15.5)
+addShrub(66 - 2 * 8, 0, 15.5)
+addEvergreenShrub(66 - 2 * 7, 0, 15.5)
+addBush2(65.5 - 2 * 6, 0, 15.5)
+addShrub(65.5 - 2 * 5, 0, 15.5)
+addEvergreenShrub(65.5 - 2 * 4, 0, 15.5)
+addBush2(65 - 2 * 3, 0, 15.5)
+addShrub(65 - 2 * 2, 0, 15.5)
+addEvergreenShrub(65 - 2 * 1, 0, 15.5)
 
 // addBush(64.59,0.88,16.10)
-addBush2(64.59,0,16.10)
-addShrub(64.59,0,16.10+2)
+addBush2(64.59, 0, 16.10)
+addShrub(64.59, 0, 16.10 + 2)
 // addShrubRow(64.59,0,16.10+2*2)
-addJungleShrub(64.59,0,16.10+2*2)
-addEvergreenShrub(64.59,0,16.10+2*2)
+addJungleShrub(64.59, 0, 16.10 + 2 * 2)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 2)
 // addPlant(64.59,0,16.10+2*5)
 // addTriSpikeGrass(64.59,0,16.10+2*6)
 // addbenchGrassFern(64.59,0,16.10+2*7)
 // addGrassSprout(64.59,0,16.10+2*8)
 // addbalsamFlower(64.59,0,16.10+2*9)
-addJungleFern(64.59,0,16.10+2*10)
+addJungleFern(64.59, 0, 16.10 + 2 * 10)
 // addCactus(64.59,0,16.10+2*11)
 // addCactus2(64.59,0,16.10+2*12)
 // addCactus3(64.59,0,16.10+2*13)
-addBush2(64.59,0,16.10+2*3)
-addShrub(64.59,0,16.10+2*4)
-addEvergreenShrub(64.59,0,16.10+2*5)
-addBush2(64.59,0,16.10+2*6)
-addShrub(64.59,0,16.10+2*7)
-addEvergreenShrub(64.59,0,16.10+2*8)
-addBush2(64.59,0,16.10+2*9)
-addShrub(64.59,0,16.10+2*10)
-addEvergreenShrub(64.59,0,16.10+2*11)
-addBush2(64.59,0,16.10+2*12)
-addShrub(64.59,0,16.10+2*13)
-addEvergreenShrub(64.59,0,16.10+2*14)
-addBush2(64.59,0,16.10+2*15)
-addShrub(64.59,0,16.10+2*16)
-addEvergreenShrub(64.59,0,16.10+2*17)
-addBush2(64.59,0,16.10+2*18)
-addShrub(64.59,0,16.10+2*19)
-addEvergreenShrub(64.59,0,16.10+2*20)
-addBush2(64.59,0,16.10+2*21)
-addShrub(64.59,0,16.10+2*22)
-addEvergreenShrub(64.59,0,16.10+2*23)
-addBush2(64.59,0,16.10+2*24)
-addShrub(64.59,0,16.10+2*25)
-addEvergreenShrub(64.59,0,16.10+2*26)
-addBush2(64.59,0,16.10+2*27)
-addShrub(64.59,0,16.10+2*28)
-addEvergreenShrub(64.59,0,16.10+2*29)
-addBush2(64.59,0,16.10+2*30)
-addShrub(64.59,0,16.10+2*31)
-addEvergreenShrub(64.59,0,16.10+2*32)
-addBush2(64.59,0,16.10+2*33)
-addShrub(64.59,0,16.10+2*34)
-addEvergreenShrub(64.59,0,16.10+2*35)
-addBush2(64.59,0,16.10+2*36)
-addShrub(64.59,0,16.10+2*37)
-addEvergreenShrub(64.59,0,16.10+2*38)
-addBush2(64.59,0,16.10+2*39)
-addShrub(64.59,0,16.10+2*40)
+addBush2(64.59, 0, 16.10 + 2 * 3)
+addShrub(64.59, 0, 16.10 + 2 * 4)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 5)
+addBush2(64.59, 0, 16.10 + 2 * 6)
+addShrub(64.59, 0, 16.10 + 2 * 7)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 8)
+addBush2(64.59, 0, 16.10 + 2 * 9)
+addShrub(64.59, 0, 16.10 + 2 * 10)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 11)
+addBush2(64.59, 0, 16.10 + 2 * 12)
+addShrub(64.59, 0, 16.10 + 2 * 13)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 14)
+addBush2(64.59, 0, 16.10 + 2 * 15)
+addShrub(64.59, 0, 16.10 + 2 * 16)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 17)
+addBush2(64.59, 0, 16.10 + 2 * 18)
+addShrub(64.59, 0, 16.10 + 2 * 19)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 20)
+addBush2(64.59, 0, 16.10 + 2 * 21)
+addShrub(64.59, 0, 16.10 + 2 * 22)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 23)
+addBush2(64.59, 0, 16.10 + 2 * 24)
+addShrub(64.59, 0, 16.10 + 2 * 25)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 26)
+addBush2(64.59, 0, 16.10 + 2 * 27)
+addShrub(64.59, 0, 16.10 + 2 * 28)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 29)
+addBush2(64.59, 0, 16.10 + 2 * 30)
+addShrub(64.59, 0, 16.10 + 2 * 31)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 32)
+addBush2(64.59, 0, 16.10 + 2 * 33)
+addShrub(64.59, 0, 16.10 + 2 * 34)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 35)
+addBush2(64.59, 0, 16.10 + 2 * 36)
+addShrub(64.59, 0, 16.10 + 2 * 37)
+addEvergreenShrub(64.59, 0, 16.10 + 2 * 38)
+addBush2(64.59, 0, 16.10 + 2 * 39)
+addShrub(64.59, 0, 16.10 + 2 * 40)
 
-addEvergreenShrub(65-2*1,0,16.50+2*40)
-addBush2(65-2*2,0,16.50+2*40)
-addShrub(65-2*3,0,16.50+2*40)
-addEvergreenShrub(65.5-2*4,0,16.50+2*40)
-addBush2(65.5-2*5,0,16.50+2*40)
-addShrub(65.5-2*6,0,16.50+2*40)
-addEvergreenShrub(66-2*7,0,16.50+2*40)
-addBush2(66-2*8,0,16.50+2*40)
+addEvergreenShrub(65 - 2 * 1, 0, 16.50 + 2 * 40)
+addBush2(65 - 2 * 2, 0, 16.50 + 2 * 40)
+addShrub(65 - 2 * 3, 0, 16.50 + 2 * 40)
+addEvergreenShrub(65.5 - 2 * 4, 0, 16.50 + 2 * 40)
+addBush2(65.5 - 2 * 5, 0, 16.50 + 2 * 40)
+addShrub(65.5 - 2 * 6, 0, 16.50 + 2 * 40)
+addEvergreenShrub(66 - 2 * 7, 0, 16.50 + 2 * 40)
+addBush2(66 - 2 * 8, 0, 16.50 + 2 * 40)
 
-addShrub(66.5-2*9,0,16+2*41)
-addEvergreenShrub(66.5-2*9,0,16+2*42)
-addBush2(66.5-2*9,0,16+2*43)
-addShrub(66.5-2*9,0,16+2*44)
-addEvergreenShrub(66.5-2*9,0,16+2*45)
-addBush2(66.5-2*9,0,16+2*46)
-addShrub(66.5-2*9,0,16+2*47)
-addEvergreenShrub(66.5-2*9,0,16+2*48)
+addShrub(66.5 - 2 * 9, 0, 16 + 2 * 41)
+addEvergreenShrub(66.5 - 2 * 9, 0, 16 + 2 * 42)
+addBush2(66.5 - 2 * 9, 0, 16 + 2 * 43)
+addShrub(66.5 - 2 * 9, 0, 16 + 2 * 44)
+addEvergreenShrub(66.5 - 2 * 9, 0, 16 + 2 * 45)
+addBush2(66.5 - 2 * 9, 0, 16 + 2 * 46)
+addShrub(66.5 - 2 * 9, 0, 16 + 2 * 47)
+addEvergreenShrub(66.5 - 2 * 9, 0, 16 + 2 * 48)
 
-addBush2(67-2*10,0,16.5+2*48)
-addShrub(67-2*11,0,16.5+2*48)
-addEvergreenShrub(67.5-2*12,0,16.5+2*48)
-addBush2(67.5-2*13,0,16.5+2*48)
-addShrub(67.5-2*14,0,16.5+2*48)
-addEvergreenShrub(68-2*15,0,16.5+2*48)
-addBush2(68-2*16,0,16.5+2*48)
-addShrub(68-2*17,0,16.5+2*48)
-addEvergreenShrub(68.5-2*18,0,16.5+2*48)
-addBush2(68.5-2*19,0,16.5+2*48)
-addShrub(68.5-2*20,0,16.5+2*48)
-addEvergreenShrub(69-2*21,0,16.5+2*48)
-addBush2(69-2*22,0,16.5+2*48)
-addShrub(69-2*23,0,16.5+2*48)
-addEvergreenShrub(69.5-2*24,0,16.5+2*48)
-addBush2(69.5-2*25,0,16.5+2*48)
-addShrub(69.5-2*26,0,16.5+2*48)
-addEvergreenShrub(70-2*27,0,16.5+2*48)
-addBush2(70-2*28,0,16.5+2*48)
-addShrub(70-2*29,0,16.5+2*48)
-addEvergreenShrub(70.5-2*30,0,16.5+2*48)
-addBush2(70.5-2*31,0,16.5+2*48)
-addShrub(70.5-2*32,0,16.5+2*48)
-addEvergreenShrub(71-2*33,0,16.5+2*48)
-addBush2(71-2*34,0,16.5+2*48)
-addShrub(71-2*35,0,16.5+2*48)
+addBush2(67 - 2 * 10, 0, 16.5 + 2 * 48)
+addShrub(67 - 2 * 11, 0, 16.5 + 2 * 48)
+addEvergreenShrub(67.5 - 2 * 12, 0, 16.5 + 2 * 48)
+addBush2(67.5 - 2 * 13, 0, 16.5 + 2 * 48)
+addShrub(67.5 - 2 * 14, 0, 16.5 + 2 * 48)
+addEvergreenShrub(68 - 2 * 15, 0, 16.5 + 2 * 48)
+addBush2(68 - 2 * 16, 0, 16.5 + 2 * 48)
+addShrub(68 - 2 * 17, 0, 16.5 + 2 * 48)
+addEvergreenShrub(68.5 - 2 * 18, 0, 16.5 + 2 * 48)
+addBush2(68.5 - 2 * 19, 0, 16.5 + 2 * 48)
+addShrub(68.5 - 2 * 20, 0, 16.5 + 2 * 48)
+addEvergreenShrub(69 - 2 * 21, 0, 16.5 + 2 * 48)
+addBush2(69 - 2 * 22, 0, 16.5 + 2 * 48)
+addShrub(69 - 2 * 23, 0, 16.5 + 2 * 48)
+addEvergreenShrub(69.5 - 2 * 24, 0, 16.5 + 2 * 48)
+addBush2(69.5 - 2 * 25, 0, 16.5 + 2 * 48)
+addShrub(69.5 - 2 * 26, 0, 16.5 + 2 * 48)
+addEvergreenShrub(70 - 2 * 27, 0, 16.5 + 2 * 48)
+addBush2(70 - 2 * 28, 0, 16.5 + 2 * 48)
+addShrub(70 - 2 * 29, 0, 16.5 + 2 * 48)
+addEvergreenShrub(70.5 - 2 * 30, 0, 16.5 + 2 * 48)
+addBush2(70.5 - 2 * 31, 0, 16.5 + 2 * 48)
+addShrub(70.5 - 2 * 32, 0, 16.5 + 2 * 48)
+addEvergreenShrub(71 - 2 * 33, 0, 16.5 + 2 * 48)
+addBush2(71 - 2 * 34, 0, 16.5 + 2 * 48)
+addShrub(71 - 2 * 35, 0, 16.5 + 2 * 48)
 // addEvergreenShrub(71.5-2*36,0,16.5+2*48)
 
 

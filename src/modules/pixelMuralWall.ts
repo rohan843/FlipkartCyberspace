@@ -8,12 +8,12 @@ baseScene.addComponent(new GLTFShape('models/baseScene.glb'))
 baseScene.addComponent(new Transform())
 engine.addEntity(baseScene)
 
-// For transforming the mural
+// For transforming the mural-38.49,-0.5,119.32
 const scene1 = new Entity()
 scene1.addComponent(
   new Transform({
-    position: new Vector3(31.48, -0.5, 126.79),
-    rotation: Quaternion.Euler(0, 0, 0),
+    position: new Vector3(-42.04, -0.5, 117.49),
+    rotation: Quaternion.Euler(0, -45, 0),
   })
 )
 engine.addEntity(scene1)
@@ -31,7 +31,7 @@ const boxShape = new BoxShape()
 boxShape.withCollisions = false
 
 // Parameters for the mural
-const MURAL_WIDTH = 51
+const MURAL_WIDTH = 57
 const MURAL_HEIGHT = 14
 const START_POS_X = -4.445
 const START_POS_Y = 4.5

@@ -367,7 +367,14 @@ export function addWallArrowBoard(x: number, y: number, z: number) {
     wallArrowBoard.addComponentOrReplace(gltfShape16)
 }
 
-export function addWallCorrugatedMetal(x: number, y: number, z: number) {
+export function addWallCorrugatedMetal(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+) {
     const wallCorrugatedMetal = new Entity('wallCorrugatedMetal')
     engine.addEntity(wallCorrugatedMetal)
     wallCorrugatedMetal.setParent(_scene)
@@ -376,6 +383,7 @@ export function addWallCorrugatedMetal(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform18.rotation.setEuler(xRot, yRot, zRot)
     wallCorrugatedMetal.addComponentOrReplace(transform18)
     const gltfShape17 = new GLTFShape("models/ed5d1431-0172-4730-b81c-856fc44043f7/CorrugatedMetalWall.glb")
     gltfShape17.withCollisions = true
@@ -384,7 +392,14 @@ export function addWallCorrugatedMetal(x: number, y: number, z: number) {
     wallCorrugatedMetal.addComponentOrReplace(gltfShape17)
 }
 
-export function addWallHexagonGrid(x: number, y: number, z: number) {
+export function addWallHexagonGrid(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const wallHexagonGrid = new Entity('wallHexagonGrid')
     engine.addEntity(wallHexagonGrid)
     wallHexagonGrid.setParent(_scene)
@@ -393,6 +408,7 @@ export function addWallHexagonGrid(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform19.rotation.setEuler(xRot, yRot, zRot);
     wallHexagonGrid.addComponentOrReplace(transform19)
     const gltfShape18 = new GLTFShape("models/59fecc02-0949-4feb-9501-f4279744b57e/HexagonGridWall.glb")
     gltfShape18.withCollisions = true
@@ -452,7 +468,14 @@ export function addWallClock(x: number, y: number, z: number) {
     wallClock.addComponentOrReplace(gltfShape21)
 }
 
-export function addWallcornerCyberpunk(x: number, y: number, z: number) {
+export function addWallcornerCyberpunk(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+) {
     const wallcornerCyberpunk = new Entity('wallcornerCyberpunk')
     engine.addEntity(wallcornerCyberpunk)
     wallcornerCyberpunk.setParent(_scene)
@@ -461,6 +484,7 @@ export function addWallcornerCyberpunk(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    transform23.rotation.setEuler(xRot, yRot, zRot);
     wallcornerCyberpunk.addComponentOrReplace(transform23)
     const gltfShape22 = new GLTFShape("models/f554c4c1-8a48-4808-aaa1-e60b1bfa908f/CyberpunkCorner.glb")
     gltfShape22.withCollisions = true
@@ -2479,29 +2503,29 @@ export function addGlassCup2(x: number, y: number, z: number) {
 }
 export function addGlassCup(x: number, y: number, z: number) {
     const chaliceOfVictory = new Entity('chaliceOfVictory')
-engine.addEntity(chaliceOfVictory)
-chaliceOfVictory.setParent(_scene)
-const transform31 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-chaliceOfVictory.addComponentOrReplace(transform31)
-const gltfShape27 = new GLTFShape("models/b3e238f7-8af9-4db0-939a-253263cd9af8/Chalice_02/Chalice_02.glb")
-gltfShape27.withCollisions = true
-gltfShape27.isPointerBlocker = true
-gltfShape27.visible = true
-chaliceOfVictory.addComponentOrReplace(gltfShape27)
+    engine.addEntity(chaliceOfVictory)
+    chaliceOfVictory.setParent(_scene)
+    const transform31 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    chaliceOfVictory.addComponentOrReplace(transform31)
+    const gltfShape27 = new GLTFShape("models/b3e238f7-8af9-4db0-939a-253263cd9af8/Chalice_02/Chalice_02.glb")
+    gltfShape27.withCollisions = true
+    gltfShape27.isPointerBlocker = true
+    gltfShape27.visible = true
+    chaliceOfVictory.addComponentOrReplace(gltfShape27)
 }
 
-export function addEvergreenShrub(x: number, y: number, z: number){
+export function addEvergreenShrub(x: number, y: number, z: number) {
     const evergreenShrub = new Entity('evergreenShrub')
     engine.addEntity(evergreenShrub)
     evergreenShrub.setParent(_scene)
     const transform6 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(1, 1, 1)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
     })
     evergreenShrub.addComponentOrReplace(transform6)
     const gltfShape2 = new GLTFShape("models/0d4f1e28-c9bd-4f3e-9605-c76c84702742/Bush_03/Bush_03.glb")
@@ -2511,259 +2535,259 @@ export function addEvergreenShrub(x: number, y: number, z: number){
     evergreenShrub.addComponentOrReplace(gltfShape2)
 }
 
-export function addPlant(x: number, y: number, z: number){
+export function addPlant(x: number, y: number, z: number) {
     const plant = new Entity('plant')
-engine.addEntity(plant)
-plant.setParent(_scene)
-const transform7 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-plant.addComponentOrReplace(transform7)
-const gltfShape3 = new GLTFShape("models/ec8b2557-4819-4a6c-a443-2fe15e7e980a/Plant 2.glb")
-gltfShape3.withCollisions = true
-gltfShape3.isPointerBlocker = true
-gltfShape3.visible = true
-plant.addComponentOrReplace(gltfShape3)
+    engine.addEntity(plant)
+    plant.setParent(_scene)
+    const transform7 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    plant.addComponentOrReplace(transform7)
+    const gltfShape3 = new GLTFShape("models/ec8b2557-4819-4a6c-a443-2fe15e7e980a/Plant 2.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    plant.addComponentOrReplace(gltfShape3)
 }
 
-export function addTriSpikeGrass(x: number, y: number, z: number){
+export function addTriSpikeGrass(x: number, y: number, z: number) {
     const triSpikeGrass = new Entity('triSpikeGrass')
-engine.addEntity(triSpikeGrass)
-triSpikeGrass.setParent(_scene)
-const transform8 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-triSpikeGrass.addComponentOrReplace(transform8)
-const gltfShape4 = new GLTFShape("models/40b603bd-9582-4100-8a5d-d09d0d82ba50/Grass_05/Grass05.glb")
-gltfShape4.withCollisions = true
-gltfShape4.isPointerBlocker = true
-gltfShape4.visible = true
-triSpikeGrass.addComponentOrReplace(gltfShape4)
+    engine.addEntity(triSpikeGrass)
+    triSpikeGrass.setParent(_scene)
+    const transform8 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    triSpikeGrass.addComponentOrReplace(transform8)
+    const gltfShape4 = new GLTFShape("models/40b603bd-9582-4100-8a5d-d09d0d82ba50/Grass_05/Grass05.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    triSpikeGrass.addComponentOrReplace(gltfShape4)
 }
 
-export function addBush(x: number, y: number, z: number){
+export function addBush(x: number, y: number, z: number) {
     const bush = new Entity('bush')
-engine.addEntity(bush)
-bush.setParent(_scene)
-const transform9 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-bush.addComponentOrReplace(transform9)
-const gltfShape5 = new GLTFShape("models/b34ad4ca-db96-44fe-8fd6-86b4aa9f2218/HWN20_Bush.glb")
-gltfShape5.withCollisions = true
-gltfShape5.isPointerBlocker = true
-gltfShape5.visible = true
-bush.addComponentOrReplace(gltfShape5)
+    engine.addEntity(bush)
+    bush.setParent(_scene)
+    const transform9 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    bush.addComponentOrReplace(transform9)
+    const gltfShape5 = new GLTFShape("models/b34ad4ca-db96-44fe-8fd6-86b4aa9f2218/HWN20_Bush.glb")
+    gltfShape5.withCollisions = true
+    gltfShape5.isPointerBlocker = true
+    gltfShape5.visible = true
+    bush.addComponentOrReplace(gltfShape5)
 }
 
-export function addShrub(x: number, y: number, z: number){
+export function addShrub(x: number, y: number, z: number) {
     const shrub = new Entity('shrub')
-engine.addEntity(shrub)
-shrub.setParent(_scene)
-const transform10 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-shrub.addComponentOrReplace(transform10)
-const gltfShape6 = new GLTFShape("models/4db158c0-a44f-4f79-a9e6-c5d6a219d48d/Bush_01/Bush_01.glb")
-gltfShape6.withCollisions = true
-gltfShape6.isPointerBlocker = true
-gltfShape6.visible = true
-shrub.addComponentOrReplace(gltfShape6)
+    engine.addEntity(shrub)
+    shrub.setParent(_scene)
+    const transform10 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    shrub.addComponentOrReplace(transform10)
+    const gltfShape6 = new GLTFShape("models/4db158c0-a44f-4f79-a9e6-c5d6a219d48d/Bush_01/Bush_01.glb")
+    gltfShape6.withCollisions = true
+    gltfShape6.isPointerBlocker = true
+    gltfShape6.visible = true
+    shrub.addComponentOrReplace(gltfShape6)
 }
 
-export function addBush2(x: number, y: number, z: number){
+export function addBush2(x: number, y: number, z: number) {
     const bush2 = new Entity('bush2')
-engine.addEntity(bush2)
-bush2.setParent(_scene)
-const transform11 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-bush2.addComponentOrReplace(transform11)
-const gltfShape7 = new GLTFShape("models/3168d3fe-8f93-4a1a-81f4-689780f2a373/Bush_02/Bush_02.glb")
-gltfShape7.withCollisions = true
-gltfShape7.isPointerBlocker = true
-gltfShape7.visible = true
-bush2.addComponentOrReplace(gltfShape7)
+    engine.addEntity(bush2)
+    bush2.setParent(_scene)
+    const transform11 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    bush2.addComponentOrReplace(transform11)
+    const gltfShape7 = new GLTFShape("models/3168d3fe-8f93-4a1a-81f4-689780f2a373/Bush_02/Bush_02.glb")
+    gltfShape7.withCollisions = true
+    gltfShape7.isPointerBlocker = true
+    gltfShape7.visible = true
+    bush2.addComponentOrReplace(gltfShape7)
 }
 
-export function addShrubRow(x: number, y: number, z: number){
+export function addShrubRow(x: number, y: number, z: number) {
     const shrubRow = new Entity('shrubRow')
-engine.addEntity(shrubRow)
-shrubRow.setParent(_scene)
-const transform12 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-shrubRow.addComponentOrReplace(transform12)
-const gltfShape8 = new GLTFShape("models/fb7e1284-521b-477f-b255-4b986c8b131e/BushPatch_02/BushPatch_02.glb")
-gltfShape8.withCollisions = true
-gltfShape8.isPointerBlocker = true
-gltfShape8.visible = true
-shrubRow.addComponentOrReplace(gltfShape8)
+    engine.addEntity(shrubRow)
+    shrubRow.setParent(_scene)
+    const transform12 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    shrubRow.addComponentOrReplace(transform12)
+    const gltfShape8 = new GLTFShape("models/fb7e1284-521b-477f-b255-4b986c8b131e/BushPatch_02/BushPatch_02.glb")
+    gltfShape8.withCollisions = true
+    gltfShape8.isPointerBlocker = true
+    gltfShape8.visible = true
+    shrubRow.addComponentOrReplace(gltfShape8)
 }
 
-export function addGrassSprout(x: number, y: number, z: number){
+export function addGrassSprout(x: number, y: number, z: number) {
     const grassSprout = new Entity('grassSprout')
-engine.addEntity(grassSprout)
-grassSprout.setParent(_scene)
-const transform13 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-grassSprout.addComponentOrReplace(transform13)
-const gltfShape9 = new GLTFShape("models/43ab9bc6-bc2a-4ee1-815a-e12f60a709ae/Grass_03/Grass_03.glb")
-gltfShape9.withCollisions = true
-gltfShape9.isPointerBlocker = true
-gltfShape9.visible = true
-grassSprout.addComponentOrReplace(gltfShape9)
+    engine.addEntity(grassSprout)
+    grassSprout.setParent(_scene)
+    const transform13 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    grassSprout.addComponentOrReplace(transform13)
+    const gltfShape9 = new GLTFShape("models/43ab9bc6-bc2a-4ee1-815a-e12f60a709ae/Grass_03/Grass_03.glb")
+    gltfShape9.withCollisions = true
+    gltfShape9.isPointerBlocker = true
+    gltfShape9.visible = true
+    grassSprout.addComponentOrReplace(gltfShape9)
 }
 
-export function addbenchGrassFern(x: number, y: number, z: number){
+export function addbenchGrassFern(x: number, y: number, z: number) {
     const beachgrassFern = new Entity('beachgrassFern')
-engine.addEntity(beachgrassFern)
-beachgrassFern.setParent(_scene)
-const transform14 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-beachgrassFern.addComponentOrReplace(transform14)
-const gltfShape10 = new GLTFShape("models/7ea57b9c-29ee-47a5-9ad2-c109101b72ac/JunglePlant_06/JunglePlant_06.glb")
-gltfShape10.withCollisions = true
-gltfShape10.isPointerBlocker = true
-gltfShape10.visible = true
-beachgrassFern.addComponentOrReplace(gltfShape10)
+    engine.addEntity(beachgrassFern)
+    beachgrassFern.setParent(_scene)
+    const transform14 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    beachgrassFern.addComponentOrReplace(transform14)
+    const gltfShape10 = new GLTFShape("models/7ea57b9c-29ee-47a5-9ad2-c109101b72ac/JunglePlant_06/JunglePlant_06.glb")
+    gltfShape10.withCollisions = true
+    gltfShape10.isPointerBlocker = true
+    gltfShape10.visible = true
+    beachgrassFern.addComponentOrReplace(gltfShape10)
 }
 
-export function addPalm(x: number, y: number, z: number){
+export function addPalm(x: number, y: number, z: number) {
     const arecaPalm = new Entity('arecaPalm')
-engine.addEntity(arecaPalm)
-arecaPalm.setParent(_scene)
-const transform15 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-arecaPalm.addComponentOrReplace(transform15)
-const gltfShape11 = new GLTFShape("models/b0f2c844-e0ba-443d-9f32-e8ad3c555c6c/JunglePlant_09/JunglePlant_09.glb")
-gltfShape11.withCollisions = true
-gltfShape11.isPointerBlocker = true
-gltfShape11.visible = true
-arecaPalm.addComponentOrReplace(gltfShape11)
+    engine.addEntity(arecaPalm)
+    arecaPalm.setParent(_scene)
+    const transform15 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    arecaPalm.addComponentOrReplace(transform15)
+    const gltfShape11 = new GLTFShape("models/b0f2c844-e0ba-443d-9f32-e8ad3c555c6c/JunglePlant_09/JunglePlant_09.glb")
+    gltfShape11.withCollisions = true
+    gltfShape11.isPointerBlocker = true
+    gltfShape11.visible = true
+    arecaPalm.addComponentOrReplace(gltfShape11)
 }
 
-export function addbalsamFlower(x: number, y: number, z: number){
+export function addbalsamFlower(x: number, y: number, z: number) {
     const balsamFlower = new Entity('balsamFlower')
-engine.addEntity(balsamFlower)
-balsamFlower.setParent(_scene)
-const transform16 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-balsamFlower.addComponentOrReplace(transform16)
-const gltfShape12 = new GLTFShape("models/71806ca6-1a2b-4d8b-b919-ae96241f8c08/Plant_02/Plant_02.glb")
-gltfShape12.withCollisions = true
-gltfShape12.isPointerBlocker = true
-gltfShape12.visible = true
-balsamFlower.addComponentOrReplace(gltfShape12)
+    engine.addEntity(balsamFlower)
+    balsamFlower.setParent(_scene)
+    const transform16 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    balsamFlower.addComponentOrReplace(transform16)
+    const gltfShape12 = new GLTFShape("models/71806ca6-1a2b-4d8b-b919-ae96241f8c08/Plant_02/Plant_02.glb")
+    gltfShape12.withCollisions = true
+    gltfShape12.isPointerBlocker = true
+    gltfShape12.visible = true
+    balsamFlower.addComponentOrReplace(gltfShape12)
 }
 
-export function addCactus(x: number, y: number, z: number){
+export function addCactus(x: number, y: number, z: number) {
     const cactus = new Entity('cactus')
-engine.addEntity(cactus)
-cactus.setParent(_scene)
-const transform17 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-cactus.addComponentOrReplace(transform17)
-const gltfShape13 = new GLTFShape("models/5962aecb-495f-4e09-a81e-c225d0eaee7c/Cactus 4.glb")
-gltfShape13.withCollisions = true
-gltfShape13.isPointerBlocker = true
-gltfShape13.visible = true
-cactus.addComponentOrReplace(gltfShape13)
+    engine.addEntity(cactus)
+    cactus.setParent(_scene)
+    const transform17 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    cactus.addComponentOrReplace(transform17)
+    const gltfShape13 = new GLTFShape("models/5962aecb-495f-4e09-a81e-c225d0eaee7c/Cactus 4.glb")
+    gltfShape13.withCollisions = true
+    gltfShape13.isPointerBlocker = true
+    gltfShape13.visible = true
+    cactus.addComponentOrReplace(gltfShape13)
 }
 
-export function addCactus2(x: number, y: number, z: number){
+export function addCactus2(x: number, y: number, z: number) {
     const cactus2 = new Entity('cactus2')
-engine.addEntity(cactus2)
-cactus2.setParent(_scene)
-const transform18 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-cactus2.addComponentOrReplace(transform18)
-const gltfShape14 = new GLTFShape("models/9b8e7c70-3f2f-4ec7-bac6-bd0b6c07a9a3/Cactus 3.glb")
-gltfShape14.withCollisions = true
-gltfShape14.isPointerBlocker = true
-gltfShape14.visible = true
-cactus2.addComponentOrReplace(gltfShape14)
+    engine.addEntity(cactus2)
+    cactus2.setParent(_scene)
+    const transform18 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    cactus2.addComponentOrReplace(transform18)
+    const gltfShape14 = new GLTFShape("models/9b8e7c70-3f2f-4ec7-bac6-bd0b6c07a9a3/Cactus 3.glb")
+    gltfShape14.withCollisions = true
+    gltfShape14.isPointerBlocker = true
+    gltfShape14.visible = true
+    cactus2.addComponentOrReplace(gltfShape14)
 }
 
-export function addCactus3(x: number, y: number, z: number){
+export function addCactus3(x: number, y: number, z: number) {
     const cactus3 = new Entity('cactus3')
-engine.addEntity(cactus3)
-cactus3.setParent(_scene)
-const transform19 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-cactus3.addComponentOrReplace(transform19)
-const gltfShape15 = new GLTFShape("models/7fdd78fe-d81e-495e-8a57-2b92f37d77a9/Cactus 9.glb")
-gltfShape15.withCollisions = true
-gltfShape15.isPointerBlocker = true
-gltfShape15.visible = true
-cactus3.addComponentOrReplace(gltfShape15)
+    engine.addEntity(cactus3)
+    cactus3.setParent(_scene)
+    const transform19 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    cactus3.addComponentOrReplace(transform19)
+    const gltfShape15 = new GLTFShape("models/7fdd78fe-d81e-495e-8a57-2b92f37d77a9/Cactus 9.glb")
+    gltfShape15.withCollisions = true
+    gltfShape15.isPointerBlocker = true
+    gltfShape15.visible = true
+    cactus3.addComponentOrReplace(gltfShape15)
 }
 
-export function addJungleShrub(x: number, y: number, z: number){
+export function addJungleShrub(x: number, y: number, z: number) {
     const jungleShrub = new Entity('jungleShrub')
-engine.addEntity(jungleShrub)
-jungleShrub.setParent(_scene)
-const transform20 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(2, 2, 2)
-})
-jungleShrub.addComponentOrReplace(transform20)
-const gltfShape16 = new GLTFShape("models/d8b2cdd4-043a-4982-91c2-202d85677533/JunglePlant_02/JunglePlant_02.glb")
-gltfShape16.withCollisions = true
-gltfShape16.isPointerBlocker = true
-gltfShape16.visible = true
-jungleShrub.addComponentOrReplace(gltfShape16)
+    engine.addEntity(jungleShrub)
+    jungleShrub.setParent(_scene)
+    const transform20 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(2, 2, 2)
+    })
+    jungleShrub.addComponentOrReplace(transform20)
+    const gltfShape16 = new GLTFShape("models/d8b2cdd4-043a-4982-91c2-202d85677533/JunglePlant_02/JunglePlant_02.glb")
+    gltfShape16.withCollisions = true
+    gltfShape16.isPointerBlocker = true
+    gltfShape16.visible = true
+    jungleShrub.addComponentOrReplace(gltfShape16)
 }
 
-export function addJungleFern(x: number, y: number, z: number){
+export function addJungleFern(x: number, y: number, z: number) {
     const jungleFern = new Entity('jungleFern')
-engine.addEntity(jungleFern)
-jungleFern.setParent(_scene)
-const transform21 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(2, 2, 2)
-})
-jungleFern.addComponentOrReplace(transform21)
-const gltfShape17 = new GLTFShape("models/3a4e677f-88c7-4616-bbf0-9a97055463d6/JunglePlant_01/JunglePlant_01.glb")
-gltfShape17.withCollisions = true
-gltfShape17.isPointerBlocker = true
-gltfShape17.visible = true
-jungleFern.addComponentOrReplace(gltfShape17)
+    engine.addEntity(jungleFern)
+    jungleFern.setParent(_scene)
+    const transform21 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(2, 2, 2)
+    })
+    jungleFern.addComponentOrReplace(transform21)
+    const gltfShape17 = new GLTFShape("models/3a4e677f-88c7-4616-bbf0-9a97055463d6/JunglePlant_01/JunglePlant_01.glb")
+    gltfShape17.withCollisions = true
+    gltfShape17.isPointerBlocker = true
+    gltfShape17.visible = true
+    jungleFern.addComponentOrReplace(gltfShape17)
     // engine.addEntity(chaliceOfVictory)
     // chaliceOfVictory.setParent(_scene)
     // const transform31 = new Transform({
