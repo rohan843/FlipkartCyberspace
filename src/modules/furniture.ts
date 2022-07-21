@@ -2,6 +2,7 @@
 // import { createInventory } from '../../node_modules/decentraland-builder-scripts/inventory'
 // import Script1 from "../../models/a116b006-c177-4e39-ab7c-a8c64761a621/src/item"
 
+
 export const _scene = new Entity('_scene')
 engine.addEntity(_scene)
 const transform = new Transform({
@@ -11,6 +12,31 @@ const transform = new Transform({
 })
 _scene.addComponentOrReplace(transform)
 
+// const _scene2 = new Entity('_scene')
+// engine.addEntity(_scene2)
+// const transform200 = new Transform({
+//     position: new Vector3(0, 0, 0),
+//     rotation: new Quaternion(0, 0, 0, 1),
+//     scale: new Vector3(1, 1, 1)
+// })
+// _scene2.addComponentOrReplace(transform200)
+
+// export function base_floor(){
+// const base_floor = new Entity('entity')
+// engine.addEntity(base_floor)
+// base_floor.setParent(_scene)
+// const gltfShape = new GLTFShape("models/3bd7d322-f897-444e-99f1-e4e82fb2c035/FloorBaseConcrete_01/FloorBaseConcrete_01.glb")
+// gltfShape.withCollisions = true
+// gltfShape.isPointerBlocker = true
+// gltfShape.visible = true
+// base_floor.addComponentOrReplace(gltfShape)
+// const transform2 = new Transform({
+//   position: new Vector3(16, 0, 56),
+//   rotation: new Quaternion(0, 0, 0, 1),
+//   scale: new Vector3(8, 1, 9)
+// })
+// base_floor.addComponentOrReplace(transform2)
+// }
 export function addWallLight(
     x: number,
     y: number,
@@ -586,15 +612,23 @@ export function addRoadCobbleCrossLong(x: number, y: number, z: number) {
     roadCobbleCrossLong.addComponentOrReplace(gltfShape)
 }
 
-export function addRoadCobbleStraight(x: number, y: number, z: number) {
+export function addRoadCobbleStraight(x: number, y: number, z: number,
+    xScale: number = 1,
+    yScale: number = 1,
+    zScale: number = 1,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0) 
+    {
     const roadCobbleStraight = new Entity('roadCobbleStraight')
     engine.addEntity(roadCobbleStraight)
     roadCobbleStraight.setParent(_scene)
     const transform7 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(xScale, yScale, zScale)
     })
+    transform7.rotation.setEuler(xRot, yRot, zRot);
     roadCobbleStraight.addComponentOrReplace(transform7)
     const gltfShape3 = new GLTFShape("models/36c28c69-e943-416a-9f73-c1ab82944c23/Road Cobble Straight.glb")
     gltfShape3.withCollisions = true
@@ -2801,4 +2835,72 @@ export function addJungleFern(x: number, y: number, z: number) {
     // gltfShape27.isPointerBlocker = true
     // gltfShape27.visible = true
     // chaliceOfVictory.addComponentOrReplace(gltfShape27)
+}
+
+export function addMarbleCheckersTile(x: number, y: number, z: number){
+    const marbleCheckersTile = new Entity('marbleCheckersTile')
+    engine.addEntity(marbleCheckersTile)
+    marbleCheckersTile.setParent(_scene)
+    const transform2 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(16, 1, 16)
+    })
+    marbleCheckersTile.addComponentOrReplace(transform2)
+    const gltfShape = new GLTFShape("models/81eb0547-ef35-4f8d-8cfe-16350b2a278b/Tile_Floor_01/Tile_Floor_01.glb")
+    gltfShape.withCollisions = true
+    gltfShape.isPointerBlocker = true
+    gltfShape.visible = true
+    marbleCheckersTile.addComponentOrReplace(gltfShape)
+}
+
+export function addStarMosaicTile(x: number, y: number, z: number){
+    const smallStarMosaicTile = new Entity('smallStarMosaicTile')
+    engine.addEntity(smallStarMosaicTile)
+    smallStarMosaicTile.setParent(_scene)
+    const transform3 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(8, 1, 8)
+    })
+    smallStarMosaicTile.addComponentOrReplace(transform3)
+    const gltfShape2 = new GLTFShape("models/be3eadca-dccd-41cd-8cf2-11c496ff504e/Floor_Tiles_2M_01/Floor_Tiles_2M_01.glb")
+    gltfShape2.withCollisions = true
+    gltfShape2.isPointerBlocker = true
+    gltfShape2.visible = true
+    smallStarMosaicTile.addComponentOrReplace(gltfShape2)
+}
+
+export function addLargeStarMosaicTile(x: number, y: number, z: number){
+    const largeStarMosaicTile = new Entity('largeStarMosaicTile')
+    engine.addEntity(largeStarMosaicTile)
+    largeStarMosaicTile.setParent(_scene)
+    const transform4 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(4, 1, 4)
+    })
+    largeStarMosaicTile.addComponentOrReplace(transform4)
+    const gltfShape3 = new GLTFShape("models/a4b6f5e5-e074-4870-bff5-edcb26d1bde2/Floor_Tiles_2M_05/Floor_Tiles_2M_05.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    largeStarMosaicTile.addComponentOrReplace(gltfShape3)
+}
+
+export function addfloorHexagon(x: number, y: number, z: number){
+    const floorHexagon = new Entity('floorHexagon')
+    engine.addEntity(floorHexagon)
+    floorHexagon.setParent(_scene)
+    const transform5 = new Transform({
+      position: new Vector3(x,y,z),
+      rotation: new Quaternion(0, 0, 0, 1),
+      scale: new Vector3(4, 1, 4)
+    })
+    floorHexagon.addComponentOrReplace(transform5)
+    const gltfShape4 = new GLTFShape("models/c2f3bda2-7ffc-4873-8d2b-026d2a4abeb6/HexagonFloor.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    floorHexagon.addComponentOrReplace(gltfShape4)
 }

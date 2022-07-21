@@ -6,12 +6,13 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addinformationTerminal, addJungleFern, addJungleShrub, addornamentalFountain, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addPlant, addpond, addRockTile, addrustickiosk, addrusticLampPost, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, addWallPlainGlass, addWoodTile } from "./modules/furniture"
+import {  addinformationTerminal,  addornamentalFountain,  addpond, addrusticLampPost, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, } from "./modules/furniture"
+import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addfloorHexagon, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addJungleFern, addJungleShrub, addMarbleCheckersTile, addorangefloorpanel, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addplanetSurfaceCrimson, addplanetSurfaceViolet, addPlant, addRoadCobbleStraight, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addStarMosaicTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addApple, addBananas, addDustbin, addFruit, addFruit2, addFruit3, addFruit4, addFruit5, addFruit6, addPineapple, addRedFish, addShelf, addSucculentCrop } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
 import { addShelf4 } from "./modules/furniture"
 import { addShopBuilding } from "./modules/building"
-import { addRusticMerchantFishStand } from "./modules/furniture"
+import { addRusticMerchantFishStand, _scene } from "./modules/furniture"
 
 
 // addGrassTile(-7.60 + 15, 0, 64.08)
@@ -397,6 +398,100 @@ addBush2(71 - 2 * 34, 0, 16.5 + 2 * 48)
 addShrub(71 - 2 * 35, 0, 16.5 + 2 * 48)
 // addEvergreenShrub(71.5-2*36,0,16.5+2*48)
 
+// addplanetSurfaceCrimson(-11.06,0,37.37)
+// addplanetSurfaceViolet(4.87,0,39.30)
+// addorangefloorpanel(4.87,0.88,49.30)
+
+// addfloorHexagon(-31.65+8, 0.0, 56.06+8)-31.65+8, 0.0, 56.06+8
+addStarMosaicTile(-31.65+8, 0.0, 56.06+8)
+// base_floor()
+
+const base_floor = new Entity('entity')
+engine.addEntity(base_floor)
+base_floor.setParent(_scene)
+const gltfShape = new GLTFShape("models/3bd7d322-f897-444e-99f1-e4e82fb2c035/FloorBaseConcrete_01/FloorBaseConcrete_01.glb")
+gltfShape.withCollisions = true
+gltfShape.isPointerBlocker = true
+gltfShape.visible = true
+base_floor.addComponentOrReplace(gltfShape)
+const transform2 = new Transform({
+  position: new Vector3(16, 0, 56),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(8, 1, 9)
+})
+base_floor.addComponentOrReplace(transform2)
+
+addRoadCobbleStraight(-12,0,125,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,123,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,121,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,119,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,117,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,115,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,113,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,111,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,109,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,107,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,105,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,103,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,101,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,99,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,97,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,95,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,93,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,91,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,89,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,87,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,85,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,83,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,81,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,79,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,77,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,75,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,73,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,71,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,69,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,67,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,65,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,63,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,61,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,59,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,57,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,55,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,53,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,51,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,49,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,47,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,45,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,43,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,41,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,39,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,37,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,35,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,33,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,31,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,29,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,27,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,25,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,23,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,21,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,19,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,17,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,15,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,13,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,11,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,9,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,7,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,5,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,3,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,1,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-1,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-3,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-5,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-7,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-9,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-11,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-13,1,1,1,0,90,0)
+// addRoadCobbleStraight(-12,0,-15,1,1,1,0,90,0)
 
 createDispenser(
     {
