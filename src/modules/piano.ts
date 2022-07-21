@@ -11,8 +11,8 @@ import resources from './resources'
 const scene = new Entity()
 scene.addComponent(
   new Transform({
-    position: new Vector3(8, 0, 48),
-    rotation: Quaternion.Euler(0, 0, 0)
+    position: new Vector3(-29.79, 0, 94.69),
+    rotation: Quaternion.Euler(0, 270, 0)
   })
 )
 engine.addEntity(scene)

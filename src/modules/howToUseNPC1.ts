@@ -1,10 +1,10 @@
 import resources from "../NPCResources"
 import { NPC, NPCDelay } from '@dcl/npc-scene-utils'
 import { HowToUseNPC1Dialog } from "./dialogData"
-
+// -17.34,1.5,107.41
 export const howToUseNPC1 = new NPC(
     {
-        position: new Vector3(-9.83, 1.5, 104.04),
+        position: new Vector3(-17.34, 1.5, 107.41),
         rotation: Quaternion.Euler(0, 30, 0),
         scale: new Vector3(1.7, 1.7, 1.7)
     },

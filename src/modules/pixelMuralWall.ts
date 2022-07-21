@@ -12,27 +12,27 @@ engine.addEntity(baseScene)
 const scene1 = new Entity()
 scene1.addComponent(
   new Transform({
-    position: new Vector3(-31.65, 0, 76.06),
-    rotation: Quaternion.Euler(0, 90, 0),
+    position: new Vector3(31.48, -0.5, 126.79),
+    rotation: Quaternion.Euler(0, 0, 0),
   })
 )
 engine.addEntity(scene1)
 
-const scene = new Entity()
-scene.addComponent(
-  new Transform({
-    position: new Vector3(-31.65, 0, 96.06),
-    rotation: Quaternion.Euler(0, 90, 0),
-  })
-)
-engine.addEntity(scene)
+// const scene = new Entity()
+// scene.addComponent(
+//   new Transform({
+//     position: new Vector3(-31.65, 0, 96.06),
+//     rotation: Quaternion.Euler(0, 90, 0),
+//   })
+// )
+// engine.addEntity(scene)
 // Tile
 const boxShape = new BoxShape()
 boxShape.withCollisions = false
 
 // Parameters for the mural
-const MURAL_WIDTH = 33
-const MURAL_HEIGHT = 16
+const MURAL_WIDTH = 51
+const MURAL_HEIGHT = 14
 const START_POS_X = -4.445
 const START_POS_Y = 4.5
 const TILE_SIZE = 0.25
@@ -67,19 +67,19 @@ for (let i = 0; i < MURAL_HEIGHT; i++) {
     tileNumbers.push(null)
     xPosition += TILE_SIZE + 0.02 // Adding a small gap
 
-    const tile2 = new Tile(
-        boxShape,
-        new Transform({
-          position: new Vector3(xPosition, yPosition, 0),
-          scale: new Vector3(TILE_SIZE, TILE_SIZE, 0.125),
-        }),
-        tileIndex
-        // colorIndex // For brick pattern
-      )
-      tile2.setParent(scene)
-      tileIndex = tiles.push(tile)
-      tileNumbers.push(null)
-      xPosition += TILE_SIZE + 0.02 // Adding a small gap
+    // const tile2 = new Tile(
+    //     boxShape,
+    //     new Transform({
+    //       position: new Vector3(xPosition, yPosition, 0),
+    //       scale: new Vector3(TILE_SIZE, TILE_SIZE, 0.125),
+    //     }),
+    //     tileIndex
+    //     // colorIndex // For brick pattern
+    //   )
+    //   tile2.setParent(scene)
+    //   tileIndex = tiles.push(tile)
+    //   tileNumbers.push(null)
+    // xPosition += TILE_SIZE + 0.02 // Adding a small gap
   }
   xPosition = START_POS_X
   yPosition -= TILE_SIZE + 0.02

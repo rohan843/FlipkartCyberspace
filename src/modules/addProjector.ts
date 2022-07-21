@@ -9,14 +9,16 @@ export const addProjectorScreen = () => {
         new Vector3(scene.columnsCenter.x, scene.columnsCenter.y + 2.5, scene.columnsCenter.z),
         new Vector3(12, 12, 1),
         Quaternion.Euler(0, 0, 0),
-        true)
+        true
+    )
 
     //make sure this projector's rotation is facing the TV created later on, and that its scale is also big enough to cover the whole stack
     let projectorScatterTVs = new Projector(
         new Vector3(scene.tvScreensCenter.x, scene.tvScreensCenter.y, scene.tvScreensCenter.z),
         new Vector3(24, 9, 1),
         Quaternion.Euler(0, 0, 0),
-        true)
+        true
+    )
 
     //assign each projector to a specific group of screens
     let ScreenGrpColumns = new ScreenGroup(projectorColumns)
@@ -87,10 +89,10 @@ export const addProjectorScreen = () => {
     // creates a grid of screen columns around a center position
     function addColumnGrid(_rows: number, _columns: number, _center: Vector3) {
 
-        const columnScale = 5
+        const columnScale = 2
         const columnBaseHeight = 0
         const columnHeight = 10
-        const columnSpacing = 3
+        const columnSpacing = 2
 
         let sizeRows = columnSpacing * (_rows - 1)
         let sizeColumnss = columnSpacing * (_columns - 1)
@@ -135,7 +137,7 @@ export const addProjectorScreen = () => {
     engine.addSystem(new LiveProjectorSystem())
 
     // add 3x3 columns
-    addColumnGrid(3, 3, scene.columnsCenter)
+    addColumnGrid(4, 4, scene.columnsCenter)
 
     //add the TV stack
     // addTVScreens(4, 6, 15, scene.center)

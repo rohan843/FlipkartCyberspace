@@ -1,4 +1,4 @@
-const myVideoClip1 = new VideoClip('textures/cc_video.mp4')
+const myVideoClip1 = new VideoClip('textures/bb_days_add.mp4')
 export const myVideoTexture = new VideoTexture(myVideoClip1)
 
 export let uvMat = new Material()
