@@ -394,11 +394,11 @@ export function addWallArrowBoard(x: number, y: number, z: number) {
 }
 
 export function addWallCorrugatedMetal(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
 ) {
     const wallCorrugatedMetal = new Entity('wallCorrugatedMetal')
@@ -495,11 +495,11 @@ export function addWallClock(x: number, y: number, z: number) {
 }
 
 export function addWallcornerCyberpunk(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
 ) {
     const wallcornerCyberpunk = new Entity('wallcornerCyberpunk')
@@ -618,8 +618,7 @@ export function addRoadCobbleStraight(x: number, y: number, z: number,
     zScale: number = 1,
     xRot: number = 0,
     yRot: number = 0,
-    zRot: number = 0) 
-    {
+    zRot: number = 0) {
     const roadCobbleStraight = new Entity('roadCobbleStraight')
     engine.addEntity(roadCobbleStraight)
     roadCobbleStraight.setParent(_scene)
@@ -2858,14 +2857,14 @@ export function addJungleFern(x: number, y: number, z: number) {
     // chaliceOfVictory.addComponentOrReplace(gltfShape27)
 }
 
-export function addMarbleCheckersTile(x: number, y: number, z: number){
+export function addMarbleCheckersTile(x: number, y: number, z: number) {
     const marbleCheckersTile = new Entity('marbleCheckersTile')
     engine.addEntity(marbleCheckersTile)
     marbleCheckersTile.setParent(_scene)
     const transform2 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(16, 1, 16)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(16, 1, 16)
     })
     marbleCheckersTile.addComponentOrReplace(transform2)
     const gltfShape = new GLTFShape("models/81eb0547-ef35-4f8d-8cfe-16350b2a278b/Tile_Floor_01/Tile_Floor_01.glb")
@@ -2875,14 +2874,14 @@ export function addMarbleCheckersTile(x: number, y: number, z: number){
     marbleCheckersTile.addComponentOrReplace(gltfShape)
 }
 
-export function addStarMosaicTile(x: number, y: number, z: number){
+export function addStarMosaicTile(x: number, y: number, z: number) {
     const smallStarMosaicTile = new Entity('smallStarMosaicTile')
     engine.addEntity(smallStarMosaicTile)
     smallStarMosaicTile.setParent(_scene)
     const transform3 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(8, 1, 8)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(8, 1, 8)
     })
     smallStarMosaicTile.addComponentOrReplace(transform3)
     const gltfShape2 = new GLTFShape("models/be3eadca-dccd-41cd-8cf2-11c496ff504e/Floor_Tiles_2M_01/Floor_Tiles_2M_01.glb")
@@ -2892,14 +2891,14 @@ export function addStarMosaicTile(x: number, y: number, z: number){
     smallStarMosaicTile.addComponentOrReplace(gltfShape2)
 }
 
-export function addLargeStarMosaicTile(x: number, y: number, z: number){
+export function addLargeStarMosaicTile(x: number, y: number, z: number) {
     const largeStarMosaicTile = new Entity('largeStarMosaicTile')
     engine.addEntity(largeStarMosaicTile)
     largeStarMosaicTile.setParent(_scene)
     const transform4 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(4, 1, 4)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(4, 1, 4)
     })
     largeStarMosaicTile.addComponentOrReplace(transform4)
     const gltfShape3 = new GLTFShape("models/a4b6f5e5-e074-4870-bff5-edcb26d1bde2/Floor_Tiles_2M_05/Floor_Tiles_2M_05.glb")
@@ -2909,14 +2908,14 @@ export function addLargeStarMosaicTile(x: number, y: number, z: number){
     largeStarMosaicTile.addComponentOrReplace(gltfShape3)
 }
 
-export function addfloorHexagon(x: number, y: number, z: number){
+export function addfloorHexagon(x: number, y: number, z: number) {
     const floorHexagon = new Entity('floorHexagon')
     engine.addEntity(floorHexagon)
     floorHexagon.setParent(_scene)
     const transform5 = new Transform({
-      position: new Vector3(x,y,z),
-      rotation: new Quaternion(0, 0, 0, 1),
-      scale: new Vector3(4, 1, 4)
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(4, 1, 4)
     })
     floorHexagon.addComponentOrReplace(transform5)
     const gltfShape4 = new GLTFShape("models/c2f3bda2-7ffc-4873-8d2b-026d2a4abeb6/HexagonFloor.glb")
@@ -2924,4 +2923,29 @@ export function addfloorHexagon(x: number, y: number, z: number){
     gltfShape4.isPointerBlocker = true
     gltfShape4.visible = true
     floorHexagon.addComponentOrReplace(gltfShape4)
+}
+
+export function addGreenhouse(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
+    const noIMAGE = new Entity('noIMAGE')
+    engine.addEntity(noIMAGE)
+    noIMAGE.setParent(_scene)
+    const transform11 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    transform11.rotation.setEuler(xRot, yRot, zRot);
+    noIMAGE.addComponentOrReplace(transform11)
+    const gltfShape7 = new GLTFShape("models/ea601b6c-3d21-4c34-b4cb-620c7022d3a2/GreenHouse_02/GreenHouse_02.glb")
+    gltfShape7.withCollisions = true
+    gltfShape7.isPointerBlocker = true
+    gltfShape7.visible = true
+    noIMAGE.addComponentOrReplace(gltfShape7)
 }

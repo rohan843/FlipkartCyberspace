@@ -6,7 +6,7 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import {  addinformationTerminal,  addornamentalFountain,  addpond, addRoadAngle, addRoadCobbleAngled, addRoadCobbleCrossLong, addRoadCobbleEnd, addRoadCobbleT, addrusticLampPost, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, } from "./modules/furniture"
+import { addRoadCobbleCrossLong, addGreenhouse, addinformationTerminal, addornamentalFountain, addpond, addrusticLampPost, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, addRoadCobbleT, addRoadCobbleEnd, addRoadAngle, addRoadCobbleAngled} from "./modules/furniture"
 import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addfloorHexagon, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addJungleFern, addJungleShrub, addMarbleCheckersTile, addorangefloorpanel, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addplanetSurfaceCrimson, addplanetSurfaceViolet, addPlant, addRoadCobbleStraight, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addStarMosaicTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addApple, addBananas, addDustbin, addFruit, addFruit2, addFruit3, addFruit4, addFruit5, addFruit6, addPineapple, addRedFish, addShelf, addSucculentCrop } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
@@ -88,6 +88,7 @@ addSteampunkBench(78.29, 0, 35.01 - 1 * 10, 0, 270, 0);
 addSteampunkBench(78.29, 0, 35.01 - 2 * 10, 0, 270, 0);
 
 // addpond(-42.30, 0, 122.20)
+addGreenhouse(-40, 0, 98.23, 0, 90, 0)
 
 // Wall
 addStoneBrickWall(-47, 0, 116 - 4 * 24, 0, 270, 0);
@@ -403,7 +404,7 @@ addShrub(71 - 2 * 35, 0, 16.5 + 2 * 48)
 // addorangefloorpanel(4.87,0.88,49.30)
 
 // addfloorHexagon(-31.65+8, 0.0, 56.06+8)-31.65+8, 0.0, 56.06+8
-addStarMosaicTile(-31.65+8, 0.0, 56.06+8)
+addStarMosaicTile(-31.65 + 8, 0.0, 56.06 + 8)
 // base_floor()
 
 const base_floor = new Entity('entity')
@@ -415,9 +416,9 @@ gltfShape.isPointerBlocker = true
 gltfShape.visible = true
 base_floor.addComponentOrReplace(gltfShape)
 const transform2 = new Transform({
-  position: new Vector3(16, 0, 56),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(8, 1, 9)
+    position: new Vector3(16, 0, 56),
+    rotation: new Quaternion(0, 0, 0, 1),
+    scale: new Vector3(8, 1, 9)
 })
 base_floor.addComponentOrReplace(transform2)
 
