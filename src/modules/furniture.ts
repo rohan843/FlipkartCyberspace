@@ -637,15 +637,22 @@ export function addRoadCobbleStraight(x: number, y: number, z: number,
     roadCobbleStraight.addComponentOrReplace(gltfShape3)
 }
 
-export function addRoadCobbleT(x: number, y: number, z: number) {
+export function addRoadCobbleT(x: number, y: number, z: number,
+    xScale: number = 1,
+    yScale: number = 1,
+    zScale: number = 1,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0) {
     const roadCobbleT = new Entity('roadCobbleT')
     engine.addEntity(roadCobbleT)
     roadCobbleT.setParent(_scene)
     const transform8 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(xScale,yScale,zScale)
     })
+    transform8.rotation.setEuler(xRot, yRot, zRot);
     roadCobbleT.addComponentOrReplace(transform8)
     const gltfShape4 = new GLTFShape("models/4432e823-05c8-4a95-aaae-0fe2742765ef/Road Cobble T.glb")
     gltfShape4.withCollisions = true
@@ -847,15 +854,22 @@ export function addWoodTile(x: number, y: number, z: number) {
     woodTile.addComponentOrReplace(gltfShape14)
 }
 
-export function addRoadCobbleAngled(x: number, y: number, z: number) {
+export function addRoadCobbleAngled(x: number, y: number, z: number,
+    xScale: number = 1,
+    yScale: number = 1,
+    zScale: number = 1,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0) {
     const roadCobbleAngled = new Entity('roadCobbleAngled')
     engine.addEntity(roadCobbleAngled)
     roadCobbleAngled.setParent(_scene)
     const transform20 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(xScale, yScale, zScale)
     })
+    transform20.rotation.setEuler(xRot, yRot, zRot);
     roadCobbleAngled.addComponentOrReplace(transform20)
     const gltfShape15 = new GLTFShape("models/c3fe212d-f3c1-47e2-aa8b-707492866281/Road Cobble Angled.glb")
     gltfShape15.withCollisions = true
@@ -864,15 +878,22 @@ export function addRoadCobbleAngled(x: number, y: number, z: number) {
     roadCobbleAngled.addComponentOrReplace(gltfShape15)
 }
 
-export function addRoadCobbleEnd(x: number, y: number, z: number) {
+export function addRoadCobbleEnd(x: number, y: number, z: number,
+    xScale: number = 1,
+    yScale: number = 1,
+    zScale: number = 1,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0) {
     const roadCobbleEnd = new Entity('roadCobbleEnd')
     engine.addEntity(roadCobbleEnd)
     roadCobbleEnd.setParent(_scene)
     const transform21 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(xScale,yScale,zScale)
     })
+    transform21.rotation.setEuler(xRot, yRot, zRot);
     roadCobbleEnd.addComponentOrReplace(transform21)
     const gltfShape16 = new GLTFShape("models/1ef4b5ec-c278-422e-b072-48c04dddce08/Road Cobble End.glb")
     gltfShape16.withCollisions = true
