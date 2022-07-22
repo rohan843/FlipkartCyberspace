@@ -66,7 +66,7 @@ export default class Button implements IScript<Props> {
     let billboard = new Entity()
     billboard.setParent(host)
     billboard.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-    billboard.addComponent(new GLTFShape('84e3703b-d55b-426a-8078-d673bf306288/models/Billboard_White.glb'))
+    billboard.addComponent(new GLTFShape('models/84e3703b-d55b-426a-8078-d673bf306288/models/Billboard_White.glb'))
     const screen2 = new Entity(host.name + '-screen2')
     screen2.setParent(host)
     screen2.addComponent(new PlaneShape())

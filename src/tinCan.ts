@@ -23,7 +23,7 @@
 // const gun = new Rifle(new GLTFShape("models/rifle.glb"), new Transform())
 // gun.getComponent(Transform).position.set(0.075, -0.5, 0.2)
 // gun.getComponent(Transform).rotation = Quaternion.Euler(-5, 0, 0)
-// // gun.setParent(Attachable.FIRST_PERSON_CAMERA)
+// gun.setParent(Attachable.FIRST_PERSON_CAMERA)
 
 // // Setup our world
 // const world = new CANNON.World()
@@ -34,7 +34,7 @@
 // // Load colliders
 // loadColliders(world)
 
-// // Setup ground material
+// Setup ground material
 // const physicsMaterial = new CANNON.Material("groundMaterial")
 // const ballContactMaterial = new CANNON.ContactMaterial(physicsMaterial, physicsMaterial, { friction: 1, restitution: 0.5 })
 // world.addContactMaterial(ballContactMaterial)

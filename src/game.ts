@@ -88,7 +88,7 @@ addSteampunkBench(78.29, 0, 35.01 - 1 * 10, 0, 270, 0);
 addSteampunkBench(78.29, 0, 35.01 - 2 * 10, 0, 270, 0);
 
 // addpond(-42.30, 0, 122.20)
-addGreenhouse(-40, 0, 98.23, 0, 90, 0)
+// addGreenhouse(-40, 0, 98.23, 0, 90, 0)
 
 // Wall
 addStoneBrickWall(-47, 0, 116 - 4 * 24, 0, 270, 0);
