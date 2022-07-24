@@ -93,7 +93,7 @@ addBook3(73.40, 0.08, -10.02)
 
 // addShelf5(75.14,0,-11.89 + 2)
 addShopEmissive(73, 0, 123, 0, 270, 0)
-addShopEmissive(73, 0, 123 - 7 * 1, 0, 270, 0)
+// addShopEmissive(73, 0, 123 - 7 * 1, 0, 270, 0)
 addShopEmissive(73, 0, 123 - 7 * 2, 0, 270, 0)
 
 // Benches
