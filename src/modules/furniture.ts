@@ -649,7 +649,7 @@ export function addRoadCobbleT(x: number, y: number, z: number,
     const transform8 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(xScale,yScale,zScale)
+        scale: new Vector3(xScale, yScale, zScale)
     })
     transform8.rotation.setEuler(xRot, yRot, zRot);
     roadCobbleT.addComponentOrReplace(transform8)
@@ -890,7 +890,7 @@ export function addRoadCobbleEnd(x: number, y: number, z: number,
     const transform21 = new Transform({
         position: new Vector3(x, y, z),
         rotation: new Quaternion(0, 0, 0, 1),
-        scale: new Vector3(xScale,yScale,zScale)
+        scale: new Vector3(xScale, yScale, zScale)
     })
     transform21.rotation.setEuler(xRot, yRot, zRot);
     roadCobbleEnd.addComponentOrReplace(transform21)
@@ -1876,11 +1876,11 @@ export function addOutdoorBoxLamp(x: number, y: number, z: number) {
 }
 
 export function addBook1(
-    x: number, 
-    y: number, 
+    x: number,
+    y: number,
     z: number,
-    xRot: number = 0, 
-    yRot: number = 0, 
+    xRot: number = 0,
+    yRot: number = 0,
     zRot: number = 0
 ) {
     const dawnOfTheCagedMind = new Entity('dawnOfTheCagedMind')
@@ -2057,13 +2057,20 @@ export function addBook4(x: number, y: number, z: number) {
     gltfShape11.visible = true
     terrorOfTheWicked.addComponentOrReplace(gltfShape11)
 }
-export function addBook3(x: number, y: number, z: number) {
+export function addBook3(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const theStoryOfALife = new Entity('theStoryOfALife')
     engine.addEntity(theStoryOfALife)
     theStoryOfALife.setParent(_scene)
     const transform16 = new Transform({
         position: new Vector3(x, y, z),
-        rotation: new Quaternion(0, 0, 0, 1),
+        rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
     theStoryOfALife.addComponentOrReplace(transform16)
@@ -2090,13 +2097,20 @@ export function addShelf(x: number, y: number, z: number) {
     sushiShelf2.addComponentOrReplace(gltfShape13)
 
 }
-export function addBook2(x: number, y: number, z: number) {
+export function addBook2(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const vanquisherManuscript = new Entity('vanquisherManuscript')
     engine.addEntity(vanquisherManuscript)
     vanquisherManuscript.setParent(_scene)
     const transform18 = new Transform({
         position: new Vector3(x, y, z),
-        rotation: new Quaternion(0, 0, 0, 1),
+        rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
     vanquisherManuscript.addComponentOrReplace(transform18)
@@ -2125,13 +2139,20 @@ export function addWallBookShelf(x: number, y: number, z: number) {
     wallBookshelf.addComponentOrReplace(gltfShape15)
 }
 
-export function addBooks(x: number, y: number, z: number) {
+export function addBooks(
+    x: number,
+    y: number,
+    z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0
+) {
     const books = new Entity('books')
     engine.addEntity(books)
     books.setParent(_scene)
     const transform20 = new Transform({
         position: new Vector3(x, y, z),
-        rotation: new Quaternion(0, 0, 0, 1),
+        rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
     books.addComponentOrReplace(transform20)
@@ -2966,20 +2987,20 @@ export function addDragonBush(
     zRot: number = 0
 ) {
     const dragonBush = new Entity('dragonBush')
-engine.addEntity(dragonBush)
-dragonBush.setParent(_scene)
-const transform7 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1/2+0.3, 1/2+0.3+0.2+0.5, 1/2+0.3+0.2)
-})
-transform7.rotation.setEuler(xRot, yRot, zRot);
-dragonBush.addComponentOrReplace(transform7)
-const gltfShape3 = new GLTFShape("models/e131a459-9dba-4b3d-a215-cec69b417ec6/HWN20_DragonBush.glb")
-gltfShape3.withCollisions = true
-gltfShape3.isPointerBlocker = true
-gltfShape3.visible = true
-dragonBush.addComponentOrReplace(gltfShape3)
+    engine.addEntity(dragonBush)
+    dragonBush.setParent(_scene)
+    const transform7 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1 / 2 + 0.3, 1 / 2 + 0.3 + 0.2 + 0.5, 1 / 2 + 0.3 + 0.2)
+    })
+    transform7.rotation.setEuler(xRot, yRot, zRot);
+    dragonBush.addComponentOrReplace(transform7)
+    const gltfShape3 = new GLTFShape("models/e131a459-9dba-4b3d-a215-cec69b417ec6/HWN20_DragonBush.glb")
+    gltfShape3.withCollisions = true
+    gltfShape3.isPointerBlocker = true
+    gltfShape3.visible = true
+    dragonBush.addComponentOrReplace(gltfShape3)
 }
 
 export function addBearBush(
@@ -2991,20 +3012,20 @@ export function addBearBush(
     zRot: number = 0
 ) {
     const bearBush = new Entity('bearBush')
-engine.addEntity(bearBush)
-bearBush.setParent(_scene)
-const transform8 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-transform8.rotation.setEuler(xRot, yRot, zRot);
-bearBush.addComponentOrReplace(transform8)
-const gltfShape4 = new GLTFShape("models/bac2e00d-61e8-461c-a120-794bc730d32d/HWN20_BearBush.glb")
-gltfShape4.withCollisions = true
-gltfShape4.isPointerBlocker = true
-gltfShape4.visible = true
-bearBush.addComponentOrReplace(gltfShape4)
+    engine.addEntity(bearBush)
+    bearBush.setParent(_scene)
+    const transform8 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    transform8.rotation.setEuler(xRot, yRot, zRot);
+    bearBush.addComponentOrReplace(transform8)
+    const gltfShape4 = new GLTFShape("models/bac2e00d-61e8-461c-a120-794bc730d32d/HWN20_BearBush.glb")
+    gltfShape4.withCollisions = true
+    gltfShape4.isPointerBlocker = true
+    gltfShape4.visible = true
+    bearBush.addComponentOrReplace(gltfShape4)
 }
 
 export function addHandBush(
@@ -3016,18 +3037,18 @@ export function addHandBush(
     zRot: number = 0
 ) {
     const handBush = new Entity('handBush')
-engine.addEntity(handBush)
-handBush.setParent(_scene)
-const transform9 = new Transform({
-  position: new Vector3(x,y,z),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-transform9.rotation.setEuler(xRot, yRot, zRot);
-handBush.addComponentOrReplace(transform9)
-const gltfShape5 = new GLTFShape("models/41ef014f-47ce-4932-97d2-32bfcaa80063/HWN20_HandBush.glb")
-gltfShape5.withCollisions = true
-gltfShape5.isPointerBlocker = true
-gltfShape5.visible = true
-handBush.addComponentOrReplace(gltfShape5)
+    engine.addEntity(handBush)
+    handBush.setParent(_scene)
+    const transform9 = new Transform({
+        position: new Vector3(x, y, z),
+        rotation: new Quaternion(0, 0, 0, 1),
+        scale: new Vector3(1, 1, 1)
+    })
+    transform9.rotation.setEuler(xRot, yRot, zRot);
+    handBush.addComponentOrReplace(transform9)
+    const gltfShape5 = new GLTFShape("models/41ef014f-47ce-4932-97d2-32bfcaa80063/HWN20_HandBush.glb")
+    gltfShape5.withCollisions = true
+    gltfShape5.isPointerBlocker = true
+    gltfShape5.visible = true
+    handBush.addComponentOrReplace(gltfShape5)
 }
