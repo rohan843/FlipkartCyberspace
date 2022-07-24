@@ -6,7 +6,7 @@ import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addRoadCobbleCrossLong, addGreenhouse, addinformationTerminal, addornamentalFountain, addpond, addrusticLampPost, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, addRoadCobbleT, addRoadCobbleEnd, addRoadAngle, addRoadCobbleAngled} from "./modules/furniture"
+import { addRoadCobbleCrossLong, addGreenhouse, addinformationTerminal, addornamentalFountain, addpond, addrusticLampPost, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, addRoadCobbleT, addRoadCobbleEnd, addRoadAngle, addRoadCobbleAngled, addDragonBush} from "./modules/furniture"
 import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addfloorHexagon, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addJungleFern, addJungleShrub, addMarbleCheckersTile, addorangefloorpanel, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addplanetSurfaceCrimson, addplanetSurfaceViolet, addPlant, addRoadCobbleStraight, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addStarMosaicTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallPlainGlass, addWoodTile } from "./modules/furniture"
 import { addApple, addBananas, addDustbin, addFruit, addFruit2, addFruit3, addFruit4, addFruit5, addFruit6, addPineapple, addRedFish, addShelf, addSucculentCrop } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
@@ -91,7 +91,7 @@ addSteampunkBench(78.29, 0, 35.01 - 2 * 10, 0, 270, 0);
 // addGreenhouse(-40, 0, 98.23, 0, 90, 0)
 
 // Wall
-addStoneBrickWall(-47, 0, 116 - 4 * 24, 0, 270, 0);
+// addStoneBrickWall(-47, 0, 116 - 4 * 24, 0, 270, 0);
 addStoneBrickWall(-47, 0, 116 - 4 * 23, 0, 270, 0);
 addStoneBrickWall(-47, 0, 116 - 4 * 22, 0, 270, 0);
 addStoneBrickWall(-47, 0, 116 - 4 * 21, 0, 270, 0);
@@ -488,34 +488,34 @@ addRoadCobbleStraight(-12,0,11,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,9,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,7,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,5,1,1,1,0,90,0)
-addRoadCobbleStraight(-12,0,3,1,1,1,0,90,0)
+// addRoadCobbleStraight(-12,0,3,1,1,1,0,90,0)
 
-addRoadCobbleT(-12,0,0,1,1,1,0,-90,0)
+addRoadCobbleT(-12,0,0+2,1,1,1,0,-90,0)
 // addRoadCobbleStraight(-12,0,1,1,1,1,0,90,0)
-// addRoadCobbleStraight(-12,0,-1,1,1,1,0,90,0)
+addRoadCobbleStraight(-12,0,-1,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,-3,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,-5,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,-7,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,-9,1,1,1,0,90,0)
 addRoadCobbleStraight(-12,0,-11,1,1,1,0,90,0)
 // addRoadCobbleStraight(-12,0,-13,1,1,1,0,90,0)
-
-addRoadCobbleStraight(-14,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-16,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-18,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-20,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-22,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-24,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-26,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-28,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-30,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-32,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-34,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-36,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-38,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-40,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-42,0,0,1,1,1,0,0,0)
-addRoadCobbleStraight(-44,0,0,1,1,1,0,0,0)
+const roadoffset = 2
+addRoadCobbleStraight(-14,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-16,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-18,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-20,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-22,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-24,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-26,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-28,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-30,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-32,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-34,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-36,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-38,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-40,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-42,0,0+roadoffset,1,1,1,0,0,0)
+addRoadCobbleStraight(-44,0,0+roadoffset,1,1,1,0,0,0)
 // addRoadCobbleStraight(-46,0,0,1,1,1,0,0,0)
 
 addRoadCobbleStraight(-16,0,56,1,1,1,0,0,0)
@@ -541,7 +541,7 @@ addRoadCobbleStraight(10,0,56,1,1,1,0,0,0)
 // addRoadCobbleStraight(-10,0,56,1,1,1,0,0,0)
 // addRoadCobbleStraight(-10,0,56,1,1,1,0,0,0)
 addRoadCobbleEnd(-20,0,56,1,1,1,0,-90,0)
-addRoadCobbleEnd(-46,0,0,1,1,1,0,-90,0)
+addRoadCobbleEnd(-46,0,2,1,1,1,0,-90,0)
 addRoadCobbleEnd(-12,0,-13,1,1,1,0,180,0)
 addRoadCobbleEnd(12,0,56,1,1,1,0,90,0)
 addRoadCobbleEnd(-12,0,125,1,1,1,0,0,0)
@@ -696,6 +696,9 @@ addRoadCobbleStraight(-16, 0, 100.55-0.55,1,1,1,0,0,0)
 // addRoadCobbleStraight(-14, 0, 100.55-0.55,1,1,1,0,0,0)
 addRoadCobbleEnd(-32,0 ,100.55-0.55,1,1,1,0,-90,0)
 
+addDragonBush(-47, 0, 115 - 4 * 26, 0, 180, 0)
+addDragonBush(-47, 0, 117.7 - 4 * 31, 0, 0, 0)
+// addDragonBush(0, 0, 0, 0, 0, 0)
 createDispenser(
     {
         position: new Vector3(8 + 5.5, 7.32, 8),
