@@ -1875,13 +1875,20 @@ export function addOutdoorBoxLamp(x: number, y: number, z: number) {
     outdoorBoxLamp.addComponentOrReplace(gltfShape13)
 }
 
-export function addBook1(x: number, y: number, z: number) {
+export function addBook1(
+    x: number, 
+    y: number, 
+    z: number,
+    xRot: number = 0, 
+    yRot: number = 0, 
+    zRot: number = 0
+) {
     const dawnOfTheCagedMind = new Entity('dawnOfTheCagedMind')
     engine.addEntity(dawnOfTheCagedMind)
     dawnOfTheCagedMind.setParent(_scene)
     const transform6 = new Transform({
         position: new Vector3(x, y, z),
-        rotation: new Quaternion(0, 0, 0, 1),
+        rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
     dawnOfTheCagedMind.addComponentOrReplace(transform6)
