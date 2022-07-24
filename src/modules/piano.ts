@@ -11,7 +11,7 @@ import resources from './resources'
 const scene = new Entity()
 scene.addComponent(
   new Transform({
-    position: new Vector3(-29.79, 0, 94.69),
+    position: new Vector3(-41.96,0,21.75),
     rotation: Quaternion.Euler(0, 270, 0)
   })
 )
@@ -21,6 +21,20 @@ const keyShape = new PlaneShape()
 
 // White keys
 const whiteKeySounds: AudioClip[] = [
+  resources.sounds.whiteKeys.c3,
+  resources.sounds.whiteKeys.d3,
+  resources.sounds.whiteKeys.e3,
+  resources.sounds.whiteKeys.f3,
+  resources.sounds.whiteKeys.g3,
+  resources.sounds.whiteKeys.a3,
+  resources.sounds.whiteKeys.b3,
+  resources.sounds.whiteKeys.c4,
+  resources.sounds.whiteKeys.d4,
+  resources.sounds.whiteKeys.e4,
+  resources.sounds.whiteKeys.f4,
+  resources.sounds.whiteKeys.g4,
+  resources.sounds.whiteKeys.a4,
+  resources.sounds.whiteKeys.b4,
   resources.sounds.whiteKeys.c3,
   resources.sounds.whiteKeys.d3,
   resources.sounds.whiteKeys.e3,
@@ -59,6 +73,16 @@ for (let i = 0; i < whiteKeySounds.length; i++) {
 
 // Black keys
 const blackKeySounds: AudioClip[] = [
+  resources.sounds.blackKeys.cSharp3,
+  resources.sounds.blackKeys.dSharp3,
+  resources.sounds.blackKeys.fSharp3,
+  resources.sounds.blackKeys.gSharp3,
+  resources.sounds.blackKeys.aSharp3,
+  resources.sounds.blackKeys.cSharp4,
+  resources.sounds.blackKeys.dSharp4,
+  resources.sounds.blackKeys.fSharp4,
+  resources.sounds.blackKeys.gSharp4,
+  resources.sounds.blackKeys.aSharp4,
   resources.sounds.blackKeys.cSharp3,
   resources.sounds.blackKeys.dSharp3,
   resources.sounds.blackKeys.fSharp3,
