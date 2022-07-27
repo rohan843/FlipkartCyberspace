@@ -159,10 +159,16 @@ export const HowToUseNPC1Dialog: Dialog[] = [
 
 export const ExtraNPC1Dialog: Dialog[] = [
     {
-        text: "Hi! I'm Ririn",
+        text: "Hi! I'm Ririn"
+    },
+    {
+        text: "These stores provide you with books, decorative clocks, and other decorative items."
+    },
+    {
+        text: "Happy Shopping!",
         isEndOfDialog: true,
         triggeredByNext: () => {
-            extraNPC1.playAnimation('Goodbye', true, 2)
+            extraNPC4.playAnimation('Goodbye', true, 2)
         }
     }
 ]
@@ -170,6 +176,18 @@ export const ExtraNPC1Dialog: Dialog[] = [
 export const ExtraNPC2Dialog: Dialog[] = [
     {
         text: "Hi! I'm Ita",
+    },
+    {
+        text: "You can find shoes, beauty products and bags in these stores."
+    },
+    {
+        text: "The 2 single - storey shops also provide you the option to see the products in 3D!"
+    },
+    {
+        text: "They provide Gym Equipments and bags right now."
+    },
+    {
+        text: "Just follow the sign boards, and enjoy shopping!",
         isEndOfDialog: true,
         triggeredByNext: () => {
             extraNPC2.playAnimation('Goodbye', true, 2)
@@ -179,7 +197,16 @@ export const ExtraNPC2Dialog: Dialog[] = [
 
 export const ExtraNPC3Dialog: Dialog[] = [
     {
-        text: "Hi! I'm Vanya",
+        text: "Hi! I'm Vanya"
+    },
+    {
+        text: "Here you can find clothes, and shoes. Just look at the bill boards, and proceed."
+    },
+    {
+        text: "You will also find 3 shops on both sides of this main complex, behind these buildings. They provide decorative items, games, books, and more!"
+    },
+    {
+        text: "Happy Shopping!",
         isEndOfDialog: true,
         triggeredByNext: () => {
             extraNPC3.playAnimation('Goodbye', true, 2)
@@ -189,7 +216,13 @@ export const ExtraNPC3Dialog: Dialog[] = [
 
 export const ExtraNPC4Dialog: Dialog[] = [
     {
-        text: "Hi! I'm Rd",
+        text: "Hi! I'm Rd"
+    },
+    {
+        text: "These stores provide you with games, outdoor sports equipment, and antiques."
+    },
+    {
+        text: "Feel free to browse, and buy your preferred items!",
         isEndOfDialog: true,
         triggeredByNext: () => {
             extraNPC4.playAnimation('Goodbye', true, 2)

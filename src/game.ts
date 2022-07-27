@@ -1,7 +1,7 @@
 import { createDispenser } from "./booth/dispenser"
 import { addMuseumAt } from "./modules/museum"
 import { addShopAt } from "./modules/shop"
-import { museumConfig1, museumConfig2, museumConfig3 } from "./museum_config"
+import { museumConfig1, museumConfig2, museumConfig3, museumConfig4, museumConfig5, museumConfig6, museumConfig7, museumConfig8, museumConfig9 } from "./museum_config"
 import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addBirdField } from "./modules/birdField"
 import { addDoors } from "./modules/doors"
@@ -17,13 +17,13 @@ import { addRusticMerchantFishStand, _scene } from "./modules/furniture"
 
 // addGrassTile(-7.60 + 15, 0, 64.08)
 addMuseumAt(8, 0, 8, museumConfig1)
-addMuseumAt(40, 0, 8, museumConfig1)
+addMuseumAt(40, 0, 8, museumConfig4)
 addMuseumAt(56, 0, 24, museumConfig2)
-addMuseumAt(56, 0, 40, museumConfig2)
-addMuseumAt(56, 0, 56, museumConfig2)
-addMuseumAt(56, 0, 72, museumConfig2)
-addMuseumAt(56, 0, 88, museumConfig2)
-addMuseumAt(8, 0, 104, museumConfig3)
+addMuseumAt(56, 0, 40, museumConfig5)
+addMuseumAt(56, 0, 56, museumConfig7)
+addMuseumAt(56, 0, 72, museumConfig8)
+addMuseumAt(56, 0, 88, museumConfig9)
+addMuseumAt(8, 0, 104, museumConfig6)
 addMuseumAt(40, 0, 104, museumConfig3)
 addShopAt(24, 0, 8, shopConfig1)
 addShopAt(24, 0, 104, shopConfig2)
@@ -92,9 +92,9 @@ addBook4(74.57, 0.08, -13.13)
 addBook3(73.40, 0.08, -10.02)
 
 // addShelf5(75.14,0,-11.89 + 2)
-// addShopEmissive(73, 0, 123, 0, 270, 0)
+addShopEmissive(73, 0, 123, 0, 270, 0)
 // addShopEmissive(73, 0, 123 - 7 * 1, 0, 270, 0)
-// addShopEmissive(73, 0, 123 - 7 * 2, 0, 270, 0)
+addShopEmissive(73, 0, 123 - 7 * 2, 0, 270, 0)
 
 // Benches
 addSteampunkBench(78.29, 0, 35.01 + 10 * 3, 0, 270, 0);

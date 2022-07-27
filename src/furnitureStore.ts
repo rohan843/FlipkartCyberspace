@@ -76,6 +76,13 @@ gltfShape2.withCollisions = true
 gltfShape2.isPointerBlocker = true
 gltfShape2.visible = true
 noIMAGE.addComponentOrReplace(gltfShape2)
+noIMAGE.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const armchairC = new Entity('armchairC')
 engine.addEntity(armchairC)
@@ -91,6 +98,13 @@ gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
 armchairC.addComponentOrReplace(gltfShape3)
+armchairC.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const armchairD = new Entity('armchairD')
 engine.addEntity(armchairD)
@@ -106,6 +120,13 @@ gltfShape4.withCollisions = true
 gltfShape4.isPointerBlocker = true
 gltfShape4.visible = true
 armchairD.addComponentOrReplace(gltfShape4)
+armchairD.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const armchairA = new Entity('armchairA')
 engine.addEntity(armchairA)
@@ -121,6 +142,13 @@ gltfShape5.withCollisions = true
 gltfShape5.isPointerBlocker = true
 gltfShape5.visible = true
 armchairA.addComponentOrReplace(gltfShape5)
+armchairA.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const armchairC2 = new Entity('armchairC2')
 engine.addEntity(armchairC2)
@@ -132,6 +160,13 @@ const transform10 = new Transform({
   scale: new Vector3(1.000001072883606, 1, 1.000001072883606)
 })
 armchairC2.addComponentOrReplace(transform10)
+armchairC2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const armchairD2 = new Entity('armchairD2')
 engine.addEntity(armchairD2)
@@ -143,6 +178,13 @@ const transform11 = new Transform({
   scale: new Vector3(1.0000061988830566, 1, 1.0000061988830566)
 })
 armchairD2.addComponentOrReplace(transform11)
+armchairD2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const woodenTabernacleRoundTable = new Entity('woodenTabernacleRoundTable')
 engine.addEntity(woodenTabernacleRoundTable)
@@ -158,6 +200,13 @@ gltfShape6.withCollisions = true
 gltfShape6.isPointerBlocker = true
 gltfShape6.visible = true
 woodenTabernacleRoundTable.addComponentOrReplace(gltfShape6)
+woodenTabernacleRoundTable.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=centre+table&sid=wwe%2Cki7%2Cot1&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&as-pos=1&as-type=RECENT&suggestionId=centre+table%7CCoffee+Tables&requestId=b8104eac-3598-410e-84bf-d5205a76c6af&as-searchtext=centre%20")
+},
+  {
+    distance: 10
+  }
+))
 
 const videoScreenStanding = new Entity('videoScreenStanding')
 engine.addEntity(videoScreenStanding)
@@ -168,6 +217,13 @@ const transform13 = new Transform({
   scale: new Vector3(0.4999999403953552, 0.5199999809265137, 0.9999999403953552)
 })
 videoScreenStanding.addComponentOrReplace(transform13)
+videoScreenStanding.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=tv&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const sofaBlack = new Entity('sofaBlack')
 engine.addEntity(sofaBlack)
@@ -183,6 +239,13 @@ gltfShape7.withCollisions = true
 gltfShape7.isPointerBlocker = true
 gltfShape7.visible = true
 sofaBlack.addComponentOrReplace(gltfShape7)
+sofaBlack.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const sofaRound = new Entity('sofaRound')
 engine.addEntity(sofaRound)
@@ -198,6 +261,13 @@ gltfShape8.withCollisions = true
 gltfShape8.isPointerBlocker = true
 gltfShape8.visible = true
 sofaRound.addComponentOrReplace(gltfShape8)
+sofaRound.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=long%20corner%20sofa%20set&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const imageCubeA = new Entity('imageCubeA')
 engine.addEntity(imageCubeA)
@@ -208,6 +278,13 @@ const transform16 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 imageCubeA.addComponentOrReplace(transform16)
+imageCubeA.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=speaker&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const imageCubeD = new Entity('imageCubeD')
 engine.addEntity(imageCubeD)
@@ -218,6 +295,13 @@ const transform17 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 imageCubeD.addComponentOrReplace(transform17)
+imageCubeD.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=speaker&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const imageCubeD2 = new Entity('imageCubeD2')
 engine.addEntity(imageCubeD2)
@@ -228,6 +312,13 @@ const transform18 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 imageCubeD2.addComponentOrReplace(transform18)
+imageCubeD2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=speaker&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const videoBillboardWhite = new Entity('videoBillboardWhite')
 engine.addEntity(videoBillboardWhite)
@@ -238,6 +329,13 @@ const transform19 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 videoBillboardWhite.addComponentOrReplace(transform19)
+// videoBillboardWhite.addComponent(new OnPointerDown(() => {
+//   if (img.link !== null) openExternalURL(img.link)
+// },
+//   {
+//       distance: 10
+//   }
+// ))
 
 const spaceshipChair = new Entity('spaceshipChair')
 engine.addEntity(spaceshipChair)
@@ -253,6 +351,13 @@ gltfShape9.withCollisions = true
 gltfShape9.isPointerBlocker = true
 gltfShape9.visible = true
 spaceshipChair.addComponentOrReplace(gltfShape9)
+spaceshipChair.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=gaming+chair&sid=4rr%2Ckm5%2C7uj&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=gaming+chair%7CGaming+Chairs&requestId=92308a3f-58dd-4b06-a092-4ce891236e4e&as-searchtext=gaming%20cha")
+},
+  {
+    distance: 10
+  }
+))
 
 const spaceshipChair2 = new Entity('spaceshipChair2')
 engine.addEntity(spaceshipChair2)
@@ -264,6 +369,13 @@ const transform21 = new Transform({
   scale: new Vector3(1.0000005960464478, 1, 1.0000005960464478)
 })
 spaceshipChair2.addComponentOrReplace(transform21)
+spaceshipChair2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
@@ -282,8 +394,8 @@ script1.init()
 script2.init()
 script3.init()
 script4.init()
-script1.spawn(videoScreenStanding, {"startOn":true,"onClickText":"Play video","volume":0.2,"onClick":[{"entityName":"videoScreenStanding","actionId":"toggle","values":{}}],"station":"https://theuniverse.club/live/genesisplaza/index.m3u8","image":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"}, createChannel(channelId, videoScreenStanding, channelBus))
-script2.spawn(imageCubeA, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageCubeA, channelBus))
-script3.spawn(imageCubeD, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageCubeD, channelBus))
-script3.spawn(imageCubeD2, {"image":"https://i.imgur.com/d25gO61.jpg"}, createChannel(channelId, imageCubeD2, channelBus))
-script4.spawn(videoBillboardWhite, {"startOn":false,"onClickText":"Play video","volume":1,"onClick":[{"entityName":"videoBillboardWhite","actionId":"toggle","values":{}}],"station":"https://theuniverse.club/live/consensys/index.m3u8"}, createChannel(channelId, videoBillboardWhite, channelBus))
+script1.spawn(videoScreenStanding, { "startOn": true, "onClickText": "Play video", "volume": 0.2, "onClick": [{ "entityName": "videoScreenStanding", "actionId": "toggle", "values": {} }], "station": "https://theuniverse.club/live/genesisplaza/index.m3u8", "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" }, createChannel(channelId, videoScreenStanding, channelBus))
+script2.spawn(imageCubeA, { "image": "https://i.imgur.com/d25gO61.jpg" }, createChannel(channelId, imageCubeA, channelBus))
+script3.spawn(imageCubeD, { "image": "https://i.imgur.com/d25gO61.jpg" }, createChannel(channelId, imageCubeD, channelBus))
+script3.spawn(imageCubeD2, { "image": "https://i.imgur.com/d25gO61.jpg" }, createChannel(channelId, imageCubeD2, channelBus))
+script4.spawn(videoBillboardWhite, { "startOn": false, "onClickText": "Play video", "volume": 1, "onClick": [{ "entityName": "videoBillboardWhite", "actionId": "toggle", "values": {} }], "station": "https://theuniverse.club/live/consensys/index.m3u8" }, createChannel(channelId, videoBillboardWhite, channelBus))
