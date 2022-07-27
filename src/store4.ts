@@ -210,6 +210,18 @@ script1.spawn(countdownTimer, {
     onThreshold: [],
     onTimeUp: []
 }, createChannel(channelId, countdownTimer, channelBus))
-// script2.spawn(countdownTimer2, {"totalTime":60,"active":false}, createChannel(channelId, countdownTimer2, channelBus))
-// script3.spawn(countdownTimer3, {"totalTime":60,"active":true}, createChannel(channelId, countdownTimer3, channelBus))
-// script1.spawn(countdownTimer4, {"totalTime":60,"active":false}, createChannel(channelId, countdownTimer4, channelBus))
+script2.spawn(countdownTimer2, {
+  "totalTime": 60, "active": false,
+  onThreshold: [],
+  onTimeUp: []
+}, createChannel(channelId, countdownTimer2, channelBus))
+script3.spawn(countdownTimer3, {
+  "totalTime": 60, "active": true,
+  onThreshold: [],
+  onTimeUp: []
+}, createChannel(channelId, countdownTimer3, channelBus))
+script1.spawn(countdownTimer4, {
+  "totalTime": 60, "active": false,
+  onThreshold: [],
+  onTimeUp: []
+}, createChannel(channelId, countdownTimer4, channelBus))

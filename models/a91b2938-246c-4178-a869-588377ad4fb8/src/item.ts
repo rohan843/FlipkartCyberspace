@@ -35,7 +35,7 @@ export default class Timer implements IScript<Props> {
         position: new Vector3(0, 0, 0)
       })
     )
-    board.addComponent(new GLTFShape('a91b2938-246c-4178-a869-588377ad4fb8/models/CountdownTimerSciFiBase.glb'))
+    board.addComponent(new GLTFShape('models/a91b2938-246c-4178-a869-588377ad4fb8/models/CountdownTimerSciFiBase.glb'))
 
     const arrow = new Entity()
     arrow.setParent(host)

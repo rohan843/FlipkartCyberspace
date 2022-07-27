@@ -36,7 +36,7 @@ export default class Timer implements IScript<Props> {
         scale: new Vector3(2, 2, 2)
       })
     )
-    board.addComponent(new GLTFShape('6267507e-7b6c-49ef-be4c-cdab372e64cd/models/Countdown_Pirate_Board.glb'))
+    board.addComponent(new GLTFShape('models/6267507e-7b6c-49ef-be4c-cdab372e64cd/models/Countdown_Pirate_Board.glb'))
 
     const arrow = new Entity()
     arrow.setParent(host)
