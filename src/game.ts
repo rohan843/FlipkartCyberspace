@@ -69,8 +69,8 @@ addTheFountainOfSpirits(19, 0, 56);
 
 // Shops
 addShopEmissive(73, 0, -11, 0, 270, 0)
-addShopEmissive(73, 0, -11 + 7 * 1, 0, 270, 0)
-addShopEmissive(73, 0, -11 + 7 * 2, 0, 270, 0)
+// addShopEmissive(73, 0, -11 + 7 * 1, 0, 270, 0)
+// addShopEmissive(73, 0, -11 + 7 * 2, 0, 270, 0)
 addShelf2(75.4, 0, -11.89)
 addShelf4(75.4, 0, -11.89 + 2)
 addBook1(75.5, 2, -11.6, 270, 0, 180)
