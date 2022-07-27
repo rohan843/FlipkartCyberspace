@@ -121,20 +121,20 @@ gltfShape5.isPointerBlocker = true
 gltfShape5.visible = true
 traditionalRoundGauzeLantern.addComponentOrReplace(gltfShape5)
 
-// const shopEmissive = new Entity('shopEmissive')
-// engine.addEntity(shopEmissive)
-// shopEmissive.setParent(_scene)
-// const transform10 = new Transform({
-//   position: new Vector3(14.5, 0, 15.5),
-//   rotation: new Quaternion(0, 0, 0, 1),
-//   scale: new Vector3(1, 1, 1)
-// })
-// shopEmissive.addComponentOrReplace(transform10)
-// const gltfShape6 = new GLTFShape("models/461bf97f-886b-47f7-89ce-16255f6a985f/Shop_Emissive.glb")
-// gltfShape6.withCollisions = true
-// gltfShape6.isPointerBlocker = true
-// gltfShape6.visible = true
-// shopEmissive.addComponentOrReplace(gltfShape6)
+const shopEmissive = new Entity('shopEmissive')
+engine.addEntity(shopEmissive)
+shopEmissive.setParent(_scene)
+const transform10 = new Transform({
+  position: new Vector3(14.5, 0, 15.5),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+shopEmissive.addComponentOrReplace(transform10)
+const gltfShape6 = new GLTFShape("models/461bf97f-886b-47f7-89ce-16255f6a985f/Shop_Emissive.glb")
+gltfShape6.withCollisions = true
+gltfShape6.isPointerBlocker = true
+gltfShape6.visible = true
+shopEmissive.addComponentOrReplace(gltfShape6)
 
 
 
