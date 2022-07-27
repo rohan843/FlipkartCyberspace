@@ -110,7 +110,7 @@ const countdownTimer = new Entity('countdownTimer')
 engine.addEntity(countdownTimer)
 countdownTimer.setParent(_scene)
 const transform9 = new Transform({
-  position: new Vector3(14, 0, 14.5),
+  position: new Vector3(13.9, 2, 14.5),
   rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
   scale: new Vector3(1.000001311302185, 1, 1.000001311302185)
 })
@@ -120,7 +120,7 @@ const countdownTimer2 = new Entity('countdownTimer2')
 engine.addEntity(countdownTimer2)
 countdownTimer2.setParent(_scene)
 const transform10 = new Transform({
-  position: new Vector3(16, 0, 12),
+  position: new Vector3(16, 3.5, 12),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -130,9 +130,9 @@ const countdownTimer3 = new Entity('countdownTimer3')
 engine.addEntity(countdownTimer3)
 countdownTimer3.setParent(_scene)
 const transform11 = new Transform({
-  position: new Vector3(17.5, 0, 18),
+  position: new Vector3(17.5, 0.1, 18),
   rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0000004768371582, 1, 1.0000004768371582)
+  scale: new Vector3(1/2, 1/2, 1/2)
 })
 countdownTimer3.addComponentOrReplace(transform11)
 
@@ -177,7 +177,7 @@ const countdownTimer4 = new Entity('countdownTimer4')
 engine.addEntity(countdownTimer4)
 countdownTimer4.setParent(_scene)
 const transform15 = new Transform({
-  position: new Vector3(17.5, 0, 14.5),
+  position: new Vector3(18.1, 2, 14.5),
   rotation: new Quaternion(4.124569338414402e-15, -0.7071068286895752, 8.429370268459024e-8, 0.7071068286895752),
   scale: new Vector3(1.0000022649765015, 1, 1.0000022649765015)
 })
