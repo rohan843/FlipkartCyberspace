@@ -3,15 +3,11 @@ import { addMuseumAt } from "./modules/museum"
 import { addShopAt } from "./modules/shop"
 import { museumConfig1, museumConfig2, museumConfig3, museumConfig4, museumConfig5, museumConfig6, museumConfig7, museumConfig8, museumConfig9 } from "./museum_config"
 import { shopConfig1, shopConfig2 } from "./shop_config"
-import { addBirdField } from "./modules/birdField"
-import { addDoors } from "./modules/doors"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addRoadCobbleCrossLong, addGreenhouse, addinformationTerminal, addornamentalFountain, addpond, addrusticLampPost, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, addRoadCobbleT, addRoadCobbleEnd, addRoadAngle, addRoadCobbleAngled, addDragonBush, addBook2, addBook3, addBook4, addBooks } from "./modules/furniture"
-import { addbalsamFlower, addbenchGrassFern, addBook1, addBush, addBush2, addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addfloorHexagon, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addJungleFern, addJungleShrub, addMarbleCheckersTile, addorangefloorpanel, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addplanetSurfaceCrimson, addplanetSurfaceViolet, addPlant, addRoadCobbleStraight, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addStarMosaicTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallPlainGlass, addWoodTile } from "./modules/furniture"
-import { addApple, addBananas, addDustbin, addFruit, addFruit2, addFruit3, addFruit4, addFruit5, addFruit6, addPineapple, addRedFish, addShelf, addSucculentCrop } from "./modules/furniture"
-import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addWallArrowBoard, addLowStonePillar, addSmallStonePillar, addConicalStonePillar } from "./modules/furniture"
+import { addRoadCobbleCrossLong, addWallcornerCyberpunk, addWallCorrugatedMetal, addRoadCobbleT, addRoadCobbleEnd, addRoadCobbleAngled, addDragonBush, addBook2, addBook3, addBook4, addBooks } from "./modules/furniture"
+import { addBook1, addBush2, addEvergreenShrub, addFairKiosk, addFruitKiosk, addIceCreamKiosk, addJungleFern, addJungleShrub, addRoadCobbleStraight, addShelf2, addShopEmissive, addShrub, addShushiBar, addStarMosaicTile, addSteampunkBench, addTheFountainOfSpirits } from "./modules/furniture"
+import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addLowStonePillar, addConicalStonePillar } from "./modules/furniture"
 import { addShelf4 } from "./modules/furniture"
-import { addShopBuilding } from "./modules/building"
 import { addRusticMerchantFishStand, _scene } from "./modules/furniture"
 
 
@@ -94,7 +90,7 @@ addBook3(73.40, 0.08, -10.02)
 // addShelf5(75.14,0,-11.89 + 2)
 addShopEmissive(73, 0, 123, 0, 270, 0)
 // addShopEmissive(73, 0, 123 - 7 * 1, 0, 270, 0)
-addShopEmissive(73, 0, 123 - 7 * 2, 0, 270, 0)
+// addShopEmissive(73, 0, 123 - 7 * 2, 0, 270, 0)
 
 // Benches
 addSteampunkBench(78.29, 0, 35.01 + 10 * 3, 0, 270, 0);

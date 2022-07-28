@@ -63,6 +63,13 @@ const transform6 = new Transform({
   rotation: new Quaternion(0.06930860877037048, -0.703701913356781, 0.06930867582559586, -0.7037018537521362),
   scale: new Vector3(1, 0.9999998807907104, 1.000000238418579)
 })
+surfboard.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 surfboard.addComponentOrReplace(transform6)
 const gltfShape2 = new GLTFShape("models/87449055-9033-4ac4-8125-c78831f751d4/SurfBoard_01/SurfBoard_01.glb")
 gltfShape2.withCollisions = true
@@ -78,6 +85,13 @@ const transform7 = new Transform({
   rotation: new Quaternion(-7.478685131302818e-15, -1, 1.1920927533992653e-7, 0),
   scale: new Vector3(1.0000003576278687, 1, 1.0000003576278687)
 })
+gamesConsole.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 gamesConsole.addComponentOrReplace(transform7)
 const gltfShape3 = new GLTFShape("models/9dadc7a7-0924-4eeb-b246-83565116826a/Games_Console.glb")
 gltfShape3.withCollisions = true
@@ -93,6 +107,13 @@ const transform8 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+basketballHoop.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 basketballHoop.addComponentOrReplace(transform8)
 const gltfShape4 = new GLTFShape("models/d21bb810-5777-42d7-bd07-c76fc4643fd0/Basketball_Hoop.glb")
 gltfShape4.withCollisions = true
@@ -122,6 +143,13 @@ const gltfShape6 = new GLTFShape("models/44e7b413-1f33-43bc-bada-96659b75bd86/Pl
 gltfShape6.withCollisions = true
 gltfShape6.isPointerBlocker = true
 gltfShape6.visible = true
+soccerBall2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 soccerBall2.addComponentOrReplace(gltfShape6)
 const transform10 = new Transform({
   position: new Vector3(17.5, 0.1, 12),
@@ -134,6 +162,13 @@ const soccerBall = new Entity('soccerBall')
 engine.addEntity(soccerBall)
 soccerBall.setParent(_scene)
 soccerBall.addComponentOrReplace(gltfShape6)
+soccerBall.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 const transform11 = new Transform({
   position: new Vector3(18, 0.1, 12),
   rotation: new Quaternion(0, 0, 0, 1),
@@ -150,6 +185,13 @@ const transform12 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+soccerBall3.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 soccerBall3.addComponentOrReplace(transform12)
 
 // const soccerBall7 = new Entity('soccerBall7')
@@ -172,6 +214,13 @@ const transform13 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+soccerBall4.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 soccerBall4.addComponentOrReplace(transform13)
 
 const surfboard2 = new Entity('surfboard2')
@@ -183,6 +232,13 @@ const transform14 = new Transform({
   rotation: new Quaternion(0.09379658848047256, -0.9523324370384216, 0.02845299057662487, -0.2888869047164917),
   scale: new Vector3(1.0000019073486328, 1, 1.0000030994415283)
 })
+surfboard2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 surfboard2.addComponentOrReplace(transform14)
 
 const messageInABottle = new Entity('messageInABottle')
@@ -193,6 +249,13 @@ const transform15 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+messageInABottle.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 messageInABottle.addComponentOrReplace(transform15)
 const gltfShape7 = new GLTFShape("models/4e6817e7-90ce-4b46-88b0-25df758ce90a/Bottle_11/Bottle_11.glb")
 gltfShape7.withCollisions = true
@@ -208,6 +271,13 @@ const transform16 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+paperBall.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 paperBall.addComponentOrReplace(transform16)
 const gltfShape8 = new GLTFShape("models/0b6fbff7-9541-47ff-a059-5fe2661d413d/Paper_Ball.glb")
 gltfShape8.withCollisions = true
@@ -223,6 +293,13 @@ const transform17 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+messageInABottle2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 messageInABottle2.addComponentOrReplace(transform17)
 messageInABottle2.addComponentOrReplace(gltfShape7)
 
@@ -235,6 +312,13 @@ const transform18 = new Transform({
   rotation: new Quaternion(-7.478685131302818e-15, -1, 1.1920927533992653e-7, 0),
   scale: new Vector3(1.0000003576278687, 1, 1.0000003576278687)
 })
+gamesConsole2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 gamesConsole2.addComponentOrReplace(transform18)
 
 const paperBall2 = new Entity('paperBall2')
@@ -246,6 +330,13 @@ const transform19 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+paperBall2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 paperBall2.addComponentOrReplace(transform19)
 
 const soccerBall5 = new Entity('soccerBall5')
@@ -257,6 +348,13 @@ const transform20 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+soccerBall5.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 soccerBall5.addComponentOrReplace(transform20)
 
 const soccerBall6 = new Entity('soccerBall6')
@@ -268,6 +366,13 @@ const transform21 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+soccerBall6.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 soccerBall6.addComponentOrReplace(transform21)
 
 const basketballHoop2 = new Entity('basketballHoop2')
@@ -279,4 +384,11 @@ const transform22 = new Transform({
   rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
   scale: new Vector3(1.0000009536743164, 1, 1.0000009536743164)
 })
+basketballHoop2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=sports%20equipments&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 basketballHoop2.addComponentOrReplace(transform22)

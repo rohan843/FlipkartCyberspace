@@ -5,7 +5,7 @@ export function addMuseumLogo(pivotScene: Entity, config: any) {
     const myEntity = new Entity()
     const myText = new TextShape(topLogoData.name)
 
-    myText.font = new Font(Fonts.LiberationSans)
+    myText.font = new Font(Fonts.SansSerif_Heavy)
     myText.color = topLogoData.color
     myText.fontSize = topLogoData.fontSize
 
@@ -62,6 +62,7 @@ export function addMuseumLogo(pivotScene: Entity, config: any) {
     imgBack.addComponent(pictureMat)
 
     imgFront.setParent(logoFrame)
+    // imgFront.setParent(myEntity)
     imgBack.setParent(logoFrame)
 
     logoFrame.setParent(pivotScene)

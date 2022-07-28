@@ -69,6 +69,13 @@ const transform6 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+ancientStonePagodaLantern.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 ancientStonePagodaLantern.addComponentOrReplace(transform6)
 const gltfShape2 = new GLTFShape("models/a8f0b74e-8331-4897-9ba9-fe12ef701388/ChineseFountain_01/ChineseFountain_01.glb")
 gltfShape2.withCollisions = true
@@ -84,6 +91,13 @@ const transform7 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+redMelonGauzeLantern.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 redMelonGauzeLantern.addComponentOrReplace(transform7)
 const gltfShape3 = new GLTFShape("models/5dc7fd31-fe40-4548-aafe-8ccaa124a218/ChineseLantern_01/ChineseLantern_01.glb")
 gltfShape3.withCollisions = true
@@ -99,6 +113,13 @@ const transform8 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+orangeMelonGauzeLantern.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 orangeMelonGauzeLantern.addComponentOrReplace(transform8)
 const gltfShape4 = new GLTFShape("models/755087fc-72c4-43b8-b371-b0df932f31eb/ChineseLantern_02/ChineseLantern_02.glb")
 gltfShape4.withCollisions = true
@@ -114,6 +135,13 @@ const transform9 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+traditionalRoundGauzeLantern.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 traditionalRoundGauzeLantern.addComponentOrReplace(transform9)
 const gltfShape5 = new GLTFShape("models/33a6078d-b432-439b-82fd-8e4a1c405186/ChineseLantern_04/ChineseLantern_04.glb")
 gltfShape5.withCollisions = true
@@ -125,9 +153,9 @@ const shopEmissive = new Entity('shopEmissive')
 engine.addEntity(shopEmissive)
 shopEmissive.setParent(_scene)
 const transform10 = new Transform({
-  position: new Vector3(14.5, 0, 15.5),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+    position: new Vector3(14.5, 0, 15.5),
+    rotation: new Quaternion(0, 0, 0, 1),
+    scale: new Vector3(1, 1, 1)
 })
 shopEmissive.addComponentOrReplace(transform10)
 const gltfShape6 = new GLTFShape("models/461bf97f-886b-47f7-89ce-16255f6a985f/Shop_Emissive.glb")
@@ -146,6 +174,13 @@ const transform12 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+smallCandleGauzeLantern.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 smallCandleGauzeLantern.addComponentOrReplace(transform12)
 const gltfShape8 = new GLTFShape("models/3ea31ee2-9a60-4846-a1f5-c8b14419d8af/ChineseLantern_05/ChineseLantern_05.glb")
 gltfShape8.withCollisions = true
@@ -161,6 +196,13 @@ const transform13 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+traditionalStonePagodaLantern.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 traditionalStonePagodaLantern.addComponentOrReplace(transform13)
 const gltfShape9 = new GLTFShape("models/2fab56bd-6a6e-4418-84e4-72d0528c7646/ChineseFountain_02/ChineseFountain_02.glb")
 gltfShape9.withCollisions = true
@@ -176,6 +218,13 @@ const transform14 = new Transform({
     rotation: new Quaternion(0, 0.7730104923248291, 0, -0.6343933343887329),
     scale: new Vector3(1.000002384185791, 1, 1.000002384185791)
 })
+yearOfThePigBanner.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 yearOfThePigBanner.addComponentOrReplace(transform14)
 const gltfShape10 = new GLTFShape("models/57d2eb7f-2671-47b3-9af9-fdfa84ceca1f/ChineseFlag_01/ChineseFlag_01.glb")
 gltfShape10.withCollisions = true
@@ -191,6 +240,13 @@ const transform15 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+chest.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 chest.addComponentOrReplace(transform15)
 
 const atomicLight = new Entity('atomicLight')
@@ -201,6 +257,13 @@ const transform16 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+atomicLight.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=antique+home+decor&sid=arb%2Cuj2%2Cz1t&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_na&as-pos=2&as-type=RECENT&suggestionId=antique+home+decor%7CShowpieces+%26+Figurines&requestId=b2f5e2bf-63f7-4023-a759-74a8e34653df&as-backfill=on")
+},
+    {
+        distance: 10
+    }
+))
 atomicLight.addComponentOrReplace(transform16)
 
 const channelId = Math.random().toString(16).slice(2)

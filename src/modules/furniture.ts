@@ -1891,6 +1891,13 @@ export function addBook1(
         rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
+    dawnOfTheCagedMind.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     dawnOfTheCagedMind.addComponentOrReplace(transform6)
     const gltfShape2 = new GLTFShape("models/9eeca876-94d9-4e89-8780-55586a7151ed/Book_04/Book_04.glb")
     gltfShape2.withCollisions = true
@@ -1908,6 +1915,13 @@ export function addOpenBook1(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    prophecyOfTheDead.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     prophecyOfTheDead.addComponentOrReplace(transform7)
     const gltfShape3 = new GLTFShape("models/ccbbdbd7-3406-4f8d-a792-8d7c396925fd/Book_06/Book_06.glb")
     gltfShape3.withCollisions = true
@@ -1925,6 +1939,13 @@ export function addOpenBook2(x: number, y: number, z: number) {
         scale: new Vector3(1, 1, 1)
     })
     dreamwhisperCodex.addComponentOrReplace(transform8)
+    dreamwhisperCodex.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     const gltfShape4 = new GLTFShape("models/0b129a3e-a9aa-422c-903e-5ad8f82156ef/Book_05/Book_05.glb")
     gltfShape4.withCollisions = true
     gltfShape4.isPointerBlocker = true
@@ -2050,6 +2071,13 @@ export function addBook4(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    terrorOfTheWicked.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     terrorOfTheWicked.addComponentOrReplace(transform15)
     const gltfShape11 = new GLTFShape("models/dc028b6e-19b1-40b3-802d-6bb42d89913f/Book_01/Book_01.glb")
     gltfShape11.withCollisions = true
@@ -2073,6 +2101,13 @@ export function addBook3(
         rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
+    theStoryOfALife.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     theStoryOfALife.addComponentOrReplace(transform16)
     const gltfShape12 = new GLTFShape("models/14a5cdac-a07c-4c4c-9733-e869eb2a8c6e/Book_02/Book_02.glb")
     gltfShape12.withCollisions = true
@@ -2113,6 +2148,13 @@ export function addBook2(
         rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
+    vanquisherManuscript.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     vanquisherManuscript.addComponentOrReplace(transform18)
     const gltfShape14 = new GLTFShape("models/3a29e237-7096-4795-95b7-038c2d584a23/Book_03/Book_03.glb")
     gltfShape14.withCollisions = true
@@ -2155,6 +2197,13 @@ export function addBooks(
         rotation: Quaternion.Euler(xRot, yRot, zRot),
         scale: new Vector3(1, 1, 1)
     })
+    books.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     books.addComponentOrReplace(transform20)
     const gltfShape16 = new GLTFShape("models/44bcc403-ae66-42db-ba5d-bd561040f607/Books.glb")
     gltfShape16.withCollisions = true
@@ -2372,6 +2421,13 @@ export function addFruit(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    fruit.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=tomato&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     fruit.addComponentOrReplace(transform18)
     const gltfShape14 = new GLTFShape("models/97635e13-2534-422a-a4a2-1465c268ba1d/Fruit 1.glb")
     gltfShape14.withCollisions = true
@@ -2389,6 +2445,13 @@ export function addFruit2(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    fruit2.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=mango&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     fruit2.addComponentOrReplace(transform19)
     const gltfShape15 = new GLTFShape("models/50c18ed7-ccb8-4b41-ad45-3502b43e07d0/Fruit 2.glb")
     gltfShape15.withCollisions = true
@@ -2405,6 +2468,13 @@ export function addFruit3(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    fruit3.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=orange&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     fruit3.addComponentOrReplace(transform20)
     const gltfShape16 = new GLTFShape("models/cce63be5-5cff-4843-bc9d-f3c910bebea3/Fruit 3.glb")
     gltfShape16.withCollisions = true
@@ -2428,6 +2498,13 @@ export function addFruit4(
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    fruit4.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=onion&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     transform21.rotation.setEuler(xRot, yRot, zRot);
     fruit4.addComponentOrReplace(transform21)
     const gltfShape17 = new GLTFShape("models/2680e223-707f-4e95-8e53-b1c3a8a6e7b4/Fruit 6.glb")
@@ -2445,6 +2522,13 @@ export function addFruit5(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    fruit5.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=mango&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     fruit5.addComponentOrReplace(transform22)
     const gltfShape18 = new GLTFShape("models/bbb40eb8-79ba-4442-a95e-b5454015a4b9/Fruit 5.glb")
     gltfShape18.withCollisions = true
@@ -2461,6 +2545,13 @@ export function addFruit6(x: number, y: number, z: number) {
         rotation: new Quaternion(0, 0, 0, 1),
         scale: new Vector3(1, 1, 1)
     })
+    fruit6.addComponent(new OnPointerDown(() => {
+        openExternalURL("https://www.flipkart.com/search?q=pear&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+    },
+        {
+            distance: 10
+        }
+    ))
     fruit6.addComponentOrReplace(transform23)
     const gltfShape19 = new GLTFShape("models/abf88b39-d0f1-433d-9dbe-beb619639a8b/Fruit 4.glb")
     gltfShape19.withCollisions = true

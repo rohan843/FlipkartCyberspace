@@ -92,6 +92,13 @@ const transform8 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+bedGamer.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 bedGamer.addComponentOrReplace(transform8)
 const gltfShape3 = new GLTFShape("models/591af8a8-b871-429e-9c90-0c744c9cb7be/Bed_Gamer.glb")
 gltfShape3.withCollisions = true
@@ -107,6 +114,13 @@ const transform9 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+game.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 game.addComponentOrReplace(transform9)
 const gltfShape4 = new GLTFShape("models/6c876c44-8018-4a53-8779-0d7a052d2b3b/Game.glb")
 gltfShape4.withCollisions = true
@@ -122,6 +136,13 @@ const transform10 = new Transform({
     rotation: new Quaternion(-1.5805062147933313e-8, -0.7071067690849304, 1.000987666088804e-7, -0.7071068286895752),
     scale: new Vector3(1, 1, 1)
 })
+gamesConsole.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 gamesConsole.addComponentOrReplace(transform10)
 const gltfShape5 = new GLTFShape("models/9dadc7a7-0924-4eeb-b246-83565116826a/Games_Console.glb")
 gltfShape5.withCollisions = true
@@ -137,6 +158,13 @@ const transform11 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+arcadeMachineBlack.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 arcadeMachineBlack.addComponentOrReplace(transform11)
 const gltfShape6 = new GLTFShape("models/7dc89fda-c062-4bf2-aa97-7d6748c8d2f4/Arcade_Machine_Black.glb")
 gltfShape6.withCollisions = true
@@ -152,6 +180,13 @@ const transform12 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+arcadeMachineBlue.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 arcadeMachineBlue.addComponentOrReplace(transform12)
 const gltfShape7 = new GLTFShape("models/5ff589ff-58c7-44df-a896-5807aad1c9be/Arcade_Machine_Blue.glb")
 gltfShape7.withCollisions = true
@@ -167,6 +202,13 @@ const transform13 = new Transform({
     rotation: new Quaternion(4.2146840684154085e-8, -0.7071068286895752, 4.2146840684154085e-8, 0.7071068286895752),
     scale: new Vector3(1.0000016689300537, 1, 1.0000016689300537)
 })
+arcadeMachineGreen.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=chair&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 arcadeMachineGreen.addComponentOrReplace(transform13)
 const gltfShape8 = new GLTFShape("models/77683fc3-021a-4d5c-8a7a-f6db84b8c819/Arcade_Machine_Green.glb")
 gltfShape8.withCollisions = true

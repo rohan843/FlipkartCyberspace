@@ -84,7 +84,7 @@ export const museumConfig1 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -96,7 +96,7 @@ export const museumConfig1 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -203,7 +203,7 @@ export const museumConfig2 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -215,7 +215,7 @@ export const museumConfig2 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -322,7 +322,7 @@ export const museumConfig3 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -334,7 +334,7 @@ export const museumConfig3 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -441,7 +441,7 @@ export const museumConfig4 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -453,7 +453,7 @@ export const museumConfig4 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -560,7 +560,7 @@ export const museumConfig5 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -572,7 +572,7 @@ export const museumConfig5 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -679,7 +679,7 @@ export const museumConfig6 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -691,7 +691,7 @@ export const museumConfig6 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -806,7 +806,7 @@ export const museumConfig7 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -818,7 +818,7 @@ export const museumConfig7 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -925,7 +925,7 @@ export const museumConfig8 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -937,7 +937,7 @@ export const museumConfig8 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {
@@ -1044,7 +1044,7 @@ export const museumConfig9 = {
         {
             name: "HOMEPAGE",
             model: "models/social_media/homepage.glb",
-            link: "https://www.decentraland.org",
+            link: "https://www.flipkart.com/",
             position: new Vector3(6, 1.2, 0.7)
         },
         {
@@ -1056,7 +1056,7 @@ export const museumConfig9 = {
         {
             name: "TWITTER",
             model: "models/social_media/twitter.glb",
-            link: "https://www.twitter.com",
+            link: "https://www.twitter.com/flipkart",
             position: new Vector3(-6, 1.2, 0.7)
         },
         {

@@ -1,9 +1,9 @@
 const _scene2 = new Entity('_scene2')
 engine.addEntity(_scene2)
-const transform1= new Transform({
-    position: new Vector3(89, 0, -20),
-    rotation: Quaternion.Euler(0, 270, 0),
-    scale: new Vector3(1, 1, 1)
+const transform1 = new Transform({
+  position: new Vector3(89, 0, -20),
+  rotation: Quaternion.Euler(0, 270, 0),
+  scale: new Vector3(1, 1, 1)
 })
 _scene2.addComponentOrReplace(transform1)
 
@@ -63,6 +63,13 @@ const transform61 = new Transform({
   rotation: new Quaternion(-0.5616251230239868, 0.4710691571235657, 0.42946162819862366, 0.5274786949157715),
   scale: new Vector3(1.0000004768371582, 1.0000017881393433, 1.0000027418136597)
 })
+hammer.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 hammer.addComponentOrReplace(transform61)
 const gltfShape21 = new GLTFShape("models/a15c48c1-0c12-4d5c-9be5-15c584991a99/Hammer_01/Hammer_01.glb")
 gltfShape21.withCollisions = true
@@ -78,6 +85,13 @@ const transform71 = new Transform({
   rotation: new Quaternion(-2.262906487407191e-16, -0.6343932747840881, 7.562555737194998e-8, -0.7730104327201843),
   scale: new Vector3(0.9999999403953552, 1, 0.9999999403953552)
 })
+axe.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 axe.addComponentOrReplace(transform71)
 const gltfShape31 = new GLTFShape("models/f877cc59-f1f4-4e73-9f38-188109781007/Axe_01/Axe_01.glb")
 gltfShape31.withCollisions = true
@@ -93,6 +107,13 @@ const transform81 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+handHook.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 handHook.addComponentOrReplace(transform81)
 const gltfShape41 = new GLTFShape("models/609d2bea-408b-43b6-bd1e-1fbbf05bc73c/Hook_01/Hook_01.glb")
 gltfShape41.withCollisions = true
@@ -108,6 +129,13 @@ const transform91 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+consoleStool.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 consoleStool.addComponentOrReplace(transform91)
 const gltfShape51 = new GLTFShape("models/a962d57d-ad5d-44f0-8868-f13aa4d59f48/ConsoleStool.glb")
 gltfShape51.withCollisions = true
@@ -123,6 +151,13 @@ const transform101 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+wizardStaff.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 wizardStaff.addComponentOrReplace(transform101)
 const gltfShape61 = new GLTFShape("models/00e3adfa-d549-46e9-8c06-e706571c8272/WizardStaff_01/WizardStaff_01.glb")
 gltfShape61.withCollisions = true
@@ -138,6 +173,13 @@ const transform111 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(0.4999999403953552, 0.5, 0.4999999701976776)
 })
+ritualPedestal.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 ritualPedestal.addComponentOrReplace(transform111)
 const gltfShape71 = new GLTFShape("models/f43f78f7-cd7f-48ab-82cf-21796bf7822d/Pedestal_01/Pedestal_01.glb")
 gltfShape71.withCollisions = true
@@ -153,6 +195,13 @@ const transform121 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+blueCrystal.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 blueCrystal.addComponentOrReplace(transform121)
 const gltfShape81 = new GLTFShape("models/add59455-719d-4fb6-adbc-72e020ff6a0a/Crystal_01/Crystal_01.glb")
 gltfShape81.withCollisions = true
@@ -183,6 +232,13 @@ const transform141 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+sack.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 sack.addComponentOrReplace(transform141)
 const gltfShape10 = new GLTFShape("models/dc465c5e-cf7a-45ff-9415-f4ebe41ceab0/Sack_01/Sack_01.glb")
 gltfShape10.withCollisions = true
@@ -193,11 +249,18 @@ sack.addComponentOrReplace(gltfShape10)
 const aquamarineJewellery = new Entity('aquamarineJewellery')
 engine.addEntity(aquamarineJewellery)
 aquamarineJewellery.setParent(_scene2)
-const transform151= new Transform({
+const transform151 = new Transform({
   position: new Vector3(16, 3, 12),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(3, 3, 1)
 })
+aquamarineJewellery.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 aquamarineJewellery.addComponentOrReplace(transform151)
 const gltfShape11 = new GLTFShape("models/f8309235-61e9-48c2-8d8d-601199f7e66c/Gem_06/Gem_06.glb")
 gltfShape11.withCollisions = true
@@ -213,6 +276,13 @@ const transform162 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+gemstoneOrnament.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 gemstoneOrnament.addComponentOrReplace(transform162)
 const gltfShape12 = new GLTFShape("models/e70ba92f-3ba2-4e3b-bf17-9c0591444baf/Ornament_Stone_01/Ornament_Stone_01.glb")
 gltfShape12.withCollisions = true
@@ -228,6 +298,13 @@ const transform172 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+magicGemstoneTorch.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 magicGemstoneTorch.addComponentOrReplace(transform172)
 const gltfShape13 = new GLTFShape("models/e53ae6eb-9c7e-447d-a7fe-a95329a05233/Torch_01/Torch_01.glb")
 gltfShape13.withCollisions = true
@@ -243,6 +320,13 @@ const transform182 = new Transform({
   rotation: new Quaternion(-0.7056509256362915, 0.7083015441894531, 0.01478154119104147, 0.012130893766880035),
   scale: new Vector3(0.9999998807907104, 1.0000005960464478, 0.9999999403953552)
 })
+chestPlatesKey.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 chestPlatesKey.addComponentOrReplace(transform182)
 const gltfShape14 = new GLTFShape("models/1f249994-a5ab-450f-868e-d6625b1ed703/Chest Plates Key.glb")
 gltfShape14.withCollisions = true
@@ -274,6 +358,13 @@ const transform202 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+consoleStool2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 consoleStool2.addComponentOrReplace(transform202)
 
 const magicGemstoneTorch2 = new Entity('magicGemstoneTorch2')
@@ -285,6 +376,13 @@ const transform212 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+magicGemstoneTorch2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 magicGemstoneTorch2.addComponentOrReplace(transform212)
 
 const sack2 = new Entity('sack2')
@@ -296,4 +394,11 @@ const transform222 = new Transform({
   rotation: new Quaternion(0, 0, 0.6343932747840881, 0.7730104327201843),
   scale: new Vector3(0.9999999403953552, 0.9999999403953552, 1)
 })
+sack2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=decor&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+    distance: 10
+  }
+))
 sack2.addComponentOrReplace(transform222)

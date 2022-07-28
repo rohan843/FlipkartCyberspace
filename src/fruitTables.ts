@@ -64,6 +64,13 @@ const transform5 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+bananas.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=banana&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 bananas.addComponentOrReplace(transform5)
 const gltfShape4 = new GLTFShape("models/adabf424-1469-4087-bb7d-5614c924ea12/Bananas_01/Bananas_01.glb")
 gltfShape4.withCollisions = true
@@ -80,6 +87,13 @@ const transform6 = new Transform({
     rotation: new Quaternion(0.02, -1, 0.1, -0.2),
     scale: new Vector3(1, 1, 1)
 })
+bananas2.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=banana&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 bananas2.addComponentOrReplace(transform6)
 
 const pineapple = new Entity('pineapple')
@@ -90,6 +104,13 @@ const transform7 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+pineapple.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=pineapple&sid=eat%2Cw2q%2Cb0g&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=pineapple%7CFresh+Fruit&requestId=b19310d7-2594-461c-8e3d-349ee3243130&as-searchtext=pine")
+},
+    {
+        distance: 10
+    }
+))
 pineapple.addComponentOrReplace(transform7)
 const gltfShape5 = new GLTFShape("models/5f23a6a6-a87c-4813-b52b-d35a07d41612/FoodPineapple_01/FoodPineapple_01.glb")
 gltfShape5.withCollisions = true
@@ -106,6 +127,13 @@ const transform8 = new Transform({
     rotation: new Quaternion(-0.12255118787288666, -0.6563444137573242, 0.01539871096611023, -0.7442823648452759),
     scale: new Vector3(1.000000238418579, 1.0000001192092896, 1.0000003576278687)
 })
+bananas3.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=banana&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 bananas3.addComponentOrReplace(transform8)
 
 const pineapple2 = new Entity('pineapple2')
@@ -117,6 +145,13 @@ const transform9 = new Transform({
     rotation: new Quaternion(0, 0, -0.6343929767608643, -0.7730107307434082),
     scale: new Vector3(1.0000001192092896, 1.0000001192092896, 1)
 })
+pineapple2.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=pineapple&sid=eat%2Cw2q%2Cb0g&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=pineapple%7CFresh+Fruit&requestId=b19310d7-2594-461c-8e3d-349ee3243130&as-searchtext=pine")
+},
+    {
+        distance: 10
+    }
+))
 pineapple2.addComponentOrReplace(transform9)
 
 const watermelon = new Entity('watermelon')
@@ -127,6 +162,13 @@ const transform10 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+watermelon.addComponent(new OnPointerDown(() => {
+    openExternalURL("http://flipkart.com/search?q=watermelon&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 watermelon.addComponentOrReplace(transform10)
 const gltfShape6 = new GLTFShape("models/f01cf0d6-e860-4eb8-8c82-6fbc2a98a110/FoodWatermelon_01/FoodWatermelon_01.glb")
 gltfShape6.withCollisions = true
@@ -158,6 +200,13 @@ const transform12 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+watermelon2.addComponent(new OnPointerDown(() => {
+    openExternalURL("http://flipkart.com/search?q=watermelon&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 watermelon2.addComponentOrReplace(transform12)
 
 const apple = new Entity('apple')
@@ -168,6 +217,13 @@ const transform13 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+apple.addComponent(new OnPointerDown(() => {
+    openExternalURL("http://flipkart.com/search?q=watermelon&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 apple.addComponentOrReplace(transform13)
 const gltfShape8 = new GLTFShape("models/efe88bc5-618c-4294-a5b5-4c64e95fafa3/FoodApple_01/FoodApple_01.glb")
 gltfShape8.withCollisions = true
@@ -184,6 +240,13 @@ const transform14 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+apple2.addComponent(new OnPointerDown(() => {
+    openExternalURL("http://flipkart.com/search?q=watermelon&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 apple2.addComponentOrReplace(transform14)
 
 const apple3 = new Entity('apple3')
@@ -195,6 +258,13 @@ const transform15 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+apple3.addComponent(new OnPointerDown(() => {
+    openExternalURL("http://flipkart.com/search?q=watermelon&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 apple3.addComponentOrReplace(transform15)
 
 const lemon = new Entity('lemon')
@@ -205,6 +275,13 @@ const transform16 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+lemon.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=lemon&sid=eat%2Clmt%2Czhh&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=lemon%7CFresh+Vegetables&requestId=04e44d8f-d551-4900-847a-7c03160ce422&as-searchtext=lemons")
+},
+    {
+        distance: 10
+    }
+))
 lemon.addComponentOrReplace(transform16)
 const gltfShape9 = new GLTFShape("models/38f22e83-4718-4788-9777-26ba847cff1a/FoodLemon_01/FoodLemon_01.glb")
 gltfShape9.withCollisions = true
@@ -221,6 +298,13 @@ const transform17 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+lemon2.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=lemon&sid=eat%2Clmt%2Czhh&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=lemon%7CFresh+Vegetables&requestId=04e44d8f-d551-4900-847a-7c03160ce422&as-searchtext=lemons")
+},
+    {
+        distance: 10
+    }
+))
 lemon2.addComponentOrReplace(transform17)
 
 const lemon3 = new Entity('lemon3')
@@ -232,6 +316,13 @@ const transform18 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+lemon3.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=lemon&sid=eat%2Clmt%2Czhh&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=lemon%7CFresh+Vegetables&requestId=04e44d8f-d551-4900-847a-7c03160ce422&as-searchtext=lemons")
+},
+    {
+        distance: 10
+    }
+))
 lemon3.addComponentOrReplace(transform18)
 
 const coconut = new Entity('coconut')
@@ -242,6 +333,13 @@ const transform19 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+coconut.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=coconut&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 coconut.addComponentOrReplace(transform19)
 const gltfShape10 = new GLTFShape("models/597981eb-2375-41cb-8db5-7e3e0f4347f4/Coco_01/Coco_01.glb")
 gltfShape10.withCollisions = true
@@ -257,6 +355,13 @@ const transform20 = new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 })
+halfCoconut.addComponent(new OnPointerDown(() => {
+    openExternalURL("https://www.flipkart.com/search?q=coconut&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+    {
+        distance: 10
+    }
+))
 halfCoconut.addComponentOrReplace(transform20)
 const gltfShape11 = new GLTFShape("models/0b710cd3-be50-4ac0-a340-d38fe2b6efe0/Coco_02/Coco_02.glb")
 gltfShape11.withCollisions = true

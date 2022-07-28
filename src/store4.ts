@@ -69,6 +69,13 @@ const transform6 = new Transform({
   rotation: new Quaternion(-6.585832572041507e-16, -0.7071068286895752, 8.429368136830817e-8, -0.7071068286895752),
   scale: new Vector3(1.0000004768371582, 1, 1.0000004768371582)
 })
+streetClock.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 streetClock.addComponentOrReplace(transform6)
 const gltfShape2 = new GLTFShape("models/3e718ab8-14e9-4352-a972-620da3ae778c/StreetClock_01/StreetClock_01.glb")
 gltfShape2.withCollisions = true
@@ -84,6 +91,13 @@ const transform7 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+clock.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 clock.addComponentOrReplace(transform7)
 const gltfShape3 = new GLTFShape("models/e6bb4e73-d06e-452a-88d2-dfd5463e59fe/Furnit 5 Clock.glb")
 gltfShape3.withCollisions = true
@@ -99,6 +113,13 @@ const transform8 = new Transform({
   rotation: new Quaternion(0.7071068286895752, 2.412783938165715e-15, -8.429369557916289e-8, 0.7071068286895752),
   scale: new Vector3(1, 1.0000027418136597, 1.0000027418136597)
 })
+wallClock.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 wallClock.addComponentOrReplace(transform8)
 const gltfShape4 = new GLTFShape("models/a0186d6a-2e78-410a-bb52-fb4d6c3289a9/Wall Clock.glb")
 gltfShape4.withCollisions = true
@@ -114,6 +135,13 @@ const transform9 = new Transform({
   rotation: new Quaternion(-1.5394153601527394e-15, 0.7071068286895752, -8.429369557916289e-8, 0.7071068286895752),
   scale: new Vector3(1.000001311302185, 1, 1.000001311302185)
 })
+countdownTimer.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 countdownTimer.addComponentOrReplace(transform9)
 
 const countdownTimer2 = new Entity('countdownTimer2')
@@ -124,6 +152,13 @@ const transform10 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+countdownTimer2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 countdownTimer2.addComponentOrReplace(transform10)
 
 const countdownTimer3 = new Entity('countdownTimer3')
@@ -134,6 +169,13 @@ const transform11 = new Transform({
   rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
   scale: new Vector3(1/2, 1/2, 1/2)
 })
+countdownTimer3.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 countdownTimer3.addComponentOrReplace(transform11)
 
 const shopEmissive = new Entity('shopEmissive')
@@ -160,6 +202,13 @@ const transform13 = new Transform({
   rotation: new Quaternion(-6.585832572041507e-16, -0.7071068286895752, 8.429368136830817e-8, -0.7071068286895752),
   scale: new Vector3(1.0000007152557373, 1, 1.0000007152557373)
 })
+streetClock2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 streetClock2.addComponentOrReplace(transform13)
 
 const clock2 = new Entity('clock2')
@@ -171,6 +220,13 @@ const transform14 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
+clock2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 clock2.addComponentOrReplace(transform14)
 
 const countdownTimer4 = new Entity('countdownTimer4')
@@ -181,6 +237,13 @@ const transform15 = new Transform({
   rotation: new Quaternion(4.124569338414402e-15, -0.7071068286895752, 8.429370268459024e-8, 0.7071068286895752),
   scale: new Vector3(1.0000022649765015, 1, 1.0000022649765015)
 })
+countdownTimer4.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 countdownTimer4.addComponentOrReplace(transform15)
 
 const wallClock2 = new Entity('wallClock2')
@@ -192,6 +255,13 @@ const transform16 = new Transform({
   rotation: new Quaternion(0.7071068286895752, 2.412783938165715e-15, -8.429369557916289e-8, 0.7071068286895752),
   scale: new Vector3(1, 1.0000029802322388, 1.0000029802322388)
 })
+wallClock2.addComponent(new OnPointerDown(() => {
+  openExternalURL("https://www.flipkart.com/search?q=clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+},
+  {
+      distance: 10
+  }
+))
 wallClock2.addComponentOrReplace(transform16)
 
 const channelId = Math.random().toString(16).slice(2)
