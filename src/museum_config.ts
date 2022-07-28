@@ -4,7 +4,7 @@ export const museumConfig1 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_electronics.png",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -123,7 +123,7 @@ export const museumConfig2 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_laptop.jpg",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -242,7 +242,7 @@ export const museumConfig3 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_beauty_products.webp",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -361,7 +361,7 @@ export const museumConfig4 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_phones.png",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -480,7 +480,7 @@ export const museumConfig5 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_men_clothes.webp",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -599,7 +599,7 @@ export const museumConfig6 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_paintings.webp",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -718,7 +718,7 @@ export const museumConfig7 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_shoes.jfif",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -845,7 +845,7 @@ export const museumConfig8 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_women_clothes.jfif",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
@@ -964,7 +964,7 @@ export const museumConfig9 = {
     logo: {
         bottom: {
             //image should be 512px square
-            imgSrc: "images/logo.png",
+            imgSrc: "images/logo_home_appliances.png",
             position: new Vector3(0, 5.8883, 6.9747)
         },
         top: {
