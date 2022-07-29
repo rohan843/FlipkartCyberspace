@@ -28,13 +28,13 @@ export const addProjectorScreen = () => {
     function addTVScreens(_rows: number, _columns: number, radius: number, center: Vector3) {
 
         let pos = new Vector3(0, 0, 1) //used as an iterator for each TVs position 
-        let screenHeight = 1.8
-        let screenWidth = 3.8
+        let screenHeight = 3.6
+        let screenWidth = 10
         let heightStep = screenHeight * 1.1 //vertical distance between rows of TVs
         let angleRange = 75 // angle range spread of the curved TV stack, relative to the centerAngle 
         let centerAngle = 180
 
-        let heightBase = screenHeight / 2 // vertical position of the bottom row of TVs
+        let heightBase = 10//screenHeight / 2 // vertical position of the bottom row of TVs
         let height = 0 // iterator for row heights
         let angleStep = angleRange / (_columns - 1) // angle increment between TVs in the same row (based on the range set above)
         let angle = centerAngle - angleStep * (_columns / 2) + angleStep / 2 // starting angle based on the initial rotation
@@ -140,7 +140,7 @@ export const addProjectorScreen = () => {
     addColumnGrid(4, 4, scene.columnsCenter)
 
     //add the TV stack
-    addTVScreens(4, 6, 15, scene.center)
+    addTVScreens(4, 6, 15, new Vector3(-16, 0, 100))
 
     //calculate the UVs for the TV stack only once on startup (no realtime reprojection needed)
     ScreenGrpScatterTvs.updateScreens(scene.center)
