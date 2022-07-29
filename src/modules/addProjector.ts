@@ -140,7 +140,7 @@ export const addProjectorScreen = () => {
     addColumnGrid(4, 4, scene.columnsCenter)
 
     //add the TV stack
-    // addTVScreens(4, 6, 15, scene.center)
+    addTVScreens(4, 6, 15, scene.center)
 
     //calculate the UVs for the TV stack only once on startup (no realtime reprojection needed)
     ScreenGrpScatterTvs.updateScreens(scene.center)
