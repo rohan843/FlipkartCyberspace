@@ -4,11 +4,15 @@ import { addShopAt } from "./modules/shop"
 import { museumConfig1, museumConfig2, museumConfig3, museumConfig4, museumConfig5, museumConfig6, museumConfig7, museumConfig8, museumConfig9 } from "./museum_config"
 import { shopConfig1, shopConfig2 } from "./shop_config"
 import { addProjectorScreen } from "./modules/addProjector"
-import { addRoadCobbleCrossLong, addWallcornerCyberpunk, addWallCorrugatedMetal, addRoadCobbleT, addRoadCobbleEnd, addRoadCobbleAngled, addDragonBush, addBook2, addBook3, addBook4, addBooks } from "./modules/furniture"
-import { addBook1, addBush2, addEvergreenShrub, addFairKiosk, addFruitKiosk, addIceCreamKiosk, addJungleFern, addJungleShrub, addRoadCobbleStraight, addShelf2, addShopEmissive, addShrub, addShushiBar, addStarMosaicTile, addSteampunkBench, addTheFountainOfSpirits } from "./modules/furniture"
+import { addBook1, addBush2 } from "./modules/furniture"
 import { addStraightBarrier, addCurvedBarrierEnd, addWallLight, addStoneBrickWall, addCornerStoneBrickWall, addStainedGlassStoneBrickWindow, addLowStonePillar, addConicalStonePillar } from "./modules/furniture"
+import { addRoadCobbleCrossLong, addGreenhouse, addinformationTerminal, addornamentalFountain, addpond, addrusticLampPost, addWallcornerCyberpunk, addWallCorrugatedMetal, addWallHexagonGrid, addRoadCobbleT, addRoadCobbleEnd, addRoadAngle, addRoadCobbleAngled, addDragonBush, addBook2, addBook3, addBook4, addBooks, addBarrel, addBarrelSpilled, addBarrelWithLid } from "./modules/furniture"
+import { addbalsamFlower, addbenchGrassFern,  addBush,  addCactus, addCactus2, addCactus3, addCaribeanWater, addEvergreenShrub, addFairKiosk, addfloorHexagon, addFruitKiosk, addGrassSprout, addGrassTile, addIceCreamKiosk, addJungleFern, addJungleShrub, addMarbleCheckersTile, addorangefloorpanel, addornamentalFountain as addOrnamentalFountain, addOrnamentalStonePillar, addplanetSurfaceCrimson, addplanetSurfaceViolet, addPlant, addRoadCobbleStraight, addRockTile, addrustickiosk, addSandTile, addShelf2, addShelf3, addShelf5, addShopBlack, addShopEmissive, addShrub, addShrubRow, addShushiBar, addSideWalkTile, addStarMosaicTile, addSteampunkBench, addStoneBrickThreshold, addTheFountainOfBrokenDreams, addTheFountainOfSpirits, addTriSpikeGrass, addWallPlainGlass, addWoodTile } from "./modules/furniture"
+import { addApple, addBananas, addDustbin, addFruit, addFruit2, addFruit3, addFruit4, addFruit5, addFruit6, addPineapple, addRedFish, addShelf, addSucculentCrop } from "./modules/furniture"
+import {  addWallArrowBoard,  addSmallStonePillar} from "./modules/furniture"
 import { addShelf4 } from "./modules/furniture"
 import { addRusticMerchantFishStand, _scene } from "./modules/furniture"
+import { addAlchemistContraption, addBloomingBlueTree, addBloomingPinkTree, addBlueAcaciaTree, addBlueAcaciaTree2, addBluePinkMushroomTree, addBlueTree, addCrystalCandelabra, addDragonStatue, addfortuneCatStatue, addGemstonePillar, addLionStatue, addMagicSerpentStone, addMagicStone, addMaidenStatue, addMOonTemplePond, addMushroomTree, addpigStatue, addPinkAcaciaTree, addPurpleTree, addRubbishRecycling, addZombieHand } from "./modules/furniture"
 
 
 // addGrassTile(-7.60 + 15, 0, 64.08)
@@ -94,6 +98,9 @@ addShopEmissive(73, 0, 123, 0, 270, 0)
 
 // Benches
 addSteampunkBench(78.29, 0, 35.01 + 10 * 3, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01 + 10 * 4, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01 + 10 * 6, 0, 270, 0);
+addSteampunkBench(78.29, 0, 35.01 + 10 * 5, 0, 270, 0);
 addSteampunkBench(78.29, 0, 35.01 + 10 * 2, 0, 270, 0);
 addSteampunkBench(78.29, 0, 35.01 + 10 * 1, 0, 270, 0);
 addSteampunkBench(78.29, 0, 35.01, 0, 270, 0);
@@ -712,6 +719,65 @@ addRoadCobbleEnd(-32, 0, 100.55 - 0.55, 1, 1, 1, 0, -90, 0)
 addDragonBush(-47, 0, 115 - 4 * 26, 0, 180, 0)
 addDragonBush(-47, 0, 117.7 - 4 * 31, 0, 0, 0)
 // addDragonBush(0, 0, 0, 0, 0, 0)
+
+// addDragonStatue(-10,0,10)
+addLionStatue(1.50,0,40,0,0,0)
+addLionStatue(1.50,0,72,0,180,0)
+// addpigStatue(0,0,10)
+// addAlchemistContraption(51.07,0,10.96)
+addMaidenStatue(53.82,0,10.87,0,135,0)
+addMaidenStatue(53.82,0,103.26,0,45,0)
+// addCrystalCandelabra(15,0,10)
+// addMOonTemplePond(20,0,10)
+// addGemstonePillar(25,0,10)
+// addZombieHand(30,0,10)
+addBlueTree(-42.80,0,85.67)
+addPurpleTree(-42.80,0,80.67)
+addBlueTree(-42.80,0,75.67)
+addPurpleTree(-42.80,0,70.67)
+addBlueTree(-42.80,0,65.67)
+addPurpleTree(-42.80,0,60.67)
+addBlueTree(-42.80,0,55.67)
+addPurpleTree(-42.80,0,50.67)
+addBlueTree(-42.80,0,45.67)
+addPurpleTree(-42.80,0,40.67)
+addBlueTree(-42.80,0,35.67)
+addPurpleTree(-42.80,0,30.67)
+// addMushroomTree(-44.80,0,85.67)
+// addBlueAcaciaTree(5,0,20)
+// addBlueAcaciaTree2(10,0,20)
+// addPinkAcaciaTree(15,0,20)
+addBloomingBlueTree(77.33,0,9.41)
+addBloomingBlueTree(77.33,0,29.41)
+addBloomingBlueTree(77.33,0,49.41)
+addBloomingBlueTree(77.33,0,69.41)
+addBloomingBlueTree(77.33,0,89.41)
+addBloomingPinkTree(77.33,0,19.41)
+addBloomingPinkTree(77.33,0,39.41)
+addBloomingPinkTree(77.33,0,59.41)
+addBloomingPinkTree(77.33,0,79.41)
+addBloomingPinkTree(77.33,0,99.41)
+// addBluePinkMushroomTree(-44.80,0,25.67)
+// addBluePinkMushroomTree(-44.80,0,30.67)
+// addBluePinkMushroomTree(-44.80,0,35.67)
+// addBluePinkMushroomTree(-44.80,0,40.67)
+// addBluePinkMushroomTree(-44.80,0,45.67)
+// addBluePinkMushroomTree(-44.80,0,50.67)
+// addBluePinkMushroomTree(-44.80,0,55.67)
+// addBluePinkMushroomTree(-44.80,0,60.67)
+// addBluePinkMushroomTree(-44.80,0,65.67)
+// addBluePinkMushroomTree(-44.80,0,70.67)
+// addBluePinkMushroomTree(-44.80,0,75.67)
+// addBluePinkMushroomTree(-44.80,0,80.67)
+
+addMagicSerpentStone(-18.36,0.88,31.30)
+addMagicStone(34.87,0,24.39)
+// addfortuneCatStatue(0,0,30)
+// addRubbishRecycling(5,0,30)
+// addBarrel(10,0,30)
+// addBarrelSpilled(15,0,30)
+// addBarrelWithLid(20,0,30)
+
 createDispenser(
     {
         position: new Vector3(8 + 5.5, 7.32, 8),

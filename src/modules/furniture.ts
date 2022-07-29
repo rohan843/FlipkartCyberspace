@@ -3143,3 +3143,387 @@ export function addHandBush(
     gltfShape5.visible = true
     handBush.addComponentOrReplace(gltfShape5)
 }
+
+
+
+
+export function addDragonStatue(x: number, y: number, z: number)
+{const tianlongDragonStatue = new Entity('tianlongDragonStatue')
+engine.addEntity(tianlongDragonStatue)
+tianlongDragonStatue.setParent(_scene)
+const transform6 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+tianlongDragonStatue.addComponentOrReplace(transform6)
+const gltfShape2 = new GLTFShape("models/2807c5c8-b44a-46fc-b79d-2c3c7ee0c9d4/ChineseStatueDragon_01/ChineseStatueDragon_01.glb")
+gltfShape2.withCollisions = true
+gltfShape2.isPointerBlocker = true
+gltfShape2.visible = true
+tianlongDragonStatue.addComponentOrReplace(gltfShape2)
+}
+
+export function addLionStatue(x: number, y: number, z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0)
+{const imperialGuardianLionStatue = new Entity('imperialGuardianLionStatue')
+engine.addEntity(imperialGuardianLionStatue)
+imperialGuardianLionStatue.setParent(_scene)
+const transform7 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+transform7.rotation.setEuler(xRot, yRot, zRot);
+imperialGuardianLionStatue.addComponentOrReplace(transform7)
+const gltfShape3 = new GLTFShape("models/aaf9ba7e-b8e3-4f5f-bc47-67a20d516526/ChineseStatueLion_01/ChineseStatueLion_01.glb")
+gltfShape3.withCollisions = true
+gltfShape3.isPointerBlocker = true
+gltfShape3.visible = true
+imperialGuardianLionStatue.addComponentOrReplace(gltfShape3)
+}
+export function addpigStatue(x: number, y: number, z: number){
+const stonePigStatue = new Entity('stonePigStatue')
+engine.addEntity(stonePigStatue)
+stonePigStatue.setParent(_scene)
+const transform8 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+stonePigStatue.addComponentOrReplace(transform8)
+const gltfShape4 = new GLTFShape("models/ab1eb62a-c1d3-4797-84f0-ec6568fbed29/ChineseStatuePig_01/ChineseStatuePig_01.glb")
+gltfShape4.withCollisions = true
+gltfShape4.isPointerBlocker = true
+gltfShape4.visible = true
+stonePigStatue.addComponentOrReplace(gltfShape4)
+}
+
+export function addAlchemistContraption(x: number, y: number, z: number){
+const alchemistContraption = new Entity('alchemistContraption')
+engine.addEntity(alchemistContraption)
+alchemistContraption.setParent(_scene)
+const transform9 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+alchemistContraption.addComponentOrReplace(transform9)
+const gltfShape5 = new GLTFShape("models/55843b02-cbbf-4348-823e-f24c6a347d42/Pillar_Fire_01/Pillar_Fire_01.glb")
+gltfShape5.withCollisions = true
+gltfShape5.isPointerBlocker = true
+gltfShape5.visible = true
+alchemistContraption.addComponentOrReplace(gltfShape5)
+}
+
+export function addMaidenStatue(x: number, y: number, z: number,
+    xRot: number = 0,
+    yRot: number = 0,
+    zRot: number = 0){
+const forestMaidenStatue = new Entity('forestMaidenStatue')
+engine.addEntity(forestMaidenStatue)
+forestMaidenStatue.setParent(_scene)
+const transform10 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1.5, 1.5, 1.5)
+})
+transform10.rotation.setEuler(xRot, yRot, zRot);
+forestMaidenStatue.addComponentOrReplace(transform10)
+const gltfShape6 = new GLTFShape("models/8e9fc52d-f3df-41be-aedd-287907fa9b90/GirlForestStatue_01/GirlForestStatue_01.glb")
+gltfShape6.withCollisions = true
+gltfShape6.isPointerBlocker = true
+gltfShape6.visible = true
+forestMaidenStatue.addComponentOrReplace(gltfShape6)
+}
+
+export function addCrystalCandelabra(x: number, y: number, z: number){
+const hoveringCrystalCandelabra = new Entity('hoveringCrystalCandelabra')
+engine.addEntity(hoveringCrystalCandelabra)
+hoveringCrystalCandelabra.setParent(_scene)
+const transform11 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+hoveringCrystalCandelabra.addComponentOrReplace(transform11)
+const gltfShape7 = new GLTFShape("models/7585ead7-6503-43eb-8cde-9e87b90a486c/CrystalTotem_01/CrystalTotem_01.glb")
+gltfShape7.withCollisions = true
+gltfShape7.isPointerBlocker = true
+gltfShape7.visible = true
+hoveringCrystalCandelabra.addComponentOrReplace(gltfShape7)
+}
+
+export function addMOonTemplePond(x: number, y: number, z: number){
+const moonTemplePond = new Entity('moonTemplePond')
+engine.addEntity(moonTemplePond)
+moonTemplePond.setParent(_scene)
+const transform12 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+moonTemplePond.addComponentOrReplace(transform12)
+const gltfShape8 = new GLTFShape("models/d997709b-a637-43af-aca5-8b5b282b56c6/TempleMoon_01/TempleMoon_01.glb")
+gltfShape8.withCollisions = true
+gltfShape8.isPointerBlocker = true
+gltfShape8.visible = true
+moonTemplePond.addComponentOrReplace(gltfShape8)
+}
+
+export function addGemstonePillar(x: number, y: number, z: number){
+const wizardGemstonePillar = new Entity('wizardGemstonePillar')
+engine.addEntity(wizardGemstonePillar)
+wizardGemstonePillar.setParent(_scene)
+const transform13 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+wizardGemstonePillar.addComponentOrReplace(transform13)
+const gltfShape9 = new GLTFShape("models/209fac77-3ea9-41fa-8a3c-dec67280db1f/Pillar_Magic_01/Pillar_Magic_01.glb")
+gltfShape9.withCollisions = true
+gltfShape9.isPointerBlocker = true
+gltfShape9.visible = true
+wizardGemstonePillar.addComponentOrReplace(gltfShape9)
+}
+
+export function addZombieHand(x: number, y: number, z: number){
+const zombieHand = new Entity('zombieHand')
+engine.addEntity(zombieHand)
+zombieHand.setParent(_scene)
+const transform14 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+zombieHand.addComponentOrReplace(transform14)
+const gltfShape10 = new GLTFShape("models/cea3883b-052b-4474-a28c-0797cba55c23/HWN20_ZombieHand_03.glb")
+gltfShape10.withCollisions = true
+gltfShape10.isPointerBlocker = true
+gltfShape10.visible = true
+zombieHand.addComponentOrReplace(gltfShape10)
+}
+
+export function addBluePinkMushroomTree(x: number, y: number, z: number){
+    const bluePinkMysticalMushroomTree = new Entity('bluePinkMysticalMushroomTree')
+engine.addEntity(bluePinkMysticalMushroomTree)
+bluePinkMysticalMushroomTree.setParent(_scene)
+const transform15 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+bluePinkMysticalMushroomTree.addComponentOrReplace(transform15)
+const gltfShape11 = new GLTFShape("models/01b875ea-95ea-4873-a0a7-a0884ca764e3/Tree_02/Tree_02.glb")
+gltfShape11.withCollisions = true
+gltfShape11.isPointerBlocker = true
+gltfShape11.visible = true
+bluePinkMysticalMushroomTree.addComponentOrReplace(gltfShape11)
+}
+
+export function addBlueAcaciaTree2(x: number, y: number, z: number){
+const blueAcaciaTree = new Entity('blueAcaciaTree')
+engine.addEntity(blueAcaciaTree)
+blueAcaciaTree.setParent(_scene)
+const transform16 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+blueAcaciaTree.addComponentOrReplace(transform16)
+const gltfShape12 = new GLTFShape("models/26343874-a629-49cc-bacd-6a040ad7427d/Tree_Forest_Blue_01/Tree_Forest_Blue_01.glb")
+gltfShape12.withCollisions = true
+gltfShape12.isPointerBlocker = true
+gltfShape12.visible = true
+blueAcaciaTree.addComponentOrReplace(gltfShape12)
+}
+
+export function addBlueTree(x: number, y: number, z: number){
+const blueWeepingWillowTree = new Entity('blueWeepingWillowTree')
+engine.addEntity(blueWeepingWillowTree)
+blueWeepingWillowTree.setParent(_scene)
+const transform17 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+blueWeepingWillowTree.addComponentOrReplace(transform17)
+const gltfShape13 = new GLTFShape("models/a917defc-3e47-4e55-90a6-dd6c4f03c9f5/Tree_Leafs_02/Tree_Leafs_02.glb")
+gltfShape13.withCollisions = true
+gltfShape13.isPointerBlocker = true
+gltfShape13.visible = true
+blueWeepingWillowTree.addComponentOrReplace(gltfShape13)
+}
+
+export function addBloomingPinkTree(x: number, y: number, z: number){
+const bloomingPinkAcaciaTree = new Entity('bloomingPinkAcaciaTree')
+engine.addEntity(bloomingPinkAcaciaTree)
+bloomingPinkAcaciaTree.setParent(_scene)
+const transform18 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+bloomingPinkAcaciaTree.addComponentOrReplace(transform18)
+const gltfShape14 = new GLTFShape("models/84d1a6c5-7928-4a77-b8c4-b22952ee8b15/Tree_Forest_Pink_02/Tree_Forest_Pink_02.glb")
+gltfShape14.withCollisions = true
+gltfShape14.isPointerBlocker = true
+gltfShape14.visible = true
+bloomingPinkAcaciaTree.addComponentOrReplace(gltfShape14)
+}
+
+export function addBloomingBlueTree(x: number, y: number, z: number){
+const bloomingBlueAcaciaTree = new Entity('bloomingBlueAcaciaTree')
+engine.addEntity(bloomingBlueAcaciaTree)
+bloomingBlueAcaciaTree.setParent(_scene)
+const transform19 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+bloomingBlueAcaciaTree.addComponentOrReplace(transform19)
+const gltfShape15 = new GLTFShape("models/3f001c84-b186-499d-bcaf-490629e85d99/Tree_Forest_Blue_02/Tree_Forest_Blue_02.glb")
+gltfShape15.withCollisions = true
+gltfShape15.isPointerBlocker = true
+gltfShape15.visible = true
+bloomingBlueAcaciaTree.addComponentOrReplace(gltfShape15)
+}
+
+export function addPinkAcaciaTree(x: number, y: number, z: number){
+const clusteredPinkAcaciaTree = new Entity('clusteredPinkAcaciaTree')
+engine.addEntity(clusteredPinkAcaciaTree)
+clusteredPinkAcaciaTree.setParent(_scene)
+const transform20 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+clusteredPinkAcaciaTree.addComponentOrReplace(transform20)
+const gltfShape16 = new GLTFShape("models/62913528-493e-41d5-9656-9d369b6e521b/Tree_Forest_Pink_03/Tree_Forest_Pink_03.glb")
+gltfShape16.withCollisions = true
+gltfShape16.isPointerBlocker = true
+gltfShape16.visible = true
+clusteredPinkAcaciaTree.addComponentOrReplace(gltfShape16)
+}
+
+export function addBlueAcaciaTree(x: number, y: number, z: number){
+const clusteredBlueAcaciaTree = new Entity('clusteredBlueAcaciaTree')
+engine.addEntity(clusteredBlueAcaciaTree)
+clusteredBlueAcaciaTree.setParent(_scene)
+const transform21 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+clusteredBlueAcaciaTree.addComponentOrReplace(transform21)
+const gltfShape17 = new GLTFShape("models/e2afd394-e1ec-4a5f-8435-e821deb638c8/Tree_Forest_Blue_03/Tree_Forest_Blue_03.glb")
+gltfShape17.withCollisions = true
+gltfShape17.isPointerBlocker = true
+gltfShape17.visible = true
+clusteredBlueAcaciaTree.addComponentOrReplace(gltfShape17)
+}
+
+export function addMushroomTree(x: number, y: number, z: number){
+const mysticalMushroomTree = new Entity('mysticalMushroomTree')
+engine.addEntity(mysticalMushroomTree)
+mysticalMushroomTree.setParent(_scene)
+const transform22 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+mysticalMushroomTree.addComponentOrReplace(transform22)
+const gltfShape18 = new GLTFShape("models/87b5f3f9-c07e-43d1-9e6e-f8d3d157069a/Tree_03/Tree_03.glb")
+gltfShape18.withCollisions = true
+gltfShape18.isPointerBlocker = true
+gltfShape18.visible = true
+mysticalMushroomTree.addComponentOrReplace(gltfShape18)
+}
+
+export function addPurpleTree(x: number, y: number, z: number){
+const purpleWeepingWillowTree = new Entity('purpleWeepingWillowTree')
+engine.addEntity(purpleWeepingWillowTree)
+purpleWeepingWillowTree.setParent(_scene)
+const transform23 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+purpleWeepingWillowTree.addComponentOrReplace(transform23)
+const gltfShape19 = new GLTFShape("models/e8013294-8574-44a5-9207-9275ea235a63/Tree_Leafs_01/Tree_Leafs_01.glb")
+gltfShape19.withCollisions = true
+gltfShape19.isPointerBlocker = true
+gltfShape19.visible = true
+purpleWeepingWillowTree.addComponentOrReplace(gltfShape19)
+}
+
+export function addMagicStone(x: number, y: number, z: number){
+const magicStone = new Entity('magicStone')
+engine.addEntity(magicStone)
+magicStone.setParent(_scene)
+const transform24 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+magicStone.addComponentOrReplace(transform24)
+const gltfShape20 = new GLTFShape("models/dd4a594e-0ab3-4c85-9dee-7f57f93775f7/Stone_Magic_01/Stone_Magic_01.glb")
+gltfShape20.withCollisions = true
+gltfShape20.isPointerBlocker = true
+gltfShape20.visible = true
+magicStone.addComponentOrReplace(gltfShape20)
+}
+
+export function addMagicSerpentStone(x: number, y: number, z: number){
+const magicSerpentStone = new Entity('magicSerpentStone')
+engine.addEntity(magicSerpentStone)
+magicSerpentStone.setParent(_scene)
+const transform25 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+magicSerpentStone.addComponentOrReplace(transform25)
+const gltfShape21 = new GLTFShape("models/b4247d54-3ee6-4a9d-bd3b-7ead311798ba/Stone_Magic_02/Stone_Magic_02.glb")
+gltfShape21.withCollisions = true
+gltfShape21.isPointerBlocker = true
+gltfShape21.visible = true
+magicSerpentStone.addComponentOrReplace(gltfShape21)
+}
+
+export function addfortuneCatStatue(x: number, y: number, z: number){
+const fortuneCatStatue = new Entity('fortuneCatStatue')
+engine.addEntity(fortuneCatStatue)
+fortuneCatStatue.setParent(_scene)
+const transform26 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+fortuneCatStatue.addComponentOrReplace(transform26)
+const gltfShape22 = new GLTFShape("models/844a0611-37a4-405b-bbeb-618bfe1c5b77/Fortune_Cat_Statue.glb")
+gltfShape22.withCollisions = true
+gltfShape22.isPointerBlocker = true
+gltfShape22.visible = true
+fortuneCatStatue.addComponentOrReplace(gltfShape22)
+}
+
+export function addRubbishRecycling(x: number, y: number, z: number){
+const rubbishRecycling = new Entity('rubbishRecycling')
+engine.addEntity(rubbishRecycling)
+rubbishRecycling.setParent(_scene)
+const transform27 = new Transform({
+  position: new Vector3(x,y,z),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+rubbishRecycling.addComponentOrReplace(transform27)
+const gltfShape23 = new GLTFShape("models/779986f4-8a23-4e5c-94a0-08dbd13c7775/Rubbish_Recycling.glb")
+gltfShape23.withCollisions = true
+gltfShape23.isPointerBlocker = true
+gltfShape23.visible = true
+rubbishRecycling.addComponentOrReplace(gltfShape23)
+}
